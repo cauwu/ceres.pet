@@ -1,17 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
+<html dir="ltr" lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Ceres Miller</title>
+    <link rel="icon" type="image/x-icon" href="assets/site/webicon.webp">
+    <meta charset="utf-8">
+    <meta name="description" content="Product design portfolio website, Ceres Miller">
+    <meta name="keywords" content="Portfolio, Product design, Ceres Miller">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ceres.pet</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href=".assets/icon/favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-        <h1>Aaaaaa</h1>  
-    </main>
-	<script src="index.js"></script>
-  </body>
+</head>
+<body>
+    <div id="overbox" class="flexobject">
+        <!-- left-side -->
+        <header id="leftside" class="flexobject" role="banner">
+            <nav id="navscontainer" class="flexobject" role="navigation">
+                <!-- icon ontop of navsbar -->
+                <a id="navsheader" href="index.html" role="button">
+                    <img id="homelink" src="images/site/webicontranswebp.webp" alt="Logo">
+                </a>
+                <!-- main left-side navsbar -->
+                <div id="leftsidenavsbox" class="bubblebox4navs flexobject">
+                    <a class="navslink flexobject" style="padding-top:0.25rem;" href="index.html" role="button">
+                        <img class="svgblk" src="images/site/home_black_24dp.svg" alt="Home icon">
+                        <img class="svgwht" src="images/site/home_white_24dp.svg" alt="Home icon">
+                        <span class="navslabel">Home</span>
+                    </a>
+                    <hr class="navs">
+                    <a class="navslink flexobject" href="index.html#siteindex" role="button">
+                        <img class="svgblk" src="images/site/list_black_24dp.svg" alt="Index icon">
+                        <img class="svgwht" src="images/site/list_white_24dp.svg" alt="Index icon">
+                        <span class="navslabel">Index</span>
+                    </a>
+                    <hr class="navs">
+                    <a class="navslink flexobject" href="comms.html" role="button">
+                        <img id="mmostsvg" class="svgblk" src="images/site/mattermostblack.svg" alt="Comms icon">
+                        <img id="mmostsvg" class="svgwht" src="images/site/mattermostwhite.svg" alt="Comms icon">
+                        <span class="navslabel">Comms</span>
+                    </a>
+                    <hr class="navs">
+                    <a class="navslink flexobject" style="padding-bottom:0.25rem;" href="wiki.html" role="button">
+                        <img class="svgblk" src="images/site/menu_book_black_24dp.svg" alt="Wiki icon">
+                        <img class="svgwht" src="images/site/menu_book_white_24dp.svg" alt="Wiki icon">
+                        <span class="navslabel">Wiki</span>
+                    </a>
+                </div>
+            </nav>            
+        </header>
+
+        <!-- right-side -->
+        <div id="rightside" class="flexobject">
+            <div id="center" class="flexobject">
+                <!-- site heading -->
+                <div id="titlebox" class="flexobject">
+                    <!-- header image on mobile -->
+                    <a class="mobheader homelink" href="index.html" role="button">
+                        <img id="homelink" src="images/site/webicontranswebp.webp" alt="Logo">
+                    </a>
+                    <h1 role="heading">Ceres Miller</h1>
+                </div>
+
+                <!-- right-side location bar, navs on mobile -->
+                <nav id="bubblebox4locbar" class="flexobject" role="navigation">
+                    <!-- location on desktop-->
+                    <a class="loclinks" href="index.html" role="link">Home /</a>
+                    <!-- navs on mobile -->
+                    <a class="moblink navslink flexobject" href="index.html" role="button">
+                        <img class="svgblk" src="images/site/home_black_24dp.svg" alt="Home icon">
+                        <img class="svgwht" src="images/site/home_white_24dp.svg" alt="Home icon">
+                        <span class="navslabel">Home</span>
+                    </a>
+                </nav>
+
+                <!-- article main -->
+                <main>
+                    <article>
+                        <!-- title, author info, intro -->
+                        <header class="bubblebox4content flexobject">
+                            <!-- article title -->
+                            <h2 role="heading">Ceres Miller</h2>
+                            <hr>
+                            <hr class="lasthr">
+                        </header>
+
+                        <!-- homepage spotlight -->
+                        <section class="bubblebox4content flexobject">
+                            <h2 id="spotlight">Spotlight Pages ⭐</h2>
+                            <hr style="margin-bottom: 0.75rem;">
+                            <p>default default</p>
+                            <hr style="margin-top: 0.5rem;">
+                        </section>
+
+                    </article>
+                </main>
+
+                <!-- site footer -->
+                <nav id="sitefooter" class="bubblebox flexobject" role="contentinfo">
+                    <div id="sitefooterlinks">
+                        <a class="footerlinks" href="about.html" role="link">About</a>
+                        <span class="footerbp">&#8226</span>
+                        <span class="footerlinks">Contact: <code class="inlinecode" style="font-size: 0.8em;">ceres@ceres.pet</code></span>
+                        <span class="footerbp">&#8226</span>
+                        <span style="font-size: 0.8rem;">&lt3</span>
+                    </div>
+                    <div id="copyrightinfo">© Ceres Miller 2023 - All works on this website, unless otherwise noted, are licensed under the CC BY-NC-ND 4.0 license.</div>
+                </nav>
+            </div>
+
+            <!-- contents list far-right side -->
+            <nav id="contentslist" class="flexobject" role="navigation">
+                <!--  blank space -->
+                <div id="contentsheader"></div>
+                <!-- contents list -->
+                <nav id="bubblebox4contentslist" class="flexobject">
+                    <span id="contstitle" class="content">Contents List</span>
+                </nav>
+            </nav>
+        </div>
+    </div>
+</body>
 </html>
