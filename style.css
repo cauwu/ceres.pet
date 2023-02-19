@@ -3,6 +3,7 @@ html {
     overscroll-behavior-y: none; 
     font-size: 20px;
     font-family: 'Arial';
+	background-color: #202020;
 }
 
 body {
@@ -35,7 +36,7 @@ body {
         display: none !important;
     }
 
-    #contentslist {
+    #hiringinfo {
         display: none !important;
     }
 
@@ -84,11 +85,6 @@ body {
         padding-top: 0.3em !important;
     }
 
-    #mmostsvg {
-        width: 1.1rem !important;
-        height: 1.1rem !important;
-    }
-
     .indexitem {
         padding-left: 1.15rem !important;
     }
@@ -113,13 +109,13 @@ body {
 
 .bubblebox {
     background-color: white;
-    border-radius: 0.3rem;
-    margin-bottom: 0.4rem;
+    /* border-radius: 0.3rem; */
+    margin-bot	tom: 0.4rem;
 }
 
 .bubblebox4content {
     background-color: white;
-    border-radius: 0.3rem;
+    /* border-radius: 0.3rem; */
     margin-bottom: 0.4rem;
     padding: 1rem 1rem 0rem 1rem;
 }
@@ -233,8 +229,6 @@ code {
 }
 
 .bubblebox4navs {
-    background-color: white;
-    border-radius: 0.3rem;
     margin-bottom: 0.4rem;
     padding: 0rem 0rem 0rem 0rem;
 }
@@ -255,6 +249,7 @@ code {
 
 #navsheader {
     height: 4em;
+	margin-bottom: 60px;
 }
 
 .navslink {
@@ -266,11 +261,11 @@ code {
 }
 
 .navslink:link {
-    color: black;
+    color: white;
 }
 
 .navslink:visited {
-    color: black;
+    color: white;
 }
 
 .navslink:hover {
@@ -285,8 +280,7 @@ code {
 .svgblk {display:flex;}  .svgwht {display:none;}  .navslink:active .svgblk {display:none;}  .navslink:active .svgwht {display:flex;}
 
 .navslabel {
-    margin: 0rem 0.3rem 0rem 0.3rem;
-    padding-top: 0.25rem;
+    margin: 0.1rem 0.3rem 0.1rem 0.3rem;
 }
 
 hr.navs {
@@ -335,33 +329,33 @@ hr.navs {
     font-size: 0.7rem;
 }
 
-/* ~~~~~ page contents list ~~~~~ */
+/* ~~~~~ hiring info right side ~~~~~ */
 
-#contentsheader {
+#hiringheader {
     height: 4em;
+	margin-bottom: 60px;
 }
 
-#bubblebox4contentslist {
-    background-color: white;
-    border-radius: 0.3em;
+#bubblebox4hiringinfo {
     margin-bottom: 0.4em;
+	margin-left: 1.8em;
     padding: 0.25em 0.5em 0.5em 0.5em;
     width:180px;
-    margin-left: 0.4em;
+
 }
 
-#contstitle {
+#hiringinfotitle {
     font-size: 1.2em;
-    margin-bottom: 0.1rem;
+	color: white;
 }
 
-.contslink {text-decoration: none;}  .contslink:link {color: black;}  .contslink:visited {color: black;}  .contslink:hover {color: grey;}
+.contslink {text-decoration: none;}  .contslink:link {color: white;}  .contslink:visited {color: white;}  .contslink:hover {color: grey;}
 
 /* ~~~~~ nav links in the middle-top ~~~~~ */
 
 #bubblebox4locbar {
     background-color: white;
-    border-radius: 0.3rem;
+    /* border-radius: 0.3rem; */
     margin-bottom: 0.4rem;
     flex-direction: row;
     align-items: center;
