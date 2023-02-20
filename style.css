@@ -2,7 +2,7 @@ html {
     overflow-y: scroll; 
     overscroll-behavior-y: none; 
     font-size: 20px;
-    font-family: 'Arial';
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
 	background-color: #e1e1e1;
 }
 
@@ -110,7 +110,7 @@ body {
 .bubblebox {
     background-color: white;
     /* border-radius: 0.3rem; */
-    margin-bot	tom: 0.4rem;
+    margin-bottom: 0.4rem;
 }
 
 .bubblebox4content {
@@ -149,6 +149,11 @@ p {
 
 hr {
     margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+ul {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .lasthr {
@@ -261,26 +266,21 @@ code {
 }
 
 .navslink:link {
-    color: white;
+    color: rgb(50, 50, 50);
 }
 
 .navslink:visited {
-    color: white;
+    color: rgb(50, 50, 50);
 }
-
-.navslink:hover {
-    background-image: linear-gradient(to right, rgba(4,77,60, 0), rgba(4,77,60, 0.5), rgba(4,77,60, 0));
-}
-
-.navslink:active {
-    background-image: linear-gradient(to right, rgba(2, 39, 30, 0.8), rgba(4,77,60, 0.8), rgba(2, 39, 30, 0.8));
-    color:#fff;
-}
-
-.svgblk {display:flex;}  .svgwht {display:none;}  .navslink:active .svgblk {display:none;}  .navslink:active .svgwht {display:flex;}
 
 .navslabel {
     margin: 0.1rem 0.3rem 0.1rem 0.3rem;
+    font-family: 'Inconsolata', 'Courier New', Courier, monospace;
+    background-color: rgb(255, 255, 220);
+}
+
+.navslabel:hover {
+    background-color: rgb(255, 255, 255);
 }
 
 hr.navs {
@@ -345,15 +345,19 @@ hr.navs {
 }
 
 #hiringinfotitle {
+    margin: 0.25rem 0rem 0.25rem 0rem;
+    font-family: 'Inconsolata', 'Courier New', Courier, monospace;
     font-size: 1.2em;
-	color: white;
+	color: rgb(50, 50, 50);
+    background-color: rgb(255, 255, 220);
 }
 
-.contslink {text-decoration: none;}  .contslink:link {color: white;}  .contslink:visited {color: white;}  .contslink:hover {color: grey;}
+#hiringinfotitle {text-decoration: none;}  #hiringinfotitle:link {color: rgb(50, 50, 50);}  #hiringinfotitle:visited {color: rgb(50, 50, 50);}  #hiringinfotitle:hover {background-color: rgb(255, 255, 255)}
 
 /* ~~~~~ nav links in the middle-top ~~~~~ */
 
 #bubblebox4locbar {
+    display: none;
     background-color: white;
     /* border-radius: 0.3rem; */
     margin-bottom: 0.4rem;
