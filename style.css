@@ -3,7 +3,7 @@ html {
     overscroll-behavior-y: none; 
     font-size: 20px;
     font-family: 'Arial';
-	background-color: #202020;
+	background-color: #e1e1e1;
 }
 
 body {
@@ -238,8 +238,8 @@ code {
 }
 
 #homelink {
-    width: 4em;
-    height: 4em;
+    width: 6em;
+    height: 6em;
     margin-top: -0.15rem;
 }
 
