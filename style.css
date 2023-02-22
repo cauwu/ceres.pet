@@ -104,6 +104,10 @@ body {
     #placeholderimageblank {
         display: none;
     }
+
+    #mobilelinks {
+        display: flex !important;
+    }
 }
 
 /* ~~~~~~ primitives ~~~~~~ */
@@ -331,6 +335,10 @@ hr.navs {
     width: 50%;
     padding-right: 1rem;
 
+}
+
+#mobilelinks {
+    display: none;
 }
 
 /* ~~~~~ site footer ~~~~~ */
