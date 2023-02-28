@@ -15,7 +15,7 @@ body {
     flex-direction: row;
 }
 
-/* debug
+/* debug */ /*
 * {
     outline: 1px solid #f00 !important;
 }
@@ -96,8 +96,8 @@ body {
     }
 
     .portfolioitem {
-        height: 100% !important;
-        width: 100% !important;
+		height: auto !important;
+        width: auto !important;
         margin: 0.5rem 0 0.5rem 0 !important;
     }
 
@@ -330,11 +330,12 @@ hr.navs {
 .portfolioitem {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    height: 50%;
-    width: 50%;
-    padding-right: 1rem;
+	margin-right: 1rem;
+	width: 50%
+}
 
+.thumbnail {
+	max-width: 100%;
 }
 
 #mobilelinks {
