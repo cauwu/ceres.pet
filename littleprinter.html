@@ -15,6 +15,7 @@
 	<meta property="og:url" content="https://ceres.pet/littleprinter.html">
 	<meta property="og:site_name" content="Ceres Miller / Product Designer">
 	<meta name="article:author" content="Ceres Miller">
+	<script src="cerespet.js"></script>
 </head>
 <body>
     <div id="overbox" class="flexobject">
@@ -76,7 +77,7 @@
                             <p>To make it useable, I had to make a housing for it, and interface it with a microcontroller so I could print what I wanted.</p>
                             <div class="portfoliorow">
                                 <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/littleprinter-3.jpg" alt="image of final thermal printer" title="final thermal printer">
+                                    <img class="thumbnail" id="thumbimage" src="assets/site/thumbnails/littleprinter-3.jpg" alt="image of final thermal printer" title="final thermal printer">
                                 </div>
                                 <div class="portfolioitem">
                                     <img class="thumbnail" src="assets/site/thumbnails/littleprinter-4.jpg" alt="test printouts showing glitchy print errors" title="test printouts showing glitchy print errors">
@@ -174,5 +175,10 @@
             </nav>
         </div>
     </div>
+	<div id="popuparea" class="popup">
+		<span class="popupclose">&times;</span>
+		<img class="popupcontent" id="popupimg">
+		<div id="popupcaption"></div>
+	</div>
 </body>
 </html>
