@@ -15,6 +15,24 @@
 	<meta property="og:url" content="https://ceres.pet/mindseye.html">
 	<meta property="og:site_name" content="Ceres Miller / Product Designer">
 	<meta name="article:author" content="Ceres Miller">
+    <!-- Needed to support versions of Safari earlier than 16 (2023) -->
+    <script async src="https://unpkg.com/es-module-shims@1.7.1/dist/es-module-shims.js"></script>
+    <!-- This tells the browser where to find any JS that we request via import -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.151.3/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.151.3/examples/jsm/",
+            "3d": "./modules/3d.module.js"
+        }
+    }
+    </script>
+    <!-- For better performance but not strictly needed -->
+    <link rel="modulepreload" href="/modules/3d.module.js" />
+    <link rel="modulepreload" href="https://unpkg.com/three@0.151.3/build/three.module.js" />
+    <link rel="modulepreload" href="https://unpkg.com/three@0.151.3/examples/jsm/controls/OrbitControls.js" />
+    <link rel="modulepreload" href="https://unpkg.com/three@0.151.3/examples/jsm/loaders/3MFLoader.js" />
+    <link rel="modulepreload" href="https://unpkg.com/three@0.151.3/examples/jsm/libs/fflate.module.js" />
 	<script src="cerespet.js"></script>
 </head>
 <body>
@@ -151,6 +169,18 @@
 							<p>With this camera my aim was to demonstrate ideas I had about modifiable digital electronics, and to look into the entire process that someone goes through when trying to learn about and repurpose their electronic devices. What methods would they use, how would they stay motivated, where would they get the knowlege and skills to do it.</p>
 							<p>Mind's Eye is a camera that inspires creativity and makes a user want to change it. I think it is a good starting point for further work in adaptable, open design for digital electronics.</p>
 							<p><a href="https://github.com/cauwu/minds-eye-camera">Models, drawings and code available on Github.</a></p>
+                            <hr class="lasthr">
+                        </section>
+
+                        <section class="bubblebox4content flexobject">
+                            <p>3D Demo</p>
+                            <!-- Wherever you want to embed a 3mf file, give it a unique ID -->
+                            <div class="threemf" id="threemf-camera-1"></div>
+                            <script type="module">
+                                import { mount } from '3d';
+                                // Pass the ID and the filename to the mount function
+                                mount('threemf-camera-1', 'camera2angel.3mf');
+                            </script>
                             <hr class="lasthr">
                         </section>
 

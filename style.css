@@ -490,3 +490,8 @@ hr.navs {
   cursor: pointer;
 }
 
+/* ~~~~~ 3D 3mf viewer ~~~~~ */
+.threemf {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
