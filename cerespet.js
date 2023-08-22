@@ -30,7 +30,7 @@ function popupSystem() {
 	var popupImg = document.getElementById("popupimg");
 	var popupCaption = document.getElementById("popupcaption");
 	
-	if (window.location.pathname === "index.html") {
+	if (window.location.pathname === "/") {
 		
 	} else {
 		const imgs = document.querySelectorAll('.thumbnail');
