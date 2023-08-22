@@ -74,9 +74,9 @@
                             <hr>
                             <ul>
                                 <li>BA(hons) Product Design, University of Edinburgh</li>
-								<li>Design for adaption</li>
-                                <li>Craft, digital electronics and integrated computing</li>
-                                <li>Rust, CircuitPython, Arduino</li>
+								<li>Design for adaptation</li>
+                                <li>Craft, electronics, and digital design</li>
+                                <li>Rust, CircuitPython, Grasshopper</li>
                             </ul>
                             <hr class="lasthr">
                         </header>
@@ -98,7 +98,7 @@
                             <hr>
                             <span>Contact:</span>
                             <ul>
-                                <li>ceres[@]ceres.pet</li>
+                                <li><button class="emailaddressspot" onclick="pfShowEmailSpot()">ceres[@]ceres.pet</button></li>
                                 <li><a class="spotlight" href="https://linkedin.com/in/ceres-miller-b69969267/" role="link">Linkedin</a></li>
                             </ul>
                             <hr style="margin-top: 0.5rem;">
@@ -128,9 +128,9 @@
                                 </a>
                             </div>
                             <div class="portfoliorow">
-                                <a class="spotlight portfolioitem" href="littleprinter.html" role="link">
-                                    <img class="thumbnail" src="assets/site/thumbnails/littleprinter-2.jpg" alt="image of final thermal printer with lid on, thumbnail image" title="final thermal printer with lid on">
-                                    <span>A Thermal Printer</span>
+                                <a class="spotlight portfolioitem" href="rabbit.html" role="link">
+                                    <img class="thumbnail" src="assets/site/thumbnails/bunny-02.jpg" alt="a soft toy rabbit sitting, thumbnail image" title="a soft toy rabbit sitting">
+                                    <span>A Toy Rabbit</span>
                                 </a>
                                 <a class="spotlight portfolioitem" href="composter.html" role="link">
 									<img class="thumbnail" src="assets/site/thumbnails/composter-1.jpg" alt="Composter in a garden" title="Composter in a garden">
@@ -138,10 +138,20 @@
 								</a>
                             </div>
 							<div class="portfoliorow">
+                                <a class="spotlight portfolioitem" href="littleprinter.html" role="link">
+                                    <img class="thumbnail" src="assets/site/thumbnails/littleprinter-2.jpg" alt="image of final thermal printer with lid on, thumbnail image" title="final thermal printer with lid on">
+                                    <span>A Thermal Printer</span>
+                                </a>
                                 <a class="spotlight portfolioitem" href="misc.html" role="link">
 									<img class="thumbnail" src="assets/site/thumbnails/misc-1.jpg" alt="Pyrex glass toothbrush with replaceable silicone heads" title="Pyrex glass toothbrush with replaceable silicone heads">
 									<span>Miscellaneous</span>
 								</a>
+                            </div>
+							<div class="portfoliorow" style="display:none">
+								<a class="spotlight portfolioitem" href="duck.html" role="link">
+                                    <img class="thumbnail" src="assets/site/thumbnails/placeholder.svg" alt="image of a duck shaped lamp, thumbnail image" title="image of a duck shaped lamp">
+                                    <span>A Duck Lamp</span>
+                                </a>
                                 <div id="placeholderimageblank" class="portfolioitem">
                                     <img class="thumbnail" src="assets/site/thumbnails/placeholder-blank.svg" alt="blank thumbnail image">
                                     <span></span>
@@ -158,6 +168,16 @@
 									<a class="spotlight portfolioitem" href="hospital.html" role="link">
 										<img class="thumbnail" src="assets/site/thumbnails/hospital-7.jpg" alt="View of a hospital waiting room scene" title="View of a hospital waiting room scene">
 										<span>Childrens' Hospital Waiting Room</span>
+									</a>
+								</div>
+								<div class="portfoliorow" style="display:none">
+									<a class="spotlight portfolioitem" href="hammer.html" role="link">
+										<img class="thumbnail" src="assets/site/thumbnails/placeholder.svg" alt="a gyroid christmas ornament, held up to a mirror" title="a gyroid christmas ornament, held up to a mirror">
+										<span>Creating Disorientating Spaces</span>
+									</a>
+									<a class="spotlight portfolioitem" href="warehouse.html" role="link">
+										<img class="thumbnail" src="assets/site/thumbnails/placeholder.svg" alt="View of a hospital waiting room scene" title="View of a hospital waiting room scene">
+										<span>Warehouse, Real-Time Rendering</span>
 									</a>
 								</div>
 								<div class="portfoliorow">
@@ -204,15 +224,19 @@
                     <a id="hiringinfotitle" href="contact.html" role="link">Hire Me for Your Project</a>
                     <div style="margin-bottom: 0.7rem; margin-top: 80px; font-family: 'Inconsolata', 'Courier New', Courier, monospace; color: rgb(50, 50, 50); text-decoration: none;">
                         <span>Contact:</span>
-                        <span>ceres[@]ceres.pet</span>
+                        <span><button class="emailaddress" onclick="pfShowEmail()">ceres[@]ceres.pet</button></span>
                     </div>
                     <a class="socialslinks" href="https://www.instagram.com/ceresmiller/" role="link">Instagram</a>
-                    <a class="socialslinks" href="https://www.behance.net/ceresmiller" role="link">Behance</a>
                     <a class="socialslinks" href="https://linkedin.com/in/ceres-miller-b69969267/" role="link">Linkedin</a>
                     <a class="socialslinks" href="https://github.com/cauwu" role="link">Github</a>
                 </nav>
             </nav>
         </div>
     </div>
+	<div id="popuparea" class="popup">
+		<span class="popupclose">&times;</span>
+		<img class="popupcontent" id="popupimg">
+		<div id="popupcaption"></div>
+	</div>
 </body>
 </html>
