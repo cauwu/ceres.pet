@@ -47,7 +47,6 @@ body {
     #homelink {
         width: 3.5rem !important;
         height: 3.5rem !important;
-		padding-left: 0rem !important;
     }
 
     h1 {
@@ -260,7 +259,6 @@ code {
 #homelink {
     width: 6em;
     height: 6em;
-	padding-left: 1rem;
 }
 
 #navscontainer {
