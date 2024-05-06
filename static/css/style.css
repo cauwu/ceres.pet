@@ -216,6 +216,10 @@ a:visited {
 
 /* ~~~~~~ article ~~~~~~ */
 
+article h3 {
+	margin: 1rem 0rem 1rem 0rem !important;
+}
+
 #articletopics {
 	margin: 0.3rem 0rem 0.2rem 0rem;
 }
