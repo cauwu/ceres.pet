@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="description" content="Blog" />
+	<meta name="keywords" content="blog" />
+	<meta property="og:title" content="Angelblog" />
+	<meta property="og:description" content="blog" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="Angelblog" />
+	<meta name="article:author" content="Angel" />
+	<title>Angelblog</title>
+	<!--<link rel="icon" type="image/x-icon" href="assets/icon/favicon-16x16.png">-->
+	<link rel="stylesheet" href="static/css/style.css" />
+</head>
+<body>
+	<div id="navpane">
+		<nav id="navcontainer" role="navigation">
+			<a href="index.html"><span>Blog</span></a>
+			<a href="index.html"><span>Photography</span></a>
+			<nav id="articlecontents">
+				<a href="blogpost.html#02"><span>Section 1</span></a>
+				<a href="blogpost.html#03"><span>Section 2</span></a>
+				<a href="blogpost.html#04"><span>Section 3</span></a>
+				<a href="blogpost.html#05"><span>Section 4</span></a>
+			</nav>
+		</nav>
+	</div>
+	<div id="contentpane">
+		<div id="main">
+			<a href="index.html"><h1>Angelblog</h1></a>
+			<article>
+				<h4>// Blog Post //</h4>
+				<h2 id="01">Sample Text</h2>
+				<span>From Wikipedia, the free encylopedia, at en.wikipedia.org.</span><br>
+				<span>Angel, 06th May 2024</span><br>
+				<div id="articletopics">
+					<a href="index.html"><span>Wikipedia</span></a><a href="index.html"><span>Encyclopedia</span></a><a href="index.html"><span>en.wikipedia.org</span></a>
+				</div>
+				<p>The page is split into two sides, navpane on the left, and contentpane on the right. They are both flexboxes with flex-grow=1. Navpane arranges items in row-reverse while contentpane arranges items in row normally, from left to right. Because these two flexboxes are opposing each other for the same space on the screen, they both work together to try and push both their content to the center of the screen. </p>
+				<p>That way, you can specify exactly how wide each section should be, and they will stay exactly that size, centered in a screen of any width. This is so you can have a main content section in the middle of the screen for a column of text that is never too wide to be read easily.</p>
+				<p>However, there has to actually be content inside these sections so that the flexboxes can center it properly. Otherwise everything will be a mess. Hence the paragraphs.</p>
+				<p>This also means that whatever gets put in navpane, something of equal width has to be put in extrapane (inside contentpane) otherwise the main section won't be in the center of the screen.</p>
+			</article>
+			<div id="sitefooter">
+				<div id="sitefooterlinks">
+					<a href="about.html" role="link">About</a>
+                    <span class="footerbp">•</span>
+                    <a href="contact.html" role="link">Contact</a>
+                    <span class="footerbp">•</span>
+                    <a href="index.html" role="link">Blog</a>
+                    <span class="footerbp">•</span>
+					<a href="index.html" role="link">Photography</a>
+                    <span class="footerbp">•</span>
+                    <span style="font-size: 0.8rem;">&lt;3</span>
+				</div>
+				<span id="copyright">© Angel 2024 - All works on this website, unless otherwise noted, are licensed under the CC BY-NC-ND 4.0 license.</span>
+			</div>
+		</div>
+		<div id="extrapane">
+			<div id="externallinkscontainer">
+				<a href="index.html"><span>Github</span></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

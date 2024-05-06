@@ -1,0 +1,249 @@
+html {
+    overflow-y: scroll; 
+    overscroll-behavior-y: none; 
+    font-size: 20px;
+    font-family: Inconsolata, monospace, Arial, Helvetica, sans-serif;
+	background-color: #fdf5e8;
+	color: #2d2a29;
+}
+
+@font-face {
+		font-family: 'Inconsolata';
+		src:url('../font/Inconsolata-VariableFont_wdth,wght.woff2') format('woff2'),		
+			url('../font/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+/* ~~~~~~ mobile and small screens settings ~~~~~~ */
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 16px;
+    }
+	body {
+		flex-direction: column !important;
+	}
+	#navpane {
+		display: none !important;
+	}
+	#extrapane {
+		display: none !important;
+	}
+}
+
+/* ~~~~~~ default settings ~~~~~~ */
+
+body {
+    margin: 0rem 0.3rem 0rem 0.3rem;
+    padding: 0.3rem 0rem 0.3rem 0rem;
+	display: flex;
+	flex-direction: row;
+}
+
+#navpane {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: flex-start;
+	flex-grow: 1;
+	padding-top: 6rem;
+}
+
+#navcontainer {
+	width: 180px;
+	font-size: 1.2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+#contentpane {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+}
+
+#main {
+	max-width: 760px;
+	display: flex;
+	flex-direction: column;
+	margin: 0rem 0.6rem 0rem 0.6rem;
+}
+
+a {
+	text-decoration: none;
+	color: #2d2a29;
+}
+
+a:visited {
+	color: #2d2a29;
+}
+
+#extrapane {
+	width: 180px;
+	font-size: 1.2rem;
+	padding: 6rem 0rem 0rem 1.6rem;
+}
+
+#externallinkscontainer {
+	display: flex;
+	flex-direction: column;
+}
+
+#sitefooter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0.6rem 0rem 0.3rem 0rem;
+}
+
+/* ~~~~~~ homepage blog post listing ~~~~~~ */
+
+.listblogpost {
+	display: flex;
+	flex-direction: row;
+	margin: 0.4rem 0em 0.8rem 0em;
+	padding: 0em 0.3rem 0em 0.3rem;
+}
+
+.listblogpost:hover {
+	background-color: white;
+}
+
+.listblogpostdate {
+	display: flex;
+	flex-direction: column;
+	padding: 0rem 0.6rem 0rem 0rem;
+	margin: -0.3rem 0rem 0rem 0rem;
+}
+
+.listblogpostdateD {
+	display: flex;
+	flex-direction: row;
+	margin: 0rem 0.3rem 0rem 0rem;
+}
+
+.listblogpostdateDD {
+	font-size: 3em;
+	font-weight: 200;
+	margin: 0rem 0rem 0rem -0.1rem;
+}
+
+.listblogpostdateHon {
+	margin: 1.75rem 0rem 0rem 0rem;
+}
+
+.listblogpostdateM {
+	margin: -0.1rem 0rem 0rem 0rem;
+	font-size: 0.9rem;
+}
+
+.listblogpostmain {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	padding: 0rem 0rem 0rem 1rem;
+}
+
+.listblogpostblurb {
+	font-size: 0.8rem;
+}
+
+.listblogposttopics {
+	display: flex;
+	flex-direction: row;
+	font-size: 0.9rem;
+	margin: 0.3rem 0rem 0.15rem 0rem;
+}
+
+.listblogposttopics span {
+	margin: 0rem 0.6rem 0rem 0rem;
+	color: #6a5d52;
+}
+
+#main h1 {
+	font-weight: 500;
+}
+
+#main h2 {
+	font-size: 1.7rem;
+	margin: 0.3rem 0rem 0.3rem 0rem;
+	font-weight: 500;
+}
+
+#main h3 {
+	font-size: 1.3rem;
+	margin: 0rem 0rem 0.3rem 0rem;
+	font-weight: 500;
+}
+
+#main h4 {
+	margin: 0rem 0rem 0.4rem 0rem;
+	font-weight: 600;
+	color: #6a5d52;
+}
+
+/* ~~~~~~ links surrounding main ~~~~~~ */
+
+#navcontainer a {
+	padding: 0.1rem 0rem 0.1rem 0rem;
+}
+
+#navcontainer span:hover {
+	background-color: white;
+}
+
+#externallinkscontainer a {
+	padding: 0.1rem 0rem 0.1rem 0rem;
+}
+
+#externallinkscontainer span:hover {
+	background-color: white;
+}
+
+/* ~~~~~~ site footer ~~~~~~ */
+
+#sitefooterlinks {
+	text-align: center;
+	font-size: 0.7rem;
+}
+
+#sitefooterlinks a {
+	font-size: 0.8rem;
+}
+
+#copyright {
+	font-size: 0.6rem;
+	text-align: center;
+	margin-top: 0.25rem;
+}
+
+/* ~~~~~~ article ~~~~~~ */
+
+#articletopics {
+	margin: 0.3rem 0rem 0.2rem 0rem;
+}
+
+#articletopics a span {
+	margin: 0rem 0.6rem 0rem 0rem;
+	color: #6a5d52;
+}
+
+#articlecontents {
+	position: fixed;
+	width: 180px;
+	font-size: 1rem;
+	display: flex;
+	flex-direction: column;
+	margin: 6rem 0rem 0rem 0rem;
+	color: #6a5d52;
+}
+
+#articlecontents a {
+	color: #6a5d52;
+}
+
+#articlecontents a:visited {
+	color: #6a5d52;
+}
+
+#articlecontents span:hover {
+	background-color: #ffffff00;
+	color: #2d2a29;
+}
