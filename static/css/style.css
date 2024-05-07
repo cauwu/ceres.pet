@@ -197,6 +197,48 @@ a:visited {
 	background-color: white;
 }
 
+#contactemail {
+	display: flex;
+	flex-direction: column;
+	margin: 4rem 0rem 0rem 0rem;
+}
+
+#contactemail span:hover {
+	background-color: #ffffff00;
+	color: #2d2a29;
+	text-decoration: none;
+}
+
+#emailaddress {
+	font-family: Inconsolata;
+	border: none;
+	font-size: 1.2rem;
+	background-color: #ffffff00;
+	text-align: left;
+	margin: 0rem 0rem 0rem 0rem;
+	padding: 0rem 0rem 0rem 0rem;
+}
+
+#emailaddress:hover {
+	color: #6a5d52;
+}
+
+#addresslabel span:hover {
+	color: inherit;
+}
+
+#emailcopiednotif {
+	display: none;
+}
+
+#addresslabel {
+	color: #2d2a29;
+}
+
+#addresslabel:hover {
+	color: #6a5d52;
+}
+
 /* ~~~~~~ site footer ~~~~~~ */
 
 #sitefooterlinks {
@@ -206,6 +248,10 @@ a:visited {
 
 #sitefooterlinks a {
 	font-size: 0.8rem;
+}
+
+#sitefooterlinks a:hover {
+	color: #6a5d52;
 }
 
 #copyright {
@@ -227,6 +273,10 @@ article h3 {
 #articletopics a span {
 	margin: 0rem 0.6rem 0rem 0rem;
 	color: #6a5d52;
+}
+
+#articletopics a span:hover {
+	color: #2d2a29;
 }
 
 #articlecontents {
