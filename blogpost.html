@@ -13,6 +13,7 @@
 	<title>Angelblog</title>
 	<!--<link rel="icon" type="image/x-icon" href="assets/icon/favicon-16x16.png">-->
 	<link rel="stylesheet" href="static/css/style.css" />
+	<script src="static/js/modules/angelblog.js"></script>
 </head>
 <body>
 	<div id="navpane">
@@ -63,6 +64,11 @@
 		<div id="extrapane">
 			<div id="externallinkscontainer">
 				<a href="index.html"><span>Github</span></a>
+				<div id="contactemail">
+					<span>Contact:</span><br>
+					<button id="emailaddress" onclick="pfCopyEmail()"></button>
+					<span id="emailcopiednotif">copied!</span>
+				</div>
 			</div>
 		</div>
 	</div>
