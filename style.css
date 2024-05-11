@@ -3,7 +3,7 @@ html {
     overscroll-behavior-y: none; 
     font-size: 20px;
     font-family: 'Work Sans', Arial, Helvetica, sans-serif;
-	background-color: #ededed;
+	background-color: #fbf4f6;
 }
 
 body {
@@ -259,10 +259,14 @@ code {
 #homelink {
     width: 6em;
     height: 6em;
+	filter: blur(0.02rem) drop-shadow(0 0 0.1rem #ababab);
+	/*transform: matrix(-1, 0, 0, -1, 0, 0);*/
+	
 }
 
 #navscontainer {
     width:180px;
+	margin-top: 1rem;
 }
 
 #navsheader {
