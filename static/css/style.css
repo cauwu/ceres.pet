@@ -111,6 +111,7 @@ a:visited {
 	flex-direction: column;
 	padding: 0rem 0.6rem 0rem 0rem;
 	margin: -0.3rem 0rem 0rem 0rem;
+	filter: blur(0.02rem) drop-shadow(0 0 0.06rem #9c938b);
 }
 
 .listblogpostdateD {
@@ -159,18 +160,21 @@ a:visited {
 
 #main h1 {
 	font-weight: 500;
+	filter: blur(0.02rem) drop-shadow(0 0 0.06rem #9c938b);
 }
 
 #main h2 {
 	font-size: 1.7rem;
 	margin: 0.3rem 0rem 0.3rem 0rem;
 	font-weight: 500;
+	filter: blur(0.02rem) drop-shadow(0 0 0.06rem #9c938b);
 }
 
 #main h3 {
 	font-size: 1.3rem;
 	margin: 0rem 0rem 0.3rem 0rem;
 	font-weight: 500;
+	filter: blur(0.02rem) drop-shadow(0 0 0.03rem #9c938b);
 }
 
 #main h4 {
@@ -185,16 +189,26 @@ a:visited {
 	padding: 0.1rem 0rem 0.1rem 0rem;
 }
 
+#navcontainer span {
+	filter: blur(0.02rem) drop-shadow(0 0 0.06rem #9c938b);
+}
+
 #navcontainer span:hover {
 	background-color: white;
+	filter: blur(0.02rem) drop-shadow(0 0 0rem #9c938b);
 }
 
 #externallinkscontainer a {
 	padding: 0.1rem 0rem 0.1rem 0rem;
 }
 
+#externallinkscontainer span {
+	filter: blur(0.02rem) drop-shadow(0 0 0.06rem #9c938b);
+}
+
 #externallinkscontainer span:hover {
 	background-color: white;
+	filter: blur(0.02rem) drop-shadow(0 0 0rem #9c938b);
 }
 
 #contactemail {
@@ -203,10 +217,12 @@ a:visited {
 	margin: 4rem 0rem 0rem 0rem;
 }
 
+#contactemail span {
+	filter: blur(0.02rem) drop-shadow(0 0 0.06rem #9c938b);
+}
+
 #contactemail span:hover {
-	background-color: #ffffff00;
 	color: #2d2a29;
-	text-decoration: none;
 }
 
 #emailaddress {
