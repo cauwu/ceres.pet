@@ -65,7 +65,7 @@ export const mount = (id, filename) => {
     const loader = new ThreeMFLoader( manager );
     setupControls(controls, render);
 
-    loader.load(`assets/site/3mf/${filename}`, (asset) => {
+    loader.load(`static/3mf/${filename}`, (asset) => {
         const box = new Box3().setFromObject( asset );
         const center = box.getCenter( new Vector3() );
 

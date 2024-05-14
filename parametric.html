@@ -1,198 +1,121 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work Sans">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-    <title>Ceres Miller / Parametric Art</title>
-    <link rel="icon" type="image/x-icon" href="assets/icon/favicon-16x16.png">
-    <meta charset="utf-8">
-    <meta name="description" content="Product design portfolio website, Ceres Miller">
-    <meta name="keywords" content="portfolio,product design,ceres miller">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:title" content="Ceres Miller / Parametric Art">
-	<meta property="og:description" content="Product design portfolio website, Ceres Miller">
-	<meta property="og:url" content="https://ceres.pet/parametric.html">
-	<meta property="og:site_name" content="Ceres Miller / Product Designer">
-	<meta name="article:author" content="Ceres Miller">
-	<script src="cerespet.js"></script>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Product design portfolio website, Ceres Miller" />
+    <meta name="keywords" content="portfolio,product design,ceres miller" />
+	<link rel="apple-touch-icon" sizes="180x180" href="static/icon/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="static/icon/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="static/icon/favicon-16x16.png" />
+	<link rel="manifest" href="static/icon/site.webmanifest" />
+	<meta property="og:title" content="Ceres Miller / Parametric Art" />
+	<meta property="og:description" content="Product design portfolio website, Ceres Miller" />
+	<meta property="og:url" content="https://ceres.pet/parametric.html" />
+	<meta property="og:site_name" content="Ceres Miller / Product Designer" />
+	<meta name="article:author" content="Ceres Miller" />
+	<title>Ceres Miller / Parametric Art</title>
+	<link rel="stylesheet" href="static/css/style.css" />
+	<script src="static/js/modules/cerespet.js"></script>
 </head>
 <body>
-    <div id="overbox" class="flexobject">
-        <!-- left-side -->
-        <header id="leftside" class="flexobject" role="banner">
-            <nav id="navscontainer" class="flexobject" role="navigation">
-                <!-- icon ontop of navsbar -->
-                <a id="navsheader" href="index.html" role="button">
-                    <div style="width:6em;height:6em;padding-left:1rem;">
-						<div><img id="homelink" src="assets/site/logo-01.svg" alt="Logo"></div>
-					</div>
-                </a>
-                <!-- main left-side navsbar -->
-                <div id="leftsidenavsbox" class="bubblebox4navs flexobject">
-                    <a class="navslink flexobject" href="index.html" role="button">
-                        <span class="navslabel">Home</span>
-                    </a>
-                    <a class="navslink flexobject" href="about.html" role="button">
-                        <span class="navslabel">About</span>
-                    </a>
-                    <a class="navslink flexobject" href="index.html#portfolio" role="button">
-                        <span class="navslabel">Portfolio</span>
-                    </a>
-                </div>
-            </nav>            
-        </header>
-
-        <!-- right-side -->
-        <div id="rightside" class="flexobject">
-            <div id="center" class="flexobject">
-                <!-- site heading -->
-                <div id="titlebox" class="flexobject">
-                    <!-- header image on mobile -->
-                    <a class="mobheader homelink" href="index.html" role="button">
-                        <div style="width:3.5rem;height:3.5rem;">
-							<div><img id="homelink" src="assets/site/logo-01.svg" alt="Logo"></div>
-						</div>
-                    </a>
-                    <h1 role="heading">Ceres Miller / Product Designer</h1>
-                </div>
-
-                <!-- right-side location bar, navs on mobile -->
-                <nav id="bubblebox4locbar" class="flexobject" role="navigation">
-                    <!-- location on desktop-->
-                    <a class="loclinks" href="index.html" role="link">Home /</a>
-                    <!-- navs on mobile -->
-                    <a class="moblink navslink flexobject" href="index.html" role="button">
-                        <span class="navslabel">Home</span>
-                    </a>
-                </nav>
-
-                <!-- article main -->
-                <main>
-                    <article>
-                        <!-- title, author info, intro -->
-                        <header class="bubblebox4content flexobject">
-                            <!-- article title -->
-                            <h2 role="heading">Parametric Art</h2>
-                            <span style="margin-top:0.3rem;"><b>Triply Periodic Minimal Surface Christmas Ornament using Grasshopper</b></span>
-                            <span style="margin-bottom: 0.5rem;">Ceres Miller, 2021</span>
-                            <hr>
-                            <p>Grasshopper is a Rhino plugin for parametric 3D modelling. Gyroid shapes are easy to make with 3D printing, and you can make pretty ornaments and patterns using them.</p>
-                            <div class="portfoliorow">
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/parametric-1.jpg" alt="A gyroid christmas ornament, held up to a mirror" title="A gyroid christmas ornament, held up to a mirror">
-                                </div>
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/parametric-2.jpg" alt="A gyroid christmas ornament on a tree" title="A gyroid christmas ornament on a tree">
-                                </div>
-                            </div>
-                            <hr class="lasthr">
-                        </header>
-
-                        <section class="bubblebox4content flexobject">
-                            <p>Many triply periodic minimal surfaces can be approximated with mathematical formulas, and Grasshopper can use those formulas to build 3D meshes. To make this gyroid, a trigonometric formula is used.</p>
-							<p>More detail on minimal surfaces can be found in <a href="https://wewanttolearn.wordpress.com/tag/gyroid/">this article.</a></p>
-                            <div class="portfoliorow">
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/parametric-4.jpg" alt="Rhino screenshot of a gyroid mesh" title="Rhino screenshot of a gyroid mesh">
-                                </div>
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/parametric-3.jpg" alt="Grasshopper screenshot showing the flowchart and formula used to build the gyroid mesh" title="Grasshopper screenshot showing the flowchart and formula used to generate the build mesh">
-                                </div>
-                            </div>
-							<p>Rhino and Grasshopper often struggled to resolve the gyroid without errors. The 2D mesh had to be thickened using Millipede to be printed, but it had difficulty doing so; sometimes to get it to resolve properly, I had to restart my computer to force Rhino to do the maths again until it worked. Millipede has a great remesh tool, which reformats a mesh to make it neater and change the number of vertices. This also assisted in helping Rhino avoid problems.</p>
-							<p>The produced mesh can be cropped or tesselated to make different things. I cropped it into a sphere, making the gyroid look like a piece of coral. Rhino had problems adding a hole for a ribbon to tie the ornament with, so I had to use Blender to carve a hole by moving vertices and faces around.</p>
-							<div class="portfoliorow" style="display:flex; flex-direction:row; justify-content:center; align-items:center;">
-                                <div class="portfolioitem">
-                                    <video class="thumbnail" alt="Video from Rhino showing gyroid surface mesh" title="Video from Rhino showing gyroid surface mesh" controls>
-										<source src="assets/site/videos/parametric-5.mp4" type="video/mp4">
-									Your browser does not support the video tag.
-									</video>
-                                </div>
-                            </div>
-							<p>The complexity of parametric objects, although most software can handle that easily, causes a lot of tools to break, especially ones designed for simpler objects. It might be better to think of parametric modelling not as being a way to create complex things, but rather as a starting point for something else, or as a quick prototyping tool. To make complex things for any kind of production, it may be more reliable to know what you want first and write it declaratively with code rather than parametrically with flowcharts.</p>
-							<p>Gyroid surfaces are used as infill for FDM 3D printing. If you watch it print, or graph a gyroid function and scroll through the Z axis, (you can do that below) you can see that gyroid shapes are made up of a bunch of spinning spirals. Instead of using Rhino and Grasshopper to make an STL file for 3D printing, you might be able to get more complicated results by writing 3D printer gcode yourself. 3D printed ceramics use this already to get intresting results.</p>
-							<div class="portfoliorow" style="display:flex; flex-direction:row; justify-content:center; align-items:center; margin:0.3rem 0rem 0.3rem 0rem;">
-                                <div class="portfolioitem" style="width:unset;">
-                                    <iframe id="desmos" src="https://www.desmos.com/calculator/vgdvudweel?embed" style="border: 1px solid #ccc; width:500px; height:500px;" frameborder=0></iframe>
-                                </div>
-                            </div>
-                            <hr class="lasthr">
-                        </section>
-						
-						<section class="bubblebox4content flexobject">
-                            <span style="margin-top:0.2rem;"><b>Parametric Textures using SVG</b></span>
-                            <span style="margin-bottom: 0.5rem;">Ceres Miller, 2022</span>
-                            <hr>
-                            <p>There are lots of programs for parametric texturing, like Adobe's Substance Designer. Writing out parametric textures in SVG however ended up being a whole lot easier.</p>
-                            <div class="portfoliorow">
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/parametric-6.jpg" alt="Wavy marbled texture, made using SVG filter primitives" title="Wavy marbled texture, made using SVG filter primitives">
-                                </div>
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/parametric-5.jpg" alt="Wavy marbled texture, made using SVG filter primitives" title="Wavy marbled texture, made using SVG filter primitives">
-                                </div>
-                            </div>
-                            <hr class="lasthr">
-                        </section>
-						
-						<section class="bubblebox4content flexobject">
-                            <p><a href="https://tympanus.net/codrops/2019/02/19/svg-filter-effects-creating-texture-with-feturbulence/">SVG filter primitives</a> are powerful tools for creating and manipulating images entirely in a web browser. Combined with SVG's animation capabilities, you can potentially have complex, client-side rendered textures and motion graphics that react to things on the page, all delivered in a handful of kilobytes.</p>
-							<p>Parametric texturing using SVG made getting access to Perlin noise textures easy, quick, and free. It formed the starting point for a workflow making noisy, random textures, similar to marbling.</p>
-                            <div class="portfoliorow">
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/parametric-7.jpg" alt="Wavy marbled texture, made using SVG filter primitives" title="Wavy marbled texture, made using SVG filter primitives">
-									<span style="margin-top: 0.2rem;">SVG filters can produce these kinds of wavy textures very quickly,</span>
-                                </div>
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/parametric-8.jpg" alt="Screenshot of Adobe Substance Designer. It's difficult to learn and difficult to get out of it what I had in mind" title="Screenshot of Adobe Substance Designer. It's difficult to learn and difficult to get out of it what I had in mind">
-									<span style="margin-top: 0.2rem;">Whereas while Adobe Substance Designer has a lot more features, it's also a lot more difficult to use and harder to get what you want out of it.</span>
-                                </div>
-                            </div>
-							
-                            <hr class="lasthr">
-                        </section>
-
-                    </article>
-                </main>
-
-                <!-- site footer -->
-                <nav id="sitefooter" class="bubblebox flexobject" role="contentinfo">
-                    <div id="sitefooterlinks">
-                        <a class="footerlinks" href="about.html" role="link">About</a>
-                        <span class="footerbp">&#8226</span>
-                        <a class="footerlinks" href="contact.html" role="link">Contact</a>
-                        <span class="footerbp">&#8226</span>
-                        <a class="footerlinks" href="index.html#portfolio" role="link">Portfolio</a>
-                        <span class="footerbp">&#8226</span>
-                        <span style="font-size: 0.8rem;">&lt3</span>
-                    </div>
-                    <div id="copyrightinfo">© Ceres Miller 2023 - All works on this website, unless otherwise noted, are licensed under the CC BY-NC-ND 4.0 license.</div>
-                </nav>
-            </div>
-
-            <!-- hiring info far-right side -->
-            <nav id="hiringinfo" class="flexobject" role="navigation">
-                <!--  blank space -->
-                <div id="hiringheader"></div>
-                <!-- hiring info -->
-                <nav id="bubblebox4hiringinfo" class="flexobject">
-                    <a id="hiringinfotitle" href="contact.html" role="link">Hire Me for Your Project</a>
-                    <div style="margin-bottom: 0.5rem; margin-top: 80px; font-family: 'Inconsolata', 'Courier New', Courier, monospace; color: rgb(50, 50, 50); text-decoration: none;">
-                        <span>Contact:</span>
-                        <span><button class="emailaddress" onclick="pfShowEmail()">ceres[@]ceres.pet</button></span>
-                    </div>
-                    <a class="socialslinks" href="https://www.instagram.com/ceresmiller/" role="link">Instagram</a>
-                    <a class="socialslinks" href="https://linkedin.com/in/ceres-miller-b69969267/" role="link">Linkedin</a>
-                    <a class="socialslinks" href="https://github.com/cauwu" role="link">Github</a>
-                </nav>
-            </nav>
-        </div>
-    </div>
-	<div id="popuparea" class="popup">
-		<span class="popupclose">&times;</span>
-		<img class="popupcontent" id="popupimg">
+	<div id="popup">
+		<span id="popupclose">&times;</span>
+		<img id="popupcontent" />
 		<div id="popupcaption"></div>
+	</div>
+	<div id="navpane">
+		<nav id="navcontainer" role="navigation">
+			<a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg"></a>
+			<a href="index.html"><span>Home</span></a>
+			<a href="about.html"><span>About</span></a>
+			<a href="index.html#portfolio"><span>Portfolio</span></a>
+		</nav>
+	</div>
+	<div id="contentpane">
+		<main>
+			<a id="title" href="index.html"><img src="static/site/logo-01.svg"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a>
+			<article>
+				<header class="contentitem">
+					<h2>Parametric Art</h2>
+					<span id="contentsubheading">Triply Periodic Minimal Surface Christmas Ornament using Grasshopper.<br>Ceres Miller, 2021</span>
+					<hr>
+					<p>Grasshopper is a Rhino plugin for parametric 3D modelling. Gyroid shapes are easy to make with 3D printing, and you can make pretty ornaments and patterns using them.</p>
+					<div class="portfoliorow">
+						<figure><img src="static/img/parametric-1.jpg" alt="A gyroid christmas ornament, held up to a mirror"  /></figure>
+						<figure><img src="static/img/parametric-2.jpg" alt="A gyroid christmas ornament on a tree" /></figure>
+					</div>
+					<hr>
+				</header>
+				<section class="contentitem">
+					<p>Many triply periodic minimal surfaces can be approximated with mathematical formulas, and Grasshopper can use those formulas to build 3D meshes. To make this gyroid, a trigonometric formula is used.</p>
+					<p>More detail on minimal surfaces can be found in <a href="https://wewanttolearn.wordpress.com/tag/gyroid/">this article.</a></p>
+					<div class="portfoliorow">
+						<figure><img src="static/img/parametric-4.jpg" alt="Rhino screenshot of a gyroid mesh" /></figure>
+						<figure><img src="static/img/parametric-3.jpg" alt="Grasshopper screenshot showing the flowchart and formula used to build the gyroid mesh" /></figure>
+					</div>
+					<p>Rhino and Grasshopper often struggled to resolve the gyroid without errors. The 2D mesh had to be thickened using Millipede to be printed, but it had difficulty doing so; sometimes to get it to resolve properly, I had to restart my computer to force Rhino to do the maths again until it worked. Millipede has a great remesh tool, which reformats a mesh to make it neater and change the number of vertices. This also assisted in helping Rhino avoid problems.</p>
+					<p>The produced mesh can be cropped or tesselated to make different things. I cropped it into a sphere, making the gyroid look like a piece of coral. Rhino had problems adding a hole for a ribbon to tie the ornament with, so I had to use Blender to carve a hole by moving vertices and faces around.</p>
+					<div class="portfoliorow">
+						<figure><video alt="Video from Rhino showing gyroid surface mesh" title="Video from Rhino showing gyroid surface mesh" controls>
+							<source src="static/video/parametric-5.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+						</video></figure>
+					</div>
+					<p>The complexity of parametric objects, although most software can handle that easily, causes a lot of tools to break, especially ones designed for simpler objects. It might be better to think of parametric modelling not as being a way to create complex things, but rather as a starting point for something else, or as a quick prototyping tool. To make complex things for any kind of production, it may be more reliable to know what you want first and write it declaratively with code rather than parametrically with flowcharts.</p>
+					<p>Gyroid surfaces are used as infill for FDM 3D printing. If you watch it print, or graph a gyroid function and scroll through the Z axis, (you can do that below) you can see that gyroid shapes are made up of a bunch of spinning spirals. Instead of using Rhino and Grasshopper to make an STL file for 3D printing, you might be able to get more complicated results by writing 3D printer gcode yourself. 3D printed ceramics use this already to get intresting results.</p>
+					<div class="portfoliorow">
+						<figure><iframe id="desmos" src="https://www.desmos.com/calculator/vgdvudweel?embed" style="border: 1px solid #ccc; width:2000px; height:500px" frameborder=0></iframe></figure>
+					</div>
+					<hr>
+				</section>
+				<section class="contentitem">
+					<h2>Parametric Textures using SVG</h2>
+					<span id="contentsubheading">Ceres Miller, 2022</span>
+					<hr>
+					<p>There are lots of programs for parametric texturing, like Adobe's Substance Designer. Writing out parametric textures in SVG however ended up being a whole lot easier.</p>
+					<div class="portfoliorow">
+						<figure><img src="static/img/parametric-6.jpg" alt="Wavy marbled texture, made using SVG filter primitives" /></figure>
+						<figure><img src="static/img/parametric-5.jpg" alt="Wavy marbled texture, made using SVG filter primitives" /></figure>
+					</div>
+					<hr>
+				</section>
+				<section class="contentitem">
+					<p><a href="https://tympanus.net/codrops/2019/02/19/svg-filter-effects-creating-texture-with-feturbulence/">SVG filter primitives</a> are powerful tools for creating and manipulating images entirely in a web browser. Combined with SVG's animation capabilities, you can potentially have complex, client-side rendered textures and motion graphics that react to things on the page, all delivered in a handful of kilobytes.</p>
+					<p>Parametric texturing using SVG made getting access to Perlin noise textures easy, quick, and free. It formed the starting point for a workflow making noisy, random textures, similar to marbling.</p>
+					<div class="portfoliorow">
+						<figure><img src="static/img/parametric-7.jpg" alt="Wavy marbled texture, made using SVG filter primitives" /><span>SVG filters can produce these kinds of wavy textures very quickly,</span></figure>
+						<figure><img src="static/img/parametric-8.jpg" alt="Screenshot of Adobe Substance Designer. It's difficult to learn and difficult to get out of it what I had in mind" /><span>Whereas while Adobe Substance Designer has a lot more features, it's also a lot more difficult to use and harder to get what you want out of it.</span></figure>
+					</div>
+					<hr>
+				</section>
+			</article>
+			<footer id="sitefooter" class="contentitem">
+				<div id="sitefooterlinks">
+					<a href="about.html" role="link">About</a>
+                    <span>•</span>
+                    <a href="about.html" role="link">Contact</a>
+                    <span>•</span>
+                    <a href="index.html#portfolio" role="link">Portfolio</a>
+                    <span>•</span>
+                    <span style="font-size: 0.8rem;">&lt;3</span>
+				</div>
+				<span id="copyright">© Ceres Miller 2024 - All works on this website, unless otherwise noted, are licensed under the CC BY-NC-ND 4.0 license.</span>
+			</footer>
+		</main>
+		<div id="extrapane">
+			<a id="hireme" href="about.html"><span>Hire Me</span></a>
+			<div id="contactemail">
+				<span>Contact:</span><br>
+				<button id="emailaddress" onclick="pfCopyEmail()"></button>
+				<span id="emailcopiednotif">copied!</span>
+			</div>
+			<div id="externallinkscontainer">
+				<a href="https://www.instagram.com/ceresmiller/"><span>Instagram</span></a>
+				<a href="https://linkedin.com/in/ceres-miller-b69969267/"><span>Linkedin</span></a>
+				<a href="https://github.com/cauwu"><span>Github</span></a>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

@@ -1,258 +1,159 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work Sans">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-    <title>Ceres Miller / Product Designer</title>
-    <link rel="icon" type="image/x-icon" href="assets/icon/favicon-16x16.png">
-    <meta charset="utf-8">
-    <meta name="description" content="Product design portfolio website, Ceres Miller">
-    <meta name="keywords" content="portfolio,product design,ceres miller">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:title" content="Ceres Miller / Product Designer">
-	<meta property="og:description" content="Product design portfolio website, Ceres Miller">
-	<meta property="og:url" content="https://ceres.pet">
-	<meta property="og:site_name" content="Ceres Miller / Product Designer">
-	<meta name="article:author" content="Ceres Miller">
-	<script src="cerespet.js"></script>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Product design portfolio website, Ceres Miller" />
+	<meta name="keywords" content="portfolio,product design,ceres miller" />
+	<link rel="apple-touch-icon" sizes="180x180" href="static/icon/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="static/icon/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="static/icon/favicon-16x16.png" />
+	<link rel="manifest" href="static/icon/site.webmanifest" />
+	<meta property="og:title" content="Ceres Miller / Product Designer" />
+	<meta property="og:description" content="Product design portfolio website, Ceres Miller" />
+	<meta property="og:url" content="https://ceres.pet" />
+	<meta property="og:site_name" content="Ceres Miller / Product Designer" />
+	<meta name="article:author" content="Ceres Miller" />
+	<title>Ceres Miller / Product Designer</title>
+	<link rel="stylesheet" href="static/css/style.css" />
+	<script src="static/js/modules/cerespet.js"></script>
 </head>
 <body>
-    <div id="overbox" class="flexobject">
-        <!-- left-side -->
-        <header id="leftside" class="flexobject" role="banner">
-            <nav id="navscontainer" class="flexobject" role="navigation">
-                <!-- icon ontop of navsbar -->
-                <a id="navsheader" href="index.html" role="button">
-					<div style="width:6em;height:6em;padding-left:1rem;">
-						<div><img id="homelink" src="assets/site/logo-01.svg" alt="Logo"></div>
-					</div>
-                </a>
-                <!-- main left-side navsbar -->
-                <div id="leftsidenavsbox" class="bubblebox4navs flexobject">
-                    <a class="navslink flexobject" href="index.html" role="button">
-                        <span class="navslabel">Home</span>
-                    </a>
-                    <a class="navslink flexobject" href="about.html" role="button">
-                        <span class="navslabel">About</span>
-                    </a>
-                    <a class="navslink flexobject" href="index.html#portfolio" role="button">
-                        <span class="navslabel">Portfolio</span>
-                    </a>
-                </div>
-            </nav>            
-        </header>
-
-        <!-- right-side -->
-        <div id="rightside" class="flexobject">
-            <div id="center" class="flexobject">
-                <!-- site heading -->
-                <div id="titlebox" class="flexobject">
-                    <!-- header image on mobile -->
-                    <a class="mobheader homelink" href="index.html" role="button">
-                        <div style="width:3.5rem;height:3.5rem;">
-							<div><img id="homelink" src="assets/site/logo-01.svg" alt="Logo"></div>
-						</div>
-                    </a>
-                    <h1 role="heading">Ceres Miller / Product Designer</h1>
-                </div>
-
-                <!-- right-side location bar, navs on mobile -->
-                <nav id="bubblebox4locbar" class="flexobject" role="navigation">
-                    <!-- location on desktop-->
-                    <a class="loclinks" href="index.html" role="link">Home /</a>
-                    <!-- navs on mobile -->
-                    <a class="moblink navslink flexobject" href="index.html" role="button">
-                        <span class="navslabel">Home</span>
-                    </a>
-                </nav>
-
-                <!-- article main -->
-                <main>
-                    <article>
-                        <!-- title, author info, intro -->
-                        <header class="bubblebox4content flexobject">
-                            <!-- article title -->
-                            <h2 role="heading">Ceres Miller</h2>
-                            <span style="margin-bottom: 0.5rem;">Product Designer, Glasgow, UK</span>
-                            <hr>
-                            <ul>
-                                <li>BA(hons) Product Design, University of Edinburgh</li>
-								<li>Design for adaptation</li>
-                                <li>Craft, electronics, and digital design</li>
-                                <li>Rust, CircuitPython, Grasshopper</li>
-                            </ul>
-                            <hr class="lasthr">
-                        </header>
-
-                        <!-- homepage spotlight -->
-                        <section class="bubblebox4content flexobject">
-                            <a id="spotlight" class="spotlight" href="mindseye.html" role="link"><h2 class="spotlight">MIND'S EYE - A Digital Camera Made to be Modified</h2></a>
-                            <hr>
-                            <a class="spotlight" href="mindseye.html" role="link"><p>A project about adaptable digital electronics. What's inside a black box?</p></a>
-                            <div style="margin-top: 0.6rem;">
-                                <a href="mindseye.html" role="link"><img class="thumbnail" src="assets/site/thumbnails/mindseye-6.jpg" alt="thumbnail image for black box project"></a>
-                            </div>
-                            <hr style="margin-top: 0.5rem;">
-                        </section>
-
-                        <!-- mobile links -->
-                        <section id="mobilelinks" class="bubblebox4content flexobject">
-                            <a href="contact.html" role="link" style="text-decoration: none !important;"><h2 class="spotlight" role="heading">Hire Me for Your Project</h2></a>
-                            <hr>
-                            <span>Contact:</span>
-                            <ul>
-                                <li><button class="emailaddressspot" onclick="pfShowEmailSpot()">ceres[@]ceres.pet</button></li>
-                                <li><a class="spotlight" href="https://linkedin.com/in/ceres-miller-b69969267/" role="link">Linkedin</a></li>
-                            </ul>
-                            <hr style="margin-top: 0.5rem;">
-                        </section>
-
-                        <!-- mission -->
-                        <section class="bubblebox4content flexobject">
-						    <h2>Mission</h2>
-                            <hr style="margin-bottom: 0.75rem;">
-                            <p>Design makes how people experience the world, for better or for worse. Nobody can build the world as they want it, but the people with influence have a duty to build it right. Where a designer is tasked with making something, it has to make people truly better off; people have to be given good things that let them make the world a better place.</p>
-                            <p style="margin-bottom: 0.6rem;">Designers don't have the power to change society. <i>Voting with your dollar</i> isn't real. But designers put things into existence that can either ruin people's lives or make them better, that can either steal from them or give them the tools to do great things. There is nothing more important than principle, duty and discipline in a designer for making sure that whatever you make, you make people healthy, happy, and able to live with dignity.</p>
-                            <hr style="margin-top: 0.5rem;">
-                        </section>
-
-                        <!-- portfolio thumbs -->
-                        <section class="bubblebox4content flexobject">
-                            <h2 id="portfolio">Portfolio</h2>
-                            <hr style="margin-bottom: 0.75rem;">
-                            <div class="portfoliorow">
-                                <a class="spotlight portfolioitem" href="mindseye.html" role="link">
-                                    <img class="thumbnail" src="assets/site/thumbnails/mindseye-1.jpg" alt="thumbnail image for black box project">
-                                    <span>Mind's Eye - Open Digital Camera</span>
-									<span style="font-size: 0.8rem">2023</span>
-                                </a>
-								<a class="spotlight portfolioitem" href="otter.html" role="link">
-                                    <img class="thumbnail" src="assets/site/thumbnails/otter-01.jpg" alt="a soft toy otter held by a figure in her arms, thumbnail image" title="a soft toy otter held by a figure in her arms">
-                                    <span>A Toy Otter</span>
-									<span style="font-size: 0.8rem">2023</span>
-                                </a>
-                            </div>
-                            <div class="portfoliorow">
-                                <a class="spotlight portfolioitem" href="rabbit.html" role="link">
-                                    <img class="thumbnail" src="assets/site/thumbnails/bunny-02.jpg" alt="a soft toy rabbit sitting, thumbnail image" title="a soft toy rabbit sitting">
-                                    <span>A Toy Rabbit</span>
-									<span style="font-size: 0.8rem">2023</span>
-                                </a>
-                                <a class="spotlight portfolioitem" href="composter.html" role="link">
-									<img class="thumbnail" src="assets/site/thumbnails/composter-1.jpg" alt="Composter in a garden" title="Composter in a garden">
-									<span>A Composter</span>
-									<span style="font-size: 0.8rem">2019</span>
-								</a>
-                            </div>
-							<div class="portfoliorow">
-                                <a class="spotlight portfolioitem" href="littleprinter.html" role="link">
-                                    <img class="thumbnail" src="assets/site/thumbnails/littleprinter-2.jpg" alt="image of final thermal printer with lid on, thumbnail image" title="final thermal printer with lid on">
-                                    <span>A Thermal Printer</span>
-									<span style="font-size: 0.8rem">2022</span>
-                                </a>
-                                <a class="spotlight portfolioitem" href="calculator.html" role="link">
-                                    <img class="thumbnail" src="assets/site/thumbnails/calculator-4.jpg" alt="render of a calculator, isometric exploded view, thumbnail image" title="render of a calculator, isometric exploded view">
-                                    <span>A Calculator</span>
-									<span style="font-size: 0.8rem">2020</span>
-                                </a>
-                            </div>
-							<div class="portfoliorow">
-								<a class="spotlight portfolioitem" href="misc.html" role="link">
-									<img class="thumbnail" src="assets/site/thumbnails/misc-1.jpg" alt="Pyrex glass toothbrush with replaceable silicone heads" title="Pyrex glass toothbrush with replaceable silicone heads">
-									<span>Sketching and Miscellaneous</span>
-									<span style="font-size: 0.8rem">2018-2023</span>
-								</a>
-                                <div id="placeholderimageblank" class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/placeholder-blank.svg" alt="blank thumbnail image">
-                                    <span></span>
-                                </div>
-                            </div>
-							<div id="showmore" class="flexobject" style="display:none;">
-								<hr style="margin-top: 1rem;">
-								<h2 style="margin-top: 0.2rem;">More Work</h2>
-								<div class="portfoliorow">
-									<a class="spotlight portfolioitem" href="parametric.html" role="link">
-										<img class="thumbnail" src="assets/site/thumbnails/parametric-1.jpg" alt="a gyroid christmas ornament, held up to a mirror" title="a gyroid christmas ornament, held up to a mirror">
-										<span>Parametric Art</span>
-										<span style="font-size: 0.8rem">2021</span>
-									</a>
-									<a class="spotlight portfolioitem" href="hospital.html" role="link">
-										<img class="thumbnail" src="assets/site/thumbnails/hospital-7.jpg" alt="View of a hospital waiting room scene" title="View of a hospital waiting room scene">
-										<span>Childrens' Hospital Waiting Room</span>
-										<span style="font-size: 0.8rem">2019</span>
-									</a>
-								</div>
-								<div class="portfoliorow" style="display:none">
-									<a class="spotlight portfolioitem" href="hammer.html" role="link">
-										<img class="thumbnail" src="assets/site/thumbnails/placeholder.svg" alt="a gyroid christmas ornament, held up to a mirror" title="a gyroid christmas ornament, held up to a mirror">
-										<span>Creating Disorientating Spaces</span>
-										<span style="font-size: 0.8rem">2020-2023</span>
-									</a>
-									<a class="spotlight portfolioitem" href="warehouse.html" role="link">
-										<img class="thumbnail" src="assets/site/thumbnails/placeholder.svg" alt="View of a hospital waiting room scene" title="View of a hospital waiting room scene">
-										<span>Warehouse, Real-Time Rendering</span>
-										<span style="font-size: 0.8rem">2023</span>
-									</a>
-								</div>
-								<div class="portfoliorow">
-                                <a class="spotlight portfolioitem" href="blendergodot.html" role="link">
-										<img class="thumbnail" src="assets/site/thumbnails/blendergodot-3.jpg" alt="sculpted model of a duck in blender on the left, and the same model 3D printed and sanded smooth on the right" title="sculpted model of a duck in blender on the left, and the same model 3D printed and sanded smooth on the right">
-										<span>Blender and Godot</span>
-										<span style="font-size: 0.8rem">2022-2023</span>
-								</a>
-                                <div id="placeholderimageblank" class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/placeholder-blank.svg" alt="blank thumbnail image">
-                                    <span></span>
-                                </div>
-                            </div>
-							</div>
-							<div style="display:flex; flex-direction:row; justify-content:center; align-items:center;">
-								<button id="showmorebutton" class="spotlight" onclick="pfDropdownToggle()">v Show More v</button>
-							</div>
-                            <hr style="margin-top: 0.5rem;">
-                        </section>
-
-                    </article>
-                </main>
-
-                <!-- site footer -->
-                <nav id="sitefooter" class="bubblebox flexobject" role="contentinfo">
-                    <div id="sitefooterlinks">
-                        <a class="footerlinks" href="about.html" role="link">About</a>
-                        <span class="footerbp">&#8226</span>
-                        <a class="footerlinks" href="contact.html" role="link">Contact</a>
-                        <span class="footerbp">&#8226</span>
-                        <a class="footerlinks" href="index.html#portfolio" role="link">Portfolio</a>
-                        <span class="footerbp">&#8226</span>
-                        <span style="font-size: 0.8rem;">&lt3</span>
-                    </div>
-                    <div id="copyrightinfo">© Ceres Miller 2023 - All works on this website, unless otherwise noted, are licensed under the CC BY-NC-ND 4.0 license.</div>
-                </nav>
-            </div>
-
-            <!-- hiring info far-right side -->
-            <nav id="hiringinfo" class="flexobject" role="navigation">
-                <!--  blank space -->
-                <div id="hiringheader"></div>
-                <!-- hiring info -->
-                <nav id="bubblebox4hiringinfo" class="flexobject">
-                    <a id="hiringinfotitle" href="contact.html" role="link">Hire Me for Your Project</a>
-                    <div style="margin-bottom: 0.7rem; margin-top: 80px; font-family: 'Inconsolata', 'Courier New', Courier, monospace; color: rgb(50, 50, 50); text-decoration: none;">
-                        <span>Contact:</span>
-                        <span><button class="emailaddress" onclick="pfShowEmail()">ceres[@]ceres.pet</button></span>
-                    </div>
-                    <a class="socialslinks" href="https://www.instagram.com/ceresmiller/" role="link">Instagram</a>
-                    <a class="socialslinks" href="https://linkedin.com/in/ceres-miller-b69969267/" role="link">Linkedin</a>
-                    <a class="socialslinks" href="https://github.com/cauwu" role="link">Github</a>
-                </nav>
-            </nav>
-        </div>
-    </div>
-	<div id="popuparea" class="popup">
-		<span class="popupclose">&times;</span>
-		<img class="popupcontent" id="popupimg">
+	<div id="popup">
+		<span id="popupclose">&times;</span>
+		<img id="popupcontent" />
 		<div id="popupcaption"></div>
+	</div>
+	<div id="navpane">
+		<nav id="navcontainer" role="navigation">
+			<a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg"></a>
+			<a href="index.html"><span>Home</span></a>
+			<a href="about.html"><span>About</span></a>
+			<a href="index.html#portfolio"><span>Portfolio</span></a>
+		</nav>
+	</div>
+	<div id="contentpane">
+		<main>
+			<a id="title" href="index.html"><img src="static/site/logo-01.svg" alt="Logo"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a>
+			<article>
+				<header class="contentitem">
+					<h2>Ceres Miller</h2>
+					<span id="contentsubheading">Product Designer, Glasgow, UK</span>
+					<hr>
+					<ul>
+						<li>BA(hons) Product Design, University of Edinburgh</li>
+						<li>Design for adaptation</li>
+						<li>Craft, electronics and digital design</li>
+						<li>CircuitPython, Grasshopper</li>
+					</ul>
+					<hr>
+				</header>
+				<section class="contentitem">
+					<a href="mindseye.html">
+						<h2>MIND'S EYE - A Digital Camera Made to be Modified</h2>
+						<hr>
+						<p>A project about adaptable digital electronics. What's inside a black box?</p>
+						<img src="static/img/mindseye-6.jpg" alt="Thumbnail image: Mind's Eye camera with the top plate taken off, showing tools around it">
+						<hr style="margin-top: 0.5rem;">
+					</a>
+				</section>
+				<section class="contentitem">
+					<h2 id="portfolio">Portfolio</h2>
+					<hr>
+					<div class="portfoliorow">
+						<a href="mindseye.html">
+							<img src="static/img/mindseye-1.jpg" alt="Thumbnail image: Mind's Eye camera, a figure looking at the camera's output on a monitor while it films">
+							<span>Mind's Eye - Open Digital Camera</span>
+							<span>2023</span>
+						</a>
+						<a href="otter.html">
+							<img src="static/img/otter-01.jpg" alt="Thumbnail image: A figure holding a stuffed toy otter">
+							<span>A Toy Otter</span>
+							<span>2023</span>
+						</a>
+					</div>
+					<div class="portfoliorow">
+						<a href="rabbit.html">
+							<img src="static/img/bunny-02.jpg" alt="Thumbnail image: A stuffed toy rabbit, posed sitting">
+							<span>A Toy Rabbit</span>
+							<span>2023</span>
+						</a>
+						<a href="composter.html">
+							<img src="static/img/composter-1.jpg" alt="Thumbnail image: A garden composter, shaped like a moomin house, pictured in a flowery garden">
+							<span>A Garden Composter</span>
+							<span>2019</span>
+						</a>
+					</div>
+					<div class="portfoliorow">
+						<a href="calculator.html">
+							<img src="static/img/calculator-4.jpg" alt="Thumbnail image: Exploded rendered view of a calculator, showing how all the parts fit together">
+							<span>A Countertop Calculator</span>
+							<span>2020</span>
+						</a>
+						<a href="misc.html">
+							<img src="static/img/misc-1.jpg" alt="Thumbnail image: A pyrex glass toothbrush with removeable silicone head">
+							<span>Sketching and Miscellaneous</span>
+							<span>2018-2023</span>
+						</a>
+					</div>
+					<div id="showmoredropdown" style="display: none;">
+						<hr>
+						<h2>More Work</h2>
+						<div class="portfoliorow">
+							<a href="parametric.html">
+								<img src="static/img/parametric-1.jpg" alt="Thumbnail image: A 3D printed Christmas bauble held up to a mirror. The bauble is white and looks like coral">
+								<span>Parametric Art</span>
+								<span>2021</span>
+							</a>
+							<a href="hospital.html">
+								<img src="static/img/hospital-7.jpg" alt="Thumbnail image: A rendered view of a children's hospital waiting room, with people using the space">
+								<span>Childrens' Hospital Waiting Room</span>
+								<span>2019</span>
+							</a>
+						</div>
+						<div class="portfoliorow">
+							<a href="blendergodot.html">
+								<img src="static/img/blendergodot-3.jpg" alt="Thumbnail image: A screenshot from Blender of a clay-coloured sculpture of a duck balancing an orange on its head. On the right, a 3D printed version">
+								<span>Blender and Godot</span>
+								<span>2022-2023</span>
+							</a>
+							<a href="littleprinter.html">
+								<img src="static/img/littleprinter-2.jpg" alt="Thumbnail image: A small, white thermal printer, with a 3D printed housing">
+								<span>A Thermal Printer</span>
+								<span>2022</span>
+							</a>
+						</div>
+					</div>
+					<button id="showmorebutton" onclick="pfDropdownToggle()">v Show More v</button>
+					<hr style="margin-top: 0.5rem;">
+				</section>
+			</article>
+			<footer id="sitefooter" class="contentitem">
+				<div id="sitefooterlinks">
+					<a href="about.html" role="link">About</a>
+                    <span>•</span>
+                    <a href="about.html" role="link">Contact</a>
+                    <span>•</span>
+                    <a href="index.html#portfolio" role="link">Portfolio</a>
+                    <span>•</span>
+                    <span style="font-size: 0.8rem;">&lt;3</span>
+				</div>
+				<span id="copyright">© Ceres Miller 2024 - All works on this website, unless otherwise noted, are licensed under the CC BY-NC-ND 4.0 license.</span>
+			</footer>
+		</main>
+		<div id="extrapane">
+			<a id="hireme" href="about.html"><span>Hire Me</span></a>
+			<div id="contactemail">
+				<span>Contact:</span><br>
+				<button id="emailaddress" onclick="pfCopyEmail()"></button>
+				<span id="emailcopiednotif">copied!</span>
+			</div>
+			<div id="externallinkscontainer">
+				<a href="https://www.instagram.com/ceresmiller/"><span>Instagram</span></a>
+				<a href="https://linkedin.com/in/ceres-miller-b69969267/"><span>Linkedin</span></a>
+				<a href="https://github.com/cauwu"><span>Github</span></a>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

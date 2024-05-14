@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work Sans">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-    <title>Ceres Miller / Mind's Eye</title>
-    <link rel="icon" type="image/x-icon" href="assets/icon/favicon-16x16.png">
-    <meta charset="utf-8">
-    <meta name="description" content="Product design portfolio website, Ceres Miller">
-    <meta name="keywords" content="portfolio,product design,ceres miller">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:title" content="Ceres Miller / Mind's Eye">
-	<meta property="og:description" content="Product design portfolio website, Ceres Miller">
-	<meta property="og:url" content="https://ceres.pet/mindseye.html">
-	<meta property="og:site_name" content="Ceres Miller / Product Designer">
-	<meta name="article:author" content="Ceres Miller">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Product design portfolio website, Ceres Miller" />
+    <meta name="keywords" content="portfolio,product design,ceres miller" />
+	<link rel="apple-touch-icon" sizes="180x180" href="static/icon/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="static/icon/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="static/icon/favicon-16x16.png" />
+	<link rel="manifest" href="static/icon/site.webmanifest" />
+	<meta property="og:title" content="Ceres Miller / Mind's Eye" />
+	<meta property="og:description" content="Product design portfolio website, Ceres Miller" />
+	<meta property="og:url" content="https://ceres.pet/mindseye.html" />
+	<meta property="og:site_name" content="Ceres Miller / Product Designer" />
+	<meta name="article:author" content="Ceres Miller" />
+	<title>Ceres Miller / Mind's Eye</title>
+	<link rel="stylesheet" href="static/css/style.css" />
+	<script src="static/js/modules/cerespet.js"></script>
     <!-- Needed to support versions of Safari earlier than 16 (2023) -->
     <script async src="https://unpkg.com/es-module-shims@1.7.1/dist/es-module-shims.js"></script>
     <!-- This tells the browser where to find any JS that we request via import -->
@@ -23,302 +25,189 @@
         "imports": {
             "three": "https://unpkg.com/three@0.151.3/build/three.module.js",
             "three/addons/": "https://unpkg.com/three@0.151.3/examples/jsm/",
-            "3d": "./modules/3d.module.js"
+            "3d": "./static/js/modules/3d.module.js"
         }
     }
     </script>
     <!-- For better performance but not strictly needed -->
-    <link rel="modulepreload" href="/modules/3d.module.js" />
+    <link rel="modulepreload" href="/static/js/modules/3d.module.js" />
     <link rel="modulepreload" href="https://unpkg.com/three@0.151.3/build/three.module.js" />
     <link rel="modulepreload" href="https://unpkg.com/three@0.151.3/examples/jsm/controls/OrbitControls.js" />
     <link rel="modulepreload" href="https://unpkg.com/three@0.151.3/examples/jsm/loaders/3MFLoader.js" />
     <link rel="modulepreload" href="https://unpkg.com/three@0.151.3/examples/jsm/libs/fflate.module.js" />
-	<script src="cerespet.js"></script>
 </head>
 <body>
-    <div id="overbox" class="flexobject">
-        <!-- left-side -->
-        <header id="leftside" class="flexobject" role="banner">
-            <nav id="navscontainer" class="flexobject" role="navigation">
-                <!-- icon ontop of navsbar -->
-                <a id="navsheader" href="index.html" role="button">
-                    <div style="width:6em;height:6em;padding-left:1rem;">
-						<div><img id="homelink" src="assets/site/logo-01.svg" alt="Logo"></div>
-					</div>
-                </a>
-                <!-- main left-side navsbar -->
-                <div id="leftsidenavsbox" class="bubblebox4navs flexobject">
-                    <a class="navslink flexobject" href="index.html" role="button">
-                        <span class="navslabel">Home</span>
-                    </a>
-                    <a class="navslink flexobject" href="about.html" role="button">
-                        <span class="navslabel">About</span>
-                    </a>
-                    <a class="navslink flexobject" href="index.html#portfolio" role="button">
-                        <span class="navslabel">Portfolio</span>
-                    </a>
-                </div>
-            </nav>            
-        </header>
-
-        <!-- right-side -->
-        <div id="rightside" class="flexobject">
-            <div id="center" class="flexobject">
-                <!-- site heading -->
-                <div id="titlebox" class="flexobject">
-                    <!-- header image on mobile -->
-                    <a class="mobheader homelink" href="index.html" role="button">
-                        <div style="width:3.5rem;height:3.5rem;">
-							<div><img id="homelink" src="assets/site/logo-01.svg" alt="Logo"></div>
-						</div>
-                    </a>
-                    <h1 role="heading">Ceres Miller / Product Designer</h1>
-                </div>
-
-                <!-- right-side location bar, navs on mobile -->
-                <nav id="bubblebox4locbar" class="flexobject" role="navigation">
-                    <!-- location on desktop-->
-                    <a class="loclinks" href="index.html" role="link">Home /</a>
-                    <!-- navs on mobile -->
-                    <a class="moblink navslink flexobject" href="index.html" role="button">
-                        <span class="navslabel">Home</span>
-                    </a>
-                </nav>
-
-                <!-- article main -->
-                <main>
-                    <article>
-                        <!-- title, author info, intro -->
-                        <header class="bubblebox4content flexobject">
-                            <!-- article title -->
-                            <h2 role="heading">MIND'S EYE - A Digital Camera Made to be Modified</h2>
-                            <span >A project about adaptable digital electronics.</span>
-                            <span style="margin-bottom: 0.5rem;">Ceres Miller, 2023</span>
-                            <hr>
-                            <div class="portfoliorow">
-                                <div style="display:flex; margin-right:1rem;">
-                                    <img class="thumbnail" src="assets/site/thumbnails/mindseye-6.jpg" alt="Mind's Eye camera with the top plate taken off, showing tools around it">
-                                </div>
-                            </div>
-                            <div class="portfoliorow">
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/mindseye-1.jpg" alt="Mind's Eye camera, looking at the camera's output while it films">
-                                </div>
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/mindseye-2.jpg" alt="Mind's Eye camera">
-                                </div>
-                            </div>
-							<div class="portfoliorow">
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/mindseye-5.jpg" alt="Mind's Eye camera on a tripod">
-                                </div>
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/mindseye-4.jpg" alt="Mind's Eye camera">
-                                </div>
-                            </div>
-							<div class="portfoliorow">
-                                <div style="display:flex; margin-right:1rem;">
-                                    <img class="thumbnail" src="assets/site/thumbnails/mindseye-7.jpg" alt="A bare-minimum, skeletal camera, meant to be made into something new, reworked, and added on to" title="A bare-minimum, skeletal camera, meant to be made into something new, reworked, and added on to">
-                                </div>
-                            </div>
-                            <hr class="lasthr">
-                        </header>
-
-                        <section class="bubblebox4content flexobject">
-                            <p>Mind's Eye is a digital camera designed to be modified by an end user. Contemporary digital electronics require expensive tools and difficult to acquire knowledge to alter them, dissuading an end user from learning and developing skills to make their electronics their own.</p>
-							<p>This project is my research and investigation into how adaptable digital electronics might look and work, that enable end users to explore, alter and adapt their devices.</p>
-                            <hr class="lasthr">
-                        </section>
-
-						<section class="bubblebox4content flexobject">
-                            <p>From my development, I considered there to be 3 key components to adaptable design for digital electronics:</p>
-							<ul>
-								<li><b>A craft approach to making,</b> where materials and construction of a product are craft-based.</li>
-								<li><b>A design that creates intrigue,</b> encouraging a user to explore it physically.</li>
-								<li><b>Avenues for social and community cooperation,</b> providing a way to learn and ask questions, share resources, and motivate the user.</li>
-							</ul>
-							<div class="portfoliorow">
-                                <div style="display:flex; margin-right:1rem;">
-                                    <img class="thumbnail" src="assets/site/thumbnails/mindseye-8.jpg" alt="the packaged camera, showing the brass parts wrapped in pink tissue paper, and the instruction booklet. The packaging is meant for postage, and is A5 size x 40mm" title="the packaged camera, showing the brass parts wrapped in pink tissue paper, and the instruction booklet. The packaging is meant for postage, and is A5 size x 40mm">
-                                </div>
-                            </div>
-							<p>The product includes the camera kit itself, but also to support an end user's ability to make using the camera, it includes warranty, an online forums service bringing users of the camera together to ask questions, share information, and exhibit their work, an online documentation service curating a library of information and resources, and paper instructions detailing assembly and asking the user to get involved in the community online by talking about their work and posting pictures.</p>
-							<p>Users talking about and exhibiting their work online is how new users come into the project. It provides inspiration and motivation to users, puts them in contact with experienced people, and helps a new user develop their own methods and goals for making.</p>
-							<div class="portfoliorow">
-                                <div style="display:flex; margin-right:1rem;">
-                                    <img class="thumbnail" src="assets/site/thumbnails/forum-01.jpg" alt="mockup of the forums site" title="mockup of the forums site">
-                                </div>
-                            </div>
-							<div class="portfoliorow">
-                                <div style="display:flex; margin-right:1rem;">
-                                    <img class="thumbnail" src="assets/site/thumbnails/documentation-01.jpg" alt="mockup of the documentation site" title="mockup of the documentation site">
-                                </div>
-                            </div>
-							<div class="portfoliorow">
-                                <div style="display:flex; margin-right:1rem;">
-                                    <img class="thumbnail" src="assets/site/thumbnails/mindseye-13.jpg" alt="mockup of the instruction booklet, cover and pages" title="mockup of the instruction booklet, cover and pages">
-                                </div>
-                            </div>
-							<p>The design of the services was inspired by band posters, using bright colours and patterns to feel energetic and creative. The impression they are meant to give is that the camera is not just a tool for experienced makers, but for everybody, with variable skillsets, methods, preferences, and materials.</p>
-							<div class="portfoliorow">
-                                <div style="display:flex; margin-right:1rem;">
-                                    <img class="thumbnail" src="assets/site/thumbnails/mindseye-10.jpg" alt="minds eye camera assembly, part 1" title="minds eye camera assembly, part 1">
-                                </div>
-                            </div>
-							<div class="portfoliorow">
-                                <div style="display:flex; margin-right:1rem;">
-                                    <img class="thumbnail" src="assets/site/thumbnails/mindseye-11.jpg" alt="minds eye camera assembly, part 2" title="minds eye camera assembly, part 2">
-                                </div>
-                            </div>
-							<p>With this camera my aim was to demonstrate ideas I had about modifiable digital electronics, and to look into the entire process that someone goes through when trying to learn about and repurpose their electronic devices. What methods would they use, how would they stay motivated, where would they get the knowlege and skills to do it.</p>
-							<p>Mind's Eye is a camera that inspires creativity and makes a user want to change it. I think it is a good starting point for further work in adaptable, open design for digital electronics.</p>
-							<p><a href="https://github.com/cauwu/minds-eye-camera">Models, drawings and code available on Github.</a></p>
-                            <hr class="lasthr">
-                        </section>
-
-                        <section class="bubblebox4content flexobject">
-                            <h2>3D Assembly</h2>
-							<p>Left click to rotate, mousewheel to zoom.</p>
-                            <hr style="margin-bottom: 0.75rem;">
-                            <!-- Wherever you want to embed a 3mf file, give it a unique ID -->
-                            <div class="threemf" id="threemf-camera-1"></div>
-                            <script type="module">
-                                import { mount } from '3d';
-                                // Pass the ID and the filename to the mount function
-                                mount('threemf-camera-1', 'mindseye.3mf');
-                            </script>
-                            <hr class="lasthr">
-                        </section>
-
-                        <section class="bubblebox4content flexobject">
-                            <h2>Development work</h2>
-                            <hr style="margin-bottom: 0.75rem;">
-                            <div class="portfoliorow">
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/blackbox-1.jpg" alt="wire webcam rebuild that I used to experiment with creating intrigue" title="wire webcam rebuild that I used to experiment with creating intrigue">
-                                </div>
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/blackbox-2.jpg" alt="wire webcam in the shape of an orchid or a dragonfly" title="wire webcam in the shape of an orchid or a dragonfly">
-                                </div>
-                            </div>
-                            <p>Experimenting with creating intrigue in electronics by rebuilding webcams in freestanding wire.</p>
-							<p></p>
-                            <div class="portfoliorow">
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/blackbox-8.jpg" alt="pictures from a workshop teaching participants about logic gates in the context of a 4-bit adder, a small computer that adds two numbers" title="pictures from a workshop teaching participants about logic gates in the context of a 4-bit adder, a small computer that adds two numbers">
-                                </div>
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/blackbox-4.jpg" alt="embroidered AND gate, for giving a tactile explanation of how a logic gate works" title="embroidered AND gate, for giving a tactile explanation of how a logic gate works">
-                                </div>
-                            </div>
-							<div class="portfoliorow">
-                                <div style="display:flex; margin-right:1rem;">
-                                    <img class="thumbnail" src="assets/site/thumbnails/blackbox-3.jpg" alt="embroidered XOR gate and wire AND gate with teaching material on foamboard slates" title="embroidered XOR gate and wire AND gate with teaching material on foamboard slates">
-                                </div>
-                            </div>
-							<p>Models of logic gates in embroidery and brass wire. These were used to explore how people interact with electronic concepts made tactile.</p>
-							<p></p>
-							<div class="portfoliorow">
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/blackbox-5.jpg" alt="XOR gate earphones, that detect when only one earbud is worn, using an XOR gate" title="XOR gate earphones, that detect when only one earbud is worn, using an XOR gate">
-                                </div>
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/blackbox-6.jpg" alt="wire headphones, modifiable by an end user" title="wire headphones, modifiable by an end user">
-                                </div>
-                            </div>
-							<div class="portfoliorow">
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/blackbox-9.jpg" alt="wire earphones" title="wire earphones">
-                                </div>
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/blackbox-14.jpg" alt="wire earbuds with a crochet string cable. The soft cable is meant to tie up hair" title="wire earbuds with a crochet string cable. The soft cable is meant to tie up hair">
-                                </div>
-                            </div>
-                            <p>Brass wire earphones. Combining the structure of the earphones with the electronics as much as possible using brass wire makes them quick to make with a soldering iron, customisable, and repeatedly alterable.</p>
-							<p></p>
-							<div class="portfoliorow">
-                                <div style="display:flex; margin-right:1rem;">
-                                    <img class="thumbnail" src="assets/site/thumbnails/blackbox-7.jpg" alt="pictures from a making together workshop, where participants made digital electronic things from scratch" title="pictures from a making together workshop, where participants made digital electronic things from scratch">
-                                </div>
-                            </div>
-							<p>A making together workshop, exploring quick prototyping materials for making electronics from scratch, like conductive paint, copper sticky tape, and foamboard.</p>
-							<p></p>
-							<div class="portfoliorow">
-                                <div style="display:flex; margin-right:1rem;">
-                                    <img class="thumbnail" src="assets/site/thumbnails/blackbox-10.jpg" alt="an artistic representation of what my project is about. it shows the potential of making digital electronics using craft methods" title="an artistic representation of what my project is about. it shows the potential of making digital electronics using craft methods">
-                                </div>
-                            </div>
-                            <p>An artistic representation of my project, when I was considering the potential of brass wire as a building system for digital electronics. LEDs in the bridge would light up in sequence as wheels passed over them.</p>
-							<p></p>
-                            <div class="portfoliorow">
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/irchat-01.jpg" alt="mockup chat screenshot of the collaborative making process two people go through over distance, using brass wire electronics as a way of making" title="mockup chat screenshot of the collaborative making process two people go through over distance, using brass wire electronics as a way of making">
-                                </div>
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/blackbox-12.jpg" alt="electronic trinket. one half" title="electronic trinket. one half">
-                                </div>
-                            </div>
-							<div class="portfoliorow">
-                                <div style="display:flex; margin-right:1rem;">
-                                    <img class="thumbnail" src="assets/site/thumbnails/blackbox-11.jpg" alt="lovers' electronic trinkets, put together, completing the circuit" title="lovers' electronic trinkets, put together, completing the circuit">
-                                </div>
-                            </div>
-                            <p>Electronic trinkets, made to explore social narratives that could influence a user's making. These are objects made seperately by long distance lovers, to be put together when they meet. Their collaborative thinking and the design process they go through together is shown in a mockup chat screenshot.</p>
-							<p></p>
-							<div class="portfoliorow">
-                                <div style="display:flex; margin-right:1rem;">
-                                    <img class="thumbnail" src="assets/site/thumbnails/mindseye-12.jpg" alt="first prototype of the mind's eye camera, showing the wire mounting rail" title="first prototype of the mind's eye camera, showing the wire mounting rail">
-                                </div>
-                            </div>
-							<p>First prototype of the Mind's Eye camera, with a soldered brass wire mounting rail on top. For my prototypes after this, I wanted to make the shape more intresting, but I couldn't keep the mounting rail because using a soldering iron couldn't get the brass plate hot enough to solder to it well and braizing with a torch is probably not something a hobby user would have access to. Drilling holes or screwing it down would have been such intricate work that a user might not want to change it.</p>
-                            <hr class="lasthr">
-                        </section>
-						
-						<section class="flexobject">
-							<div style="display:flex;">
-								<img class="thumbnail" src="assets/site/thumbnails/businesscard.jpg" alt="" title="">
-							</div>
-                        </section>
-                    </article>
-                </main>
-
-                <!-- site footer -->
-                <nav id="sitefooter" class="bubblebox flexobject" role="contentinfo">
-                    <div id="sitefooterlinks">
-                        <a class="footerlinks" href="about.html" role="link">About</a>
-                        <span class="footerbp">&#8226</span>
-                        <a class="footerlinks" href="contact.html" role="link">Contact</a>
-                        <span class="footerbp">&#8226</span>
-                        <a class="footerlinks" href="index.html#portfolio" role="link">Portfolio</a>
-                        <span class="footerbp">&#8226</span>
-                        <span style="font-size: 0.8rem;">&lt3</span>
-                    </div>
-                    <div id="copyrightinfo">© Ceres Miller 2023 - All works on this website, unless otherwise noted, are licensed under the CC BY-NC-ND 4.0 license.</div>
-                </nav>
-            </div>
-
-            <!-- hiring info far-right side -->
-            <nav id="hiringinfo" class="flexobject" role="navigation">
-                <!--  blank space -->
-                <div id="hiringheader"></div>
-                <!-- hiring info -->
-                <nav id="bubblebox4hiringinfo" class="flexobject">
-                    <a id="hiringinfotitle" href="contact.html" role="link">Hire Me for Your Project</a>
-                    <div style="margin-bottom: 0.5rem; margin-top: 80px; font-family: 'Inconsolata', 'Courier New', Courier, monospace; color: rgb(50, 50, 50); text-decoration: none;">
-                        <span>Contact:</span>
-                        <span><button class="emailaddress" onclick="pfShowEmail()">ceres[@]ceres.pet</button></span>
-                    </div>
-                    <a class="socialslinks" href="https://www.instagram.com/ceresmiller/" role="link">Instagram</a>
-                    <a class="socialslinks" href="https://linkedin.com/in/ceres-miller-b69969267/" role="link">Linkedin</a>
-                    <a class="socialslinks" href="https://github.com/cauwu" role="link">Github</a>
-                </nav>
-            </nav>
-        </div>
-    </div>
-	<div id="popuparea" class="popup">
-		<span class="popupclose">&times;</span>
-		<img class="popupcontent" id="popupimg">
+	<div id="popup">
+		<span id="popupclose">&times;</span>
+		<img id="popupcontent" />
 		<div id="popupcaption"></div>
+	</div>
+	<div id="navpane">
+		<nav id="navcontainer" role="navigation">
+			<a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg"></a>
+			<a href="index.html"><span>Home</span></a>
+			<a href="about.html"><span>About</span></a>
+			<a href="index.html#portfolio"><span>Portfolio</span></a>
+		</nav>
+	</div>
+	<div id="contentpane">
+		<main>
+			<a id="title" href="index.html"><img src="static/site/logo-01.svg"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a>
+			<article>
+				<header class="contentitem">
+					<h2>MIND'S EYE - A Digital Camera Made to be Modified</h2>
+					<span id="contentsubheading">A project about adaptable digital electronics.<br>Ceres Miller, 2023</span>
+					<hr>
+					<div class="portfoliorow">
+						<figure><img src="static/img/mindseye-6.jpg" alt="Mind's Eye camera with the top plate taken off, showing tools around it" /></figure>
+					</div>
+					<div class="portfoliorow">
+						<figure><img src="static/img/mindseye-1.jpg" alt="Mind's Eye camera, looking at the camera's output while it films" /></figure>
+						<figure><img src="static/img/mindseye-2.jpg" alt="Mind's Eye camera" /></figure>
+					</div>
+					<div class="portfoliorow">
+						<figure><img src="static/img/mindseye-5.jpg" alt="Mind's Eye camera on a tripod" /></figure>
+						<figure><img src="static/img/mindseye-4.jpg" alt="Mind's Eye camera" /></figure>
+					</div>
+					<div class="portfoliorow">
+						<figure><img src="static/img/mindseye-7.jpg" alt="A bare-minimum, skeletal camera, meant to be made into something new, reworked, and added on to" /></figure>
+					</div>
+					<hr>
+				</header>
+				<section class="contentitem">
+					<p>Mind's Eye is a digital camera designed to be modified by an end user. Contemporary digital electronics require expensive tools and difficult to acquire knowledge to alter them, dissuading an end user from learning and developing skills to make their electronics their own.</p>
+					<p>This project is my research and investigation into how adaptable digital electronics might look and work, that enable end users to explore, alter and adapt their devices.</p>
+					<hr>
+				</section>
+				<section class="contentitem">
+					<p>From my development, I considered there to be 3 key components to adaptable design for digital electronics:</p>
+					<ul>
+						<li><b>A craft approach to making,</b> where materials and construction of a product are craft-based.</li>
+						<li><b>A design that creates intrigue,</b> encouraging a user to explore it physically.</li>
+						<li><b>Avenues for social and community cooperation,</b> providing a way to learn and ask questions, share resources, and motivate the user.</li>
+					</ul>
+					<div class="portfoliorow">
+						<figure><img src="static/img/mindseye-8.jpg" alt="the packaged camera, showing the brass parts wrapped in pink tissue paper, and the instruction booklet. The packaging is meant for postage, and is A5 size x 40mm" /></figure>
+					</div>
+					<p>The product includes the camera kit itself, but also to support an end user's ability to make using the camera, it includes warranty, an online forums service bringing users of the camera together to ask questions, share information, and exhibit their work, an online documentation service curating a library of information and resources, and paper instructions detailing assembly and asking the user to get involved in the community online by talking about their work and posting pictures.</p>
+					<p>Users talking about and exhibiting their work online is how new users come into the project. It provides inspiration and motivation to users, puts them in contact with experienced people, and helps a new user develop their own methods and goals for making.</p>
+					<div class="portfoliorow">
+						<figure><img src="static/img/forum-01.jpg" alt="mockup of the forums site" /></figure>
+					</div>
+					<div class="portfoliorow">
+						<figure><img src="static/img/documentation-01.jpg" alt="mockup of the documentation site" /></figure>
+					</div>
+					<div class="portfoliorow">
+						<figure><img src="static/img/mindseye-13.jpg" alt="mockup of the instruction booklet, cover and pages" /></figure>
+					</div>
+					<p>The design of the services was inspired by band posters, using bright colours and patterns to feel energetic and creative. The impression they are meant to give is that the camera is not just a tool for experienced makers, but for everybody, with variable skillsets, methods, preferences, and materials.</p>
+					<div class="portfoliorow">
+						<figure><img src="static/img/mindseye-10.jpg" alt="minds eye camera assembly, part 1" /></figure>
+					</div>
+					<div class="portfoliorow">
+						<figure><img src="static/img/mindseye-11.jpg" alt="minds eye camera assembly, part 2" /></figure>
+					</div>
+					<p>With this camera my aim was to demonstrate ideas I had about modifiable digital electronics, and to look into the entire process that someone goes through when trying to learn about and repurpose their electronic devices. What methods would they use, how would they stay motivated, where would they get the knowlege and skills to do it.</p>
+					<p>Mind's Eye is a camera that inspires creativity and makes a user want to change it. I think it is a good starting point for further work in adaptable, open design for digital electronics.</p>
+					<p><a href="https://github.com/cauwu/minds-eye-camera">Models, drawings and code <u>available on Github.</u></a></p>
+					<hr>
+				</section>
+				<section class="contentitem">
+					<h2>3D Assembly</h2>
+					<span id="contentsubheading">Left click to rotate, mousewheel to zoom.</span>
+					<hr>
+					<!-- Wherever you want to embed a 3mf file, give it a unique ID -->
+					<div class="threemf" id="threemf-camera-1"></div>
+					<script type="module">
+						import { mount } from '3d';
+						// Pass the ID and the filename to the mount function
+						mount('threemf-camera-1', 'mindseye.3mf');
+					</script>
+					<hr>
+				</section>
+				<section class="contentitem">
+					<h2>Development work</h2>
+					<hr>
+					<div class="portfoliorow">
+						<figure><img src="static/img/blackbox-1.jpg" alt="wire webcam rebuild that I used to experiment with creating intrigue" /></figure>
+						<figure><img src="static/img/blackbox-2.jpg" alt="wire webcam in the shape of an orchid or a dragonfly" /></figure>
+					</div>
+					<p>Experimenting with creating intrigue in electronics by rebuilding webcams in freestanding wire.</p>
+					<p></p>
+					<div class="portfoliorow">
+						<figure><img src="static/img/blackbox-8.jpg" alt="pictures from a workshop teaching participants about logic gates in the context of a 4-bit adder, a small computer that adds two numbers" /></figure>
+						<figure><img src="static/img/blackbox-4.jpg" alt="embroidered AND gate, for giving a tactile explanation of how a logic gate works" /></figure>
+					</div>
+					<div class="portfoliorow">
+						<figure><img src="static/img/blackbox-3.jpg" alt="embroidered XOR gate and wire AND gate with teaching material on foamboard slates" /></figure>
+					</div>
+					<p>Models of logic gates in embroidery and brass wire. These were used to explore how people interact with electronic concepts made tactile.</p>
+					<p></p>
+					<div class="portfoliorow">
+						<figure><img src="static/img/blackbox-5.jpg" alt="XOR gate earphones, that detect when only one earbud is worn, using an XOR gate" /></figure>
+						<figure><img src="static/img/blackbox-6.jpg" alt="wire headphones, modifiable by an end user" /></figure>
+					</div>
+					<div class="portfoliorow">
+						<figure><img src="static/img/blackbox-9.jpg" alt="wire earphones" /></figure>
+						<figure><img src="static/img/blackbox-14.jpg" alt="wire earbuds with a crochet string cable. The soft cable is meant to tie up hair" /></figure>
+					</div>
+					<p>Brass wire earphones. Combining the structure of the earphones with the electronics as much as possible using brass wire makes them quick to make with a soldering iron, customisable, and repeatedly alterable.</p>
+					<p></p>
+					<div class="portfoliorow">
+						<figure><img src="static/img/blackbox-7.jpg" alt="pictures from a making together workshop, where participants made digital electronic things from scratch" /></figure>
+					</div>
+					<p>A making together workshop, exploring quick prototyping materials for making electronics from scratch, like conductive paint, copper sticky tape, and foamboard.</p>
+					<p></p>
+					<div class="portfoliorow">
+						<img src="static/img/blackbox-10.jpg" alt="an artistic representation of what my project is about. it shows the potential of making digital electronics using craft methods" />
+					</div>
+					<p>An artistic representation of my project, when I was considering the potential of brass wire as a building system for digital electronics. LEDs in the bridge would light up in sequence as wheels passed over them.</p>
+					<p></p>
+					<div class="portfoliorow">
+						<figure><img src="static/img/irchat-01.jpg" alt="mockup chat screenshot of the collaborative making process two people go through over distance, using brass wire electronics as a way of making" /></figure>
+						<figure><img src="static/img/blackbox-12.jpg" alt="electronic trinket. one half" /></figure>
+					</div>
+					<div class="portfoliorow">
+						<figure><img src="static/img/blackbox-11.jpg" alt="lovers' electronic trinkets, put together, completing the circuit" /></figure>
+					</div>
+					<p>Electronic trinkets, made to explore social narratives that could influence a user's making. These are objects made seperately by long distance lovers, to be put together when they meet. Their collaborative thinking and the design process they go through together is shown in a mockup chat screenshot.</p>
+					<p></p>
+					<div class="portfoliorow">
+						<figure><img src="static/img/mindseye-12.jpg" alt="first prototype of the mind's eye camera, showing the wire mounting rail" /></figure>
+					</div>
+					<p>First prototype of the Mind's Eye camera, with a soldered brass wire mounting rail on top. For my prototypes after this, I wanted to make the shape more intresting, but I couldn't keep the mounting rail because using a soldering iron couldn't get the brass plate hot enough to solder to it well and braizing with a torch is probably not something a hobby user would have access to. Drilling holes or screwing it down would have been such intricate work that a user might not want to change it.</p>
+					<hr>
+				</section>
+				<section>
+					<img style="max-width:100%;" src="static/img/businesscard.jpg" alt="" />
+				</section>
+			</article>
+			<footer id="sitefooter" class="contentitem">
+				<div id="sitefooterlinks">
+					<a href="about.html" role="link">About</a>
+                    <span>•</span>
+                    <a href="about.html" role="link">Contact</a>
+                    <span>•</span>
+                    <a href="index.html#portfolio" role="link">Portfolio</a>
+                    <span>•</span>
+                    <span style="font-size: 0.8rem;">&lt;3</span>
+				</div>
+				<span id="copyright">© Ceres Miller 2024 - All works on this website, unless otherwise noted, are licensed under the CC BY-NC-ND 4.0 license.</span>
+			</footer>
+		</main>
+		<div id="extrapane">
+			<a id="hireme" href="about.html"><span>Hire Me</span></a>
+			<div id="contactemail">
+				<span>Contact:</span><br>
+				<button id="emailaddress" onclick="pfCopyEmail()"></button>
+				<span id="emailcopiednotif">copied!</span>
+			</div>
+			<div id="externallinkscontainer">
+				<a href="https://www.instagram.com/ceresmiller/"><span>Instagram</span></a>
+				<a href="https://linkedin.com/in/ceres-miller-b69969267/"><span>Linkedin</span></a>
+				<a href="https://github.com/cauwu"><span>Github</span></a>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

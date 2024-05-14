@@ -1,165 +1,92 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work Sans">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-    <title>Ceres Miller / Blender and Godot</title>
-    <link rel="icon" type="image/x-icon" href="assets/icon/favicon-16x16.png">
-    <meta charset="utf-8">
-    <meta name="description" content="Product design portfolio website, Ceres Miller">
-    <meta name="keywords" content="portfolio,product design,ceres miller">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:title" content="Ceres Miller / Blender and Godot">
-	<meta property="og:description" content="Product design portfolio website, Ceres Miller">
-	<meta property="og:url" content="https://ceres.pet/blendergodot.html">
-	<meta property="og:site_name" content="Ceres Miller / Product Designer">
-	<meta name="article:author" content="Ceres Miller">
-	<script src="cerespet.js"></script>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Product design portfolio website, Ceres Miller" />
+    <meta name="keywords" content="portfolio,product design,ceres miller" />
+	<link rel="apple-touch-icon" sizes="180x180" href="static/icon/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="static/icon/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="static/icon/favicon-16x16.png" />
+	<link rel="manifest" href="static/icon/site.webmanifest" />
+	<meta property="og:title" content="Ceres Miller / Blender and Godot" />
+	<meta property="og:description" content="Product design portfolio website, Ceres Miller" />
+	<meta property="og:url" content="https://ceres.pet/blendergodot.html" />
+	<meta property="og:site_name" content="Ceres Miller / Product Designer" />
+	<meta name="article:author" content="Ceres Miller" />
+	<title>Ceres Miller / Blender and Godot</title>
+	<link rel="stylesheet" href="static/css/style.css" />
+	<script src="static/js/modules/cerespet.js"></script>
 </head>
 <body>
-    <div id="overbox" class="flexobject">
-        <!-- left-side -->
-        <header id="leftside" class="flexobject" role="banner">
-            <nav id="navscontainer" class="flexobject" role="navigation">
-                <!-- icon ontop of navsbar -->
-                <a id="navsheader" href="index.html" role="button">
-                    <div style="width:6em;height:6em;padding-left:1rem;">
-						<div><img id="homelink" src="assets/site/logo-01.svg" alt="Logo"></div>
-					</div>
-                </a>
-                <!-- main left-side navsbar -->
-                <div id="leftsidenavsbox" class="bubblebox4navs flexobject">
-                    <a class="navslink flexobject" href="index.html" role="button">
-                        <span class="navslabel">Home</span>
-                    </a>
-                    <a class="navslink flexobject" href="about.html" role="button">
-                        <span class="navslabel">About</span>
-                    </a>
-                    <a class="navslink flexobject" href="index.html#portfolio" role="button">
-                        <span class="navslabel">Portfolio</span>
-                    </a>
-                </div>
-            </nav>            
-        </header>
-
-        <!-- right-side -->
-        <div id="rightside" class="flexobject">
-            <div id="center" class="flexobject">
-                <!-- site heading -->
-                <div id="titlebox" class="flexobject">
-                    <!-- header image on mobile -->
-                    <a class="mobheader homelink" href="index.html" role="button">
-                        <div style="width:3.5rem;height:3.5rem;">
-							<div><img id="homelink" src="assets/site/logo-01.svg" alt="Logo"></div>
-						</div>
-                    </a>
-                    <h1 role="heading">Ceres Miller / Product Designer</h1>
-                </div>
-
-                <!-- right-side location bar, navs on mobile -->
-                <nav id="bubblebox4locbar" class="flexobject" role="navigation">
-                    <!-- location on desktop-->
-                    <a class="loclinks" href="index.html" role="link">Home /</a>
-                    <!-- navs on mobile -->
-                    <a class="moblink navslink flexobject" href="index.html" role="button">
-                        <span class="navslabel">Home</span>
-                    </a>
-                </nav>
-
-                <!-- article main -->
-                <main>
-                    <article>
-                        <!-- title, author info, intro -->
-                        <header class="bubblebox4content flexobject">
-                            <!-- article title -->
-                            <h2 role="heading">Blender and Godot</h2>
-                            <span>3D Modelling, UVing, Texturing, Animating</span>
-                            <span style="margin-bottom: 0.5rem;">Ceres Miller, 2022-2023</span>
-                            <hr>
-                            <p>Learning new things from scratch is a long process hampered mostly by not knowing what best practices are, while at the same time developing an efficient workflow tailored to your own skills and intrests. If you aren't being taught best practices and a workflow, progress is slow.</p>
-							<p>However I'm motivated by want to be able to create, even if it takes a long time. Working out a style, standards and a workflow is done over many years of trial and error.</p>
-                            <div class="portfoliorow">
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/blendergodot-1.jpg" alt="textured model of a hazmat suit and oxygen tank in blender, using as few mesh vertices and as small a texture resolution as possible to show necessary detail" title="textured model of a hazmat suit and oxygen tank in blender, using as few mesh vertices and as small a texture resolution as possible to show necessary detail">
-									<span style="margin-top:0.2rem;">It's easy to think that lowering the resolution of a model will cover up roughness, but it ends up making work more difficult. You end up fiddling with little details to get the effect right, working pixel by pixel, and taking up a lot of time.</span>
-                                </div>
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/blendergodot-3.jpg" alt="sculpted model of a duck in blender on the left, and the same model 3D printed and sanded smooth on the right" title="sculpted model of a duck in blender on the left, and the same model 3D printed and sanded smooth on the right">
-									<span style="margin-top:0.2rem;">Working in very high resolutions ironically speeds up the process. Sculpting in Blender requires working at hundreds of thousands of vertices, but when exporting, the model can be decimated to make it more manageable.</span>
-                                </div>
-                            </div>
-							<div class="portfoliorow">
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/blendergodot-5.jpg" alt="Left: 3D printed duck being held up to a lamp, lighting up because it's hollow. Right: The huge mesh in Rhino" title="Left: 3D printed duck being held up to a lamp, lighting up because it's hollow. Right: The huge mesh in Rhino">
-									<span style="margin-top:0.2rem;">Millipede's remeshing tool, via Rhino, helped rationalise a gigantic mesh into something that could be worked with. This duck had to be hollow and fit with other parts, but the mesh had to have enough detail that sanding after printing would produce a good finish.</span>
-                                </div>
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/blendergodot-7.jpg" alt="flat-looking, rectangular doors in Blender, in a sort of pixel art style" title="flat-looking, rectangular doors in Blender, in a sort of pixel art style">
-									<span style="margin-top:0.2rem;">Because of not knowing better, I UVed these models by placing every single face's UV coordinates by hand on the texture, pixel by pixel. Despite being such simple looking models, I spent days of work on these, fiddling with the textures and the topology granularly.</span>
-                                </div>
-                            </div>
-							<div class="portfoliorow">
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/blendergodot-6.jpg" alt="A scene in Godot using pixel art style components. To make it feel more homely, the colour and strength of light in the scene has to be changed" title="A scene in Godot using pixel art style components. To make it feel more homely, the colour and strength of light in the scene has to be changed">
-									<span style="margin-top:0.2rem;">Godot's default ambient lighting has a bluish colour that tints everything and makes textures look flat. Getting the right appearance is also trial and error, fiddling with roughness and metallic maps on models and environmental and shader settings.</span>
-                                </div>
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/blendergodot-4.jpg" alt="A candle, showing how the flame is just a flat image that glows brightly and always faces the camera" title="A candle, showing how the flame is just a flat image that glows brightly and always faces the camera">
-									<span style="margin-top:0.2rem;">Making a bright flame and a candle glow makes use of emissive map textures that tell the renderer where light is shining. The flame is a flat image that rotates to face the camera, and wiggles by spawning and fading away over and over.</span>
-                                </div>
-                            </div>
-							<div class="portfoliorow">
-                                <div class="portfolioitem">
-                                    <img class="thumbnail" src="assets/site/thumbnails/blendergodot-2.jpg" alt="Three models of a person, oldest on the left and newest on the right" title="Three models of a person, oldest on the left and newest on the right">
-									<span style="margin-top:0.2rem;">Multiple attempts have to be made to develop something you're happy with. These were done over about 2 weeks and developed to be rigged. Every successive attempt fixes problems with the previous and helped me understand more about how human retopology is supposed to work.</span>
-                                </div>
-                                <div class="portfolioitem">
-                                    <img id="placeholderimageblank" class="" src="assets/site/thumbnails/placeholder-blank.svg" alt="" title="">
-                                </div>
-                            </div>
-                            <hr class="lasthr">
-                        </header>
-                    </article>
-                </main>
-
-                <!-- site footer -->
-                <nav id="sitefooter" class="bubblebox flexobject" role="contentinfo">
-                    <div id="sitefooterlinks">
-                        <a class="footerlinks" href="about.html" role="link">About</a>
-                        <span class="footerbp">&#8226</span>
-                        <a class="footerlinks" href="contact.html" role="link">Contact</a>
-                        <span class="footerbp">&#8226</span>
-                        <a class="footerlinks" href="index.html#portfolio" role="link">Portfolio</a>
-                        <span class="footerbp">&#8226</span>
-                        <span style="font-size: 0.8rem;">&lt3</span>
-                    </div>
-                    <div id="copyrightinfo">© Ceres Miller 2023 - All works on this website, unless otherwise noted, are licensed under the CC BY-NC-ND 4.0 license.</div>
-                </nav>
-            </div>
-
-            <!-- hiring info far-right side -->
-            <nav id="hiringinfo" class="flexobject" role="navigation">
-                <!--  blank space -->
-                <div id="hiringheader"></div>
-                <!-- hiring info -->
-                <nav id="bubblebox4hiringinfo" class="flexobject">
-                    <a id="hiringinfotitle" href="contact.html" role="link">Hire Me for Your Project</a>
-                    <div style="margin-bottom: 0.5rem; margin-top: 80px; font-family: 'Inconsolata', 'Courier New', Courier, monospace; color: rgb(50, 50, 50); text-decoration: none;">
-                        <span>Contact:</span>
-                        <span><button class="emailaddress" onclick="pfShowEmail()">ceres[@]ceres.pet</button></span>
-                    </div>
-                    <a class="socialslinks" href="https://www.instagram.com/ceresmiller/" role="link">Instagram</a>
-                    <a class="socialslinks" href="https://linkedin.com/in/ceres-miller-b69969267/" role="link">Linkedin</a>
-                    <a class="socialslinks" href="https://github.com/cauwu" role="link">Github</a>
-                </nav>
-            </nav>
-        </div>
-    </div>
-	<div id="popuparea" class="popup">
-		<span class="popupclose">&times;</span>
-		<img class="popupcontent" id="popupimg">
+	<div id="popup">
+		<span id="popupclose">&times;</span>
+		<img id="popupcontent" />
 		<div id="popupcaption"></div>
+	</div>
+	<div id="navpane">
+		<nav id="navcontainer" role="navigation">
+			<a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg"></a>
+			<a href="index.html"><span>Home</span></a>
+			<a href="about.html"><span>About</span></a>
+			<a href="index.html#portfolio"><span>Portfolio</span></a>
+		</nav>
+	</div>
+	<div id="contentpane">
+		<main>
+			<a id="title" href="index.html"><img src="static/site/logo-01.svg"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a>
+			<article>
+				<header class="contentitem">
+					<h2>Blender and Godot</h2>
+					<span id="contentsubheading">3D Modelling, UVing, Texturing, Animating.<br>Ceres Miller, 2022-2023</span>
+					<hr>
+					<p>Learning new things from scratch is a long process hampered mostly by not knowing what best practices are, while at the same time developing an efficient workflow tailored to your own skills and intrests. If you aren't being taught best practices and a workflow, progress is slow.</p>
+					<p>However I'm motivated by want to be able to create, even if it takes a long time. Working out a style, standards and a workflow is done over many years of trial and error.</p>
+					<div class="portfoliorow">
+						<figure><img src="static/img/blendergodot-1.jpg" alt="textured model of a hazmat suit and oxygen tank in blender, using as few mesh vertices and as small a texture resolution as possible to show necessary detail" /><span>It's easy to think that lowering the resolution of a model will cover up roughness, but it ends up making work more difficult. You end up fiddling with little details to get the effect right, working pixel by pixel, and taking up a lot of time.</span></figure>
+						<figure><img src="static/img/blendergodot-3.jpg" alt="sculpted model of a duck in blender on the left, and the same model 3D printed and sanded smooth on the right" /><span>Working in very high resolutions ironically speeds up the process. Sculpting in Blender requires working at hundreds of thousands of vertices, but when exporting, the model can be decimated to make it more manageable.</span></figure>
+					</div>
+					<div class="portfoliorow">
+						<figure><img src="static/img/blendergodot-5.jpg" alt="Left: 3D printed duck being held up to a lamp, lighting up because it's hollow. Right: The huge mesh in Rhino" /><span>Millipede's remeshing tool, via Rhino, helped rationalise a gigantic mesh into something that could be worked with. This duck had to be hollow and fit with other parts, but the mesh had to have enough detail that sanding after printing would produce a good finish.</span></figure>
+						<figure><img src="static/img/blendergodot-7.jpg" alt="flat-looking, rectangular doors in Blender, in a sort of pixel art style" /><span>Because of not knowing better, I UVed these models by placing every single face's UV coordinates by hand on the texture, pixel by pixel. Despite being such simple looking models, I spent days of work on these, fiddling with the textures and the topology granularly.</span></figure>
+					</div>
+					<div class="portfoliorow">
+						<figure><img src="static/img/blendergodot-6.jpg" alt="A scene in Godot using pixel art style components. To make it feel more homely, the colour and strength of light in the scene has to be changed" /><span>Godot's default ambient lighting has a bluish colour that tints everything and makes textures look flat. Getting the right appearance is also trial and error, fiddling with roughness and metallic maps on models and environmental and shader settings.</span></figure>
+						<figure><img src="static/img/blendergodot-4.jpg" alt="A candle, showing how the flame is just a flat image that glows brightly and always faces the camera" /><span>Making a bright flame and a candle glow makes use of emissive map textures that tell the renderer where light is shining. The flame is a flat image that rotates to face the camera, and wiggles by spawning and fading away over and over.</span></figure>
+					</div>
+					<div class="portfoliorow">
+						<figure><img src="static/img/blendergodot-2.jpg" alt="Three models of a person, oldest on the left and newest on the right" title="Three models of a person, oldest on the left and newest on the right" /><span>Multiple attempts have to be made to develop something you're happy with. These were done over about 2 weeks and developed to be rigged. Every successive attempt fixes problems with the previous and helped me understand more about how human retopology is supposed to work.</span></figure>
+						<figure><img src="" alt="" /><span></span></figure>
+					</div>
+					<hr>
+				</header>
+			</article>
+			<footer id="sitefooter" class="contentitem">
+				<div id="sitefooterlinks">
+					<a href="about.html" role="link">About</a>
+                    <span>•</span>
+                    <a href="about.html" role="link">Contact</a>
+                    <span>•</span>
+                    <a href="index.html#portfolio" role="link">Portfolio</a>
+                    <span>•</span>
+                    <span style="font-size: 0.8rem;">&lt;3</span>
+				</div>
+				<span id="copyright">© Ceres Miller 2024 - All works on this website, unless otherwise noted, are licensed under the CC BY-NC-ND 4.0 license.</span>
+			</footer>
+		</main>
+		<div id="extrapane">
+			<a id="hireme" href="about.html"><span>Hire Me</span></a>
+			<div id="contactemail">
+				<span>Contact:</span><br>
+				<button id="emailaddress" onclick="pfCopyEmail()"></button>
+				<span id="emailcopiednotif">copied!</span>
+			</div>
+			<div id="externallinkscontainer">
+				<a href="https://www.instagram.com/ceresmiller/"><span>Instagram</span></a>
+				<a href="https://linkedin.com/in/ceres-miller-b69969267/"><span>Linkedin</span></a>
+				<a href="https://github.com/cauwu"><span>Github</span></a>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
