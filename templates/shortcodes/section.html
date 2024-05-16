@@ -1,0 +1,9 @@
+<section class="contentitem">
+  {% if link %}
+  <a href="{{ get_url(path=link) }}">
+    {{ body | markdown | safe }}
+  </a>
+  {% else %}
+    {{ body | markdown | safe }}
+  {% endif %}
+</section>

@@ -29,9 +29,9 @@ html {
 
 /* ~~~~~~ mobile and small screens settings ~~~~~~ */
 @media only screen and (max-width: 800px) {
-    html {
-        font-size: 16px;
-    }
+	html {
+			font-size: 16px;
+	}
 	body {
 		flex-direction: column !important;
 	}
@@ -53,7 +53,7 @@ html {
 	.portfoliorow a:nth-child(1),figure:nth-child(1) {
 		margin: 0rem 0rem 0.4rem 0rem !important;
 	}
-	main h1 {
+	#title span {
 		font-size: 1.4rem !important;
 		margin: 0rem 0rem 0.2rem 0rem !important;
 	}
@@ -68,8 +68,8 @@ html {
 /* ~~~~~~ default settings ~~~~~~ */
 
 body {
-    margin: 0rem 0.3rem 0rem 0.3rem;
-    padding: 0.3rem 0rem 0.3rem 0rem;
+	margin: 0rem 0.3rem 0rem 0.3rem;
+	padding: 0.3rem 0rem 0.3rem 0rem;
 	display: flex;
 	flex-direction: row;
 }
@@ -95,7 +95,7 @@ body {
 	flex-grow: 1;
 }
 
-main {
+#maincolumn {
 	max-width: 760px;
 	display: flex;
 	flex-direction: column;
@@ -274,12 +274,12 @@ a:visited {
 
 /* ~~~~~~ portfolio list and article styling ~~~~~~ */
 
-main h1 {
+#title span {
 	color: white;
 	margin: 1rem 0rem 1rem 0rem;
 }
 
-main h2 {
+main h1 {
 	margin: 1rem 0rem 1rem 0rem;
 	font-weight: 600;
 	filter: blur(0.02rem) drop-shadow(0 0 0.03rem #c0c0c0);

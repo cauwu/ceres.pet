@@ -1,0 +1,118 @@
+{% if page %}
+	{% set title = page.title %}
+	{% set description = page.description %}
+	{% set content = page.content %}
+{% elif section %}
+	{% set title = section.title %}
+	{% set description = section.description %}
+	{% set content = section.content %}
+{% endif %}
+
+<!doctype html>
+<html dir="ltr" lang="en">
+
+<head>
+	{# It's important that these ones are seen by the browser earliest #}
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{# You want styles, scripts and stuff as high as possible so the browser can start go getting them #}
+	<link rel="stylesheet" href="{{ get_url(path="/css/style.css") }}">
+	<script defer src="{{ get_url(path="/js/modules/cerespet.js") }}"></script>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path="/icon/apple-touch-icon.png") }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path="/icon/favicon-32x32.png") }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="/icon/favicon-16x16.png") }}">
+	<link rel="manifest" href="{{ get_url(path="/icon/site.webmanifest") }}">
+
+	{# Metadata mostly for Search Engines #}
+	<title>{{ config.extra.title.prefix }} / {{ title }}</title>
+	<meta name="description" content="{{ description }}">
+	<meta name="keywords" content="portfolio,product design,ceres miller">
+	<meta property="og:title" content="{{ config.extra.title.prefix }} / {{ title }}">
+	<meta property="og:description" content="{{ description }}">
+	<meta property="og:url" content="{{ current_url }}">
+	<meta property="og:site_name" content="{{ config.title }}">
+	<meta name="article:author" content="{{ config.author }}">
+</head>
+
+<body>
+	<div id="popup">
+		<span id="popupclose">&times;</span>
+		<img id="popupcontent" />
+		<div id="popupcaption"></div>
+	</div>
+	{% block navpane %}
+	<div id="navpane">
+		<nav id="navcontainer" role="navigation">
+			<a id="desktoplogo" href="index.html"><img src="{{ get_url(path="/site/logo-01.svg") }}"></a>
+			<a href="index.html"><span>Home</span></a>
+			<a href="about.html"><span>About</span></a>
+			<a href="index.html#portfolio"><span>Portfolio</span></a>
+		</nav>
+	</div>
+	{% endblock navpane %}
+
+	<div id="contentpane">
+	<div id="maincolumn">
+	{% block sitetitle %}
+	{# Similar to <footer>, <header> is a landmark and has a different aria role ("banner") when used outside
+		# of main, article etc. The "banner" role is "reserved for globally repeating site-wide content that is 
+		# generally located at the top of every page" (MDN). 
+	#}
+	<header>
+			<a id="title" href="index.html">
+			<img src="{{ get_url(path="/site/logo-01.svg") }}" alt="Logo"/>
+			{# I made this a span because the <h1> should really be used for the page/article-specific heading #}
+			<span>Ceres&nbsp;Miller / Product&nbsp;Designer</span>
+	</a>
+	</header>
+	{% endblock sitetitle %}
+
+	<main>
+		{% block content %}
+			{{ content | safe }}
+		{% endblock content %}
+	</main>
+
+	{# Footer
+		# The site footer should not be a child of <main>, <article> etc unless it is specific to that content.
+		# For screen readers, a site footer (rather than a content footer) is a "landmark" 
+		# See the ariarole info in https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer#technical_summary
+	#}
+	{% block sitefooter %}
+	<footer id="sitefooter" class="contentitem">
+		<div id="sitefooterlinks">
+			<a href="/about.html">About</a>
+			<span>•</span>
+			<a href="/about.html">Contact</a>
+			<span>•</span>
+			<a href="/index.html#portfolio"">Portfolio</a>
+			<span>•</span>
+			<span style="font-size: 0.8rem;">&lt;3</span>
+		</div>
+		<span id="copyright">© Ceres Miller 2024 - All works on this website, unless otherwise noted, are licensed under the
+			CC BY-NC-ND 4.0 license.</span>
+	</footer>
+	{% endblock sitefooter %}
+
+	</div>
+	</div>
+
+	<div id="extrapane">
+			<a id="hireme" href="about.html"><span>Hire Me</span></a>
+			<div id="contactemail">
+				<span>Contact:</span><br>
+				<button id="emailaddress" onclick="pfCopyEmail()"></button>
+				<span id="emailcopiednotif">copied!</span>
+			</div>
+			<div id="externallinkscontainer">
+				<a href="https://www.instagram.com/ceresmiller/"><span>Instagram</span></a>
+				<a href="https://linkedin.com/in/ceres-miller-b69969267/"><span>Linkedin</span></a>
+				<a href="https://github.com/cauwu"><span>Github</span></a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+<header class="contentitem">
+  <h1>{% if page %}{{ page.title }}{% elif section %}{{ section.title }}{% endif %}</h1>
+  <span id="contentsubheading">{{ subheading }}</span>
+  <hr>
+  {{ body | markdown | safe }}
+  <hr>
+</header>
