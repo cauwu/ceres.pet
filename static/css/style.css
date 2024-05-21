@@ -301,7 +301,7 @@ main b {
 }
 
 .contentitem img,video,source {
-	max-width: 100%
+	max-width: 100%;
 }
 
 .contentitem hr:nth-last-child(1) {
