@@ -59,7 +59,7 @@ body {
 	flex-grow: 1;
 }
 
-#main {
+main {
 	max-width: 760px;
 	display: flex;
 	flex-direction: column;
@@ -158,26 +158,26 @@ a:visited {
 	color: #6a5d52;
 }
 
-#main h1 {
+main h1 {
 	font-weight: 500;
 	filter: blur(0.02rem) drop-shadow(0 0 0.06rem #9c938b);
 }
 
-#main h2 {
+main h2 {
 	font-size: 1.7rem;
 	margin: 0.3rem 0rem 0.3rem 0rem;
 	font-weight: 500;
 	filter: blur(0.02rem) drop-shadow(0 0 0.06rem #9c938b);
 }
 
-#main h3 {
+main h3 {
 	font-size: 1.3rem;
 	margin: 0rem 0rem 0.3rem 0rem;
 	font-weight: 500;
 	filter: blur(0.02rem) drop-shadow(0 0 0.03rem #9c938b);
 }
 
-#main h4 {
+main h4 {
 	margin: 0rem 0rem 0.4rem 0rem;
 	font-weight: 600;
 	color: #6a5d52;
@@ -284,8 +284,8 @@ a:visited {
 
 /* ~~~~~~ article ~~~~~~ */
 
-article h3 {
-	margin: 1rem 0rem 1rem 0rem !important;
+#blogpost h3 {
+	margin: 1rem 0rem 1rem 0rem;
 }
 
 #articletopics {
