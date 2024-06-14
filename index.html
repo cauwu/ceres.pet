@@ -19,11 +19,11 @@
 	<script src="static/js/modules/cerespet.js"></script>
 </head>
 <body>
-	<div id="popup">
-		<span id="popupclose">&times;</span>
+	<dialog id="popup">
+		<span id="popupclose" autofocus>&times;</span>
 		<img id="popupcontent" />
 		<div id="popupcaption"></div>
-	</div>
+	</dialog>
 	<div id="navpane">
 		<nav id="navcontainer" role="navigation">
 			<a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg"></a>
@@ -147,6 +147,8 @@
                     <a href="about.html" role="link">Contact</a>
                     <span>•</span>
                     <a href="index.html#portfolio" role="link">Portfolio</a>
+                    <span>•</span>
+					<button id="darkmodetoggle" onclick="pfDarkmodeToggle()">💡</button>
                     <span>•</span>
                     <span style="font-size: 0.8rem;">&lt;3</span>
 				</div>

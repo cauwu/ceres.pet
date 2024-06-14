@@ -19,11 +19,11 @@
 	<script src="static/js/modules/cerespet.js"></script>
 </head>
 <body>
-	<div id="popup">
-		<span id="popupclose">&times;</span>
+	<dialog id="popup">
+		<span id="popupclose" autofocus>&times;</span>
 		<img id="popupcontent" />
 		<div id="popupcaption"></div>
-	</div>
+	</dialog>
 	<div id="navpane">
 		<nav id="navcontainer" role="navigation">
 			<a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg"></a>
@@ -42,7 +42,7 @@
 					<hr>
 					<span><b>Contact:</b></span>
 					<ul>
-						<li><button id="emailaddress" style="font-family:Work Sans; font-size:1rem; background-color:#fbf4f6; padding:0.2rem;" onclick="pfCopyEmail(v = 1)"></button><span id="emailcopiednotifmobile" style="padding:0.2rem; color:#808080; font-family:Inconsolata; display:none;">copied!</span></li>
+						<li><button id="emailaddress" style="font-family:Work Sans; font-size:1rem; background-color:light-dark(#fbf4f6, #2b2123); padding:0.2rem;" onclick="pfCopyEmail(v = 1)"></button><span id="emailcopiednotifmobile" style="padding:0.2rem; color:light-dark(#808080, #ffc5cd); font-family:Inconsolata; display:none;">copied!</span></li>
 						<li><a href="https://linkedin.com/in/ceres-miller-b69969267/"><span>Linkedin</span></a></li>
 						<li><a href="https://www.instagram.com/ceresmiller/"><span>Instagram</span></a></li>
 						<li><a href="https://github.com/cauwu"><span>Github</span></a></li>

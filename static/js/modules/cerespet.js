@@ -62,6 +62,7 @@ function pfPopupSystem() {
 		imgs.forEach(imgClicked);
 		function imgClicked(img,index) {
 			img.addEventListener('click',()=>{
+				popup.showModal();
 				popup.style.display = "flex";
 				popupContent.src = imgs[index].src;
 				popupCaption.innerHTML = imgs[index].alt;
@@ -70,10 +71,29 @@ function pfPopupSystem() {
 		
 		document.getElementById("popupclose").onclick = function() {
 			popup.style.display = "none";
+			popup.close();
 		}
 		
 		popup.onclick = function() {
 			popup.style.display = "none";
+			popup.close();
 		}
 	}
+}
+
+// turn on and off dark mode
+function pfDarkmodeToggle() {
+	const root = document.querySelector(":root")
+	const mode = window.getComputedStyle(root).getPropertyValue('color-scheme');
+	let newmode;
+	if (mode === "light") {
+		newmode = "dark";
+		pfDarkmodeSet(newmode);
+	} else {
+		newmode = "light";
+		pfDarkmodeSet(newmode);
+	}
+}
+function pfDarkmodeSet(newmode) {
+	document.querySelector(":root").style.setProperty('color-scheme', newmode);
 }
