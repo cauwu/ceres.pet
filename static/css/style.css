@@ -85,6 +85,7 @@ main {
 	flex-direction: column;
 	align-items: center;
 	padding: 0.4rem 0.6rem 0.3rem 0.6rem;
+	box-shadow: 0 0 0.3rem light-dark(transparent, transparent);
 }
 
 article {
@@ -251,12 +252,12 @@ a:visited {
 	background-color: light-dark(#808080, #ffc5cd);
 }
 
-/* ~~~~~~ portfolio list and article styling ~~~~~~ */
+/* ~~~~~~ portfolio list, gallery, and article styling ~~~~~~ */
 
 main h1 {
-	color: light-dark(white, #473438); /* "white", "dark pink-red" */
+	color: light-dark(white, #362a2c); /* "white", "dark pink-red" #473438*/
 	margin: 1rem 0rem 1rem 0rem;
-	
+	filter: blur(0.01rem) drop-shadow(0 0 0.06rem light-dark(transparent, #332d2f)); /* "transparent", "chinese black" */
 }
 
 main h2 {
@@ -275,7 +276,7 @@ main b {
 }
 
 .contentitem {
-	background-color: light-dark(white, #473438); /* "white", "dark pink-red" */
+	background-color: light-dark(white, transparent); /* "white", "dark pink-red" #473438 */
 	margin: 0rem 0rem 0.4rem 0rem;
 	padding: 0rem 1rem 0rem 1rem;
 	box-shadow: 0 0 0.3rem light-dark(transparent, #191919); /* "transparent", "very dark grey" */
@@ -315,6 +316,18 @@ main b {
 
 .portfoliorow figure:nth-child(2) {
 	margin: 0rem 0rem 0rem 0rem;
+}
+
+.portfoliorow figure:nth-child(3) {
+	margin: 0rem 0rem 0rem 1rem;
+}
+
+.galleryitem .portfoliorow figure:nth-child(1) {
+	margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.galleryitem .portfoliorow figure:nth-child(3) {
+	margin: 0rem 0rem 0rem 0.5rem;
 }
 
 .portfoliorow figure img,video,source,iframe {
@@ -444,12 +457,16 @@ main b {
 	}
 	.portfoliorow {
 		flex-direction: column;
+		margin: 0.4rem 0rem 0.4rem 0rem !important;
 	}
 	.portfoliorow a,figure {
 		width: auto;
 	}
 	.portfoliorow a:nth-child(1),figure:nth-child(1) {
-		margin: 0rem 0rem 0.4rem 0rem;
+		margin: 0rem 0rem 0.4rem 0rem !important;
+	}
+	.portfoliorow a:nth-child(3),figure:nth-child(3) {
+		margin: 0.4rem 0rem 0rem 0rem !important;
 	}
 	main h1 {
 		font-size: 1.4rem;
