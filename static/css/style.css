@@ -1,5 +1,6 @@
 :root {
-	color-scheme: light dark; /* colour names from `encycolorpedia.com` */
+	color-scheme: light; /* colour names from `encycolorpedia.com` */
+	/* add "dark" after "light" to enable dark mode. I don't like dark mode. portfolio websites should be paper white */
 }
 
 html {
