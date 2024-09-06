@@ -1,67 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://ceres.pet></loc>
+		<loc>https://ceres.pet</loc>
 		<lastmod>2024-08-05</lastmod>
 	</url>
 	<url>
-		<loc>https://ceres.pet/about></loc>
+		<loc>https://ceres.pet/about</loc>
 		<lastmod>2024-06-19</lastmod>
 	</url>
 	<url>
-		<loc>https://ceres.pet/gallery></loc>
+		<loc>https://ceres.pet/gallery</loc>
 		<lastmod>2024-08-05</lastmod>
 	</url>
 	<url>
-		<loc>https://ceres.pet/mindseye></loc>
+		<loc>https://ceres.pet/mindseye</loc>
 		<lastmod>2024-06-19</lastmod>
 	</url>
 	<url>
-		<loc>https://ceres.pet/otter></loc>
+		<loc>https://ceres.pet/otter</loc>
 		<lastmod>2024-06-19</lastmod>
 	</url>
 	<url>
-		<loc>https://ceres.pet/rabbit></loc>
+		<loc>https://ceres.pet/rabbit</loc>
 		<lastmod>2024-06-19</lastmod>
 	</url>
 	<url>
-		<loc>https://ceres.pet/composter></loc>
+		<loc>https://ceres.pet/composter</loc>
 		<lastmod>2024-06-19</lastmod>
 	</url>
 	<url>
-		<loc>https://ceres.pet/rainhat></loc>
+		<loc>https://ceres.pet/rainhat</loc>
 		<lastmod>2024-06-19</lastmod>
 	</url>
 	<url>
-		<loc>https://ceres.pet/calculator></loc>
+		<loc>https://ceres.pet/calculator</loc>
 		<lastmod>2024-06-19</lastmod>
 	</url>
 	<url>
-		<loc>https://ceres.pet/misc></loc>
+		<loc>https://ceres.pet/misc</loc>
 		<lastmod>2024-06-19</lastmod>
 	</url>
 	<url>
-		<loc>https://ceres.pet/static/pdf/graphicdesign></loc>
+		<loc>https://ceres.pet/static/pdf/graphicdesign</loc>
 		<lastmod>2024-08-05</lastmod>
 	</url>
 	<url>
-		<loc>https://ceres.pet/parametric></loc>
+		<loc>https://ceres.pet/parametric</loc>
 		<lastmod>2024-06-19</lastmod>
 	</url>
 	<url>
-		<loc>https://ceres.pet/hospital></loc>
+		<loc>https://ceres.pet/hospital</loc>
 		<lastmod>2024-06-19</lastmod>
 	</url>
 	<url>
-		<loc>https://ceres.pet/warehouse></loc>
+		<loc>https://ceres.pet/warehouse</loc>
 		<lastmod>2024-06-19</lastmod>
 	</url>
 	<url>
-		<loc>https://ceres.pet/blendergodot></loc>
+		<loc>https://ceres.pet/blendergodot</loc>
 		<lastmod>2024-06-19</lastmod>
 	</url>
 	<url>
-		<loc>https://ceres.pet/littleprinter></loc>
+		<loc>https://ceres.pet/littleprinter</loc>
 		<lastmod>2024-06-19</lastmod>
+	</url>
+	<url>
+		<loc>https://ceres.pet/angelbag</loc>
+		<lastmod>2024-09-05</lastmod>
 	</url>
 </urlset>
