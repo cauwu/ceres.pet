@@ -1,0 +1,132 @@
+{
+	"pages": [
+		{
+			"article_url": "about",
+			"article_title": "Ceres Miller / About",
+			"page_article_location": "./pages/about",
+			"head_extra_location": "",
+			"page_modal": true,
+			"contents_pane": false
+		},
+		{
+			"article_url": "angelbag",
+			"article_title": "Ceres Miller / Camera-Handbag for Angel",
+			"page_article_location": "./pages/angelbag",
+			"head_extra_location": "",
+			"page_modal": true,
+			"contents_pane": false
+		},
+		{
+			"article_url": "blendergodot",
+			"article_title": "Ceres Miller / Blender and Godot",
+			"page_article_location": "./pages/blendergodot",
+			"head_extra_location": "",
+			"page_modal": true,
+			"contents_pane": false
+		},
+		{
+			"article_url": "calculator",
+			"article_title": "Ceres Miller / A Countertop Calculator",
+			"page_article_location": "./pages/calculator",
+			"head_extra_location": "",
+			"page_modal": true,
+			"contents_pane": false
+		},
+		{
+			"article_url": "composter",
+			"article_title": "Ceres Miller / A Garden Composter",
+			"page_article_location": "./pages/composter",
+			"head_extra_location": "",
+			"page_modal": true,
+			"contents_pane": false
+		},
+		{
+			"article_url": "hospital",
+			"article_title": "Ceres Miller / Childrens' Hospital Waiting Room",
+			"page_article_location": "./pages/hospital",
+			"head_extra_location": "",
+			"page_modal": true,
+			"contents_pane": false
+		},
+		{
+			"article_url": "index",
+			"article_title": "Ceres Miller / Product Designer",
+			"page_article_location": "./pages/index",
+			"head_extra_location": "",
+			"page_modal": false,
+			"contents_pane": false
+		},
+		{
+			"article_url": "littleprinter",
+			"article_title": "Ceres Miller / A Thermal Printer",
+			"page_article_location": "./pages/littleprinter",
+			"head_extra_location": "",
+			"page_modal": true,
+			"contents_pane": false
+		},
+		{
+			"article_url": "mindseye",
+			"article_title": "Ceres Miller / Mind's Eye",
+			"page_article_location": "./pages/mindseye",
+			"head_extra_location": "./pages/head_extra/mindseye",
+			"page_modal": true,
+			"contents_pane": false
+		},
+		{
+			"article_url": "misc",
+			"article_title": "Ceres Miller / Miscellaneous",
+			"page_article_location": "./pages/misc",
+			"head_extra_location": "",
+			"page_modal": true,
+			"contents_pane": false
+		},
+		{
+			"article_url": "otter",
+			"article_title": "Ceres Miller / Otter Toy",
+			"page_article_location": "./pages/otter",
+			"head_extra_location": "",
+			"page_modal": true,
+			"contents_pane": false
+		},
+		{
+			"article_url": "parametric",
+			"article_title": "Ceres Miller / Parametric Art",
+			"page_article_location": "./pages/parametric",
+			"head_extra_location": "",
+			"page_modal": true,
+			"contents_pane": false
+		},
+		{
+			"article_url": "rabbit",
+			"article_title": "Ceres Miller / A Toy Rabbit",
+			"page_article_location": "./pages/rabbit",
+			"head_extra_location": "",
+			"page_modal": true,
+			"contents_pane": false
+		},
+		{
+			"article_url": "rainhat",
+			"article_title": "Ceres Miller / A Rain Hood",
+			"page_article_location": "./pages/rainhat",
+			"head_extra_location": "",
+			"page_modal": true,
+			"contents_pane": false
+		},
+		{
+			"article_url": "thiswebsite",
+			"article_title": "Ceres Miller / This Website",
+			"page_article_location": "./pages/thiswebsite",
+			"head_extra_location": "",
+			"page_modal": true,
+			"contents_pane": false
+		},
+		{
+			"article_url": "warehouse",
+			"article_title": "Ceres Miller / Fast Environment Rendering Study",
+			"page_article_location": "./pages/warehouse",
+			"head_extra_location": "",
+			"page_modal": true,
+			"contents_pane": false
+		}
+	]
+}

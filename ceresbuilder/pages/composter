@@ -1,0 +1,23 @@
+<header class="contentitem">
+    <h2>A Garden Composter</h2>
+    <span id="contentsubheading">Outdoor vertical composter that minimises the use of a shovel.<br>Ceres Miller, 2019</span>
+    <hr>
+    <p>Turning over compost is work enough that people with home composters rarely do it. This composter helps make that work faster and cleaner, helping produce better compost with less pests.</p>
+    <div class="portfoliorow">
+        <figure><img src="static/img/composter-2.jpg" alt="View of the composter setup, showing the dividers between buckets that allows liquid and worms to pass through" /></figure>
+        <figure><img src="static/img/composter-3.jpg" alt="Section of the composter setup, showing how the buckets fit together" /></figure>
+    </div>
+    <hr>
+</header>
+<section class="contentitem">
+    <p>Composting requires agitatation to decompose properly, as oxygen and water are required for the bacteria to work. This is usually done with a pitchfork, but in the case of "dalek" composters, the most common kind in home use here, turning them over is hard work. This leads to pest infestations, (ants, gnats) and a bad smell, as the compost tries to decompose anaerobically.</p>
+    <p>This composter works by having the user agitate the compost by tipping it into buckets. When the top bucket fills up with food waste, it's tipped into the bucket below. When it fills up again, the user tips the second bucket into the third, and the first into the second, in a chain.</p>
+    <p>Based on the time taken for two people to produce enough food waste to fill a bucket, the composter produces compost at a steady rate, into the final bucket to be picked up and spread around a garden.</p>
+    <div class="portfoliorow">
+        <figure><img src="static/img/composter-1.jpg" alt="Composter in a garden" /></figure>
+        <figure><img src="static/img/composter-4.jpg" alt="Composter setup showing silhouettes using it. When the top bucket is full, compost is agitated by tipping it into the bucket below it. This is done consecutively, producing finished compost at the final stage" /></figure>
+    </div>
+    <p>A normal composter is not an ugly thing, but most people relegate it to a corner of a garden, usually out of the sun. This composter's appearance is meant to encourage users to make the best use of what space they have, that every part of a garden can be visible. Keeping the composter out of the shade helps give the compost the necessary heat it needs to decompose, too.</p>
+    <p>The composter can be placed on soil without worrying about rats, as the bottom bucket and the screens in between each section helps prevent rats from climbing up.</p>
+    <hr>
+</section>

@@ -1,0 +1,53 @@
+<header class="contentitem">
+    <h2>Parametric Art</h2>
+    <span id="contentsubheading">Triply Periodic Minimal Surface Christmas Ornament using Grasshopper.<br>Ceres Miller, 2021</span>
+    <hr>
+    <p>Grasshopper is a Rhino plugin for parametric 3D modelling. Gyroid shapes are easy to make with 3D printing, and you can make pretty ornaments and patterns using them.</p>
+    <div class="portfoliorow">
+        <figure><img src="static/img/parametric-1.jpg" alt="A gyroid christmas ornament, held up to a mirror"  /></figure>
+        <figure><img src="static/img/parametric-2.jpg" alt="A gyroid christmas ornament on a tree" /></figure>
+    </div>
+    <hr>
+</header>
+<section class="contentitem">
+    <p>Many triply periodic minimal surfaces can be approximated with mathematical formulas, and Grasshopper can use those formulas to build 3D meshes. To make this gyroid, a trigonometric formula is used.</p>
+    <p>More detail on minimal surfaces can be found in <a href="https://wewanttolearn.wordpress.com/tag/gyroid/">this article.</a></p>
+    <div class="portfoliorow">
+        <figure><img src="static/img/parametric-4.jpg" alt="Rhino screenshot of a gyroid mesh" /></figure>
+        <figure><img src="static/img/parametric-3.jpg" alt="Grasshopper screenshot showing the flowchart and formula used to build the gyroid mesh" /></figure>
+    </div>
+    <p>Rhino and Grasshopper often struggled to resolve the gyroid without errors. The 2D mesh had to be thickened using Millipede to be printed, but it had difficulty doing so; sometimes to get it to resolve properly, I had to restart my computer to force Rhino to do the maths again until it worked. Millipede has a great remesh tool, which reformats a mesh to make it neater and change the number of vertices. This also assisted in helping Rhino avoid problems.</p>
+    <p>The produced mesh can be cropped or tesselated to make different things. I cropped it into a sphere, making the gyroid look like a piece of coral. Rhino had problems adding a hole for a ribbon to tie the ornament with, so I had to use Blender to carve a hole by moving vertices and faces around.</p>
+    <div class="portfoliorow">
+        <figure><video alt="Video from Rhino showing gyroid surface mesh" title="Video from Rhino showing gyroid surface mesh" controls>
+            <source src="static/video/parametric-5.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video></figure>
+    </div>
+    <p>The complexity of parametric objects, although most software can handle that easily, causes a lot of tools to break, especially ones designed for simpler objects. It might be better to think of parametric modelling not as being a way to create complex things, but rather as a starting point for something else, or as a quick prototyping tool. To make complex things for any kind of production, it may be more reliable to know what you want first and write it declaratively with code rather than parametrically with flowcharts.</p>
+    <p>Gyroid surfaces are used as infill for FDM 3D printing. If you watch it print, or graph a gyroid function and scroll through the Z axis, (you can do that below) you can see that gyroid shapes are made up of a bunch of spinning spirals. Instead of using Rhino and Grasshopper to make an STL file for 3D printing, you might be able to get more complicated results by writing 3D printer gcode yourself. 3D printed ceramics use this already to get intresting results.</p>
+    <div class="portfoliorow">
+        <figure><iframe id="desmos" src="https://www.desmos.com/calculator/vgdvudweel?embed" style="border: 1px solid #ccc; width:2000px; height:500px" frameborder=0></iframe></figure>
+    </div>
+    <hr>
+</section>
+<section class="contentitem">
+    <h2>Parametric Textures using SVG</h2>
+    <span id="contentsubheading">Ceres Miller, 2022</span>
+    <hr>
+    <p>There are lots of programs for parametric texturing, like Adobe's Substance Designer. Writing out parametric textures in SVG however ended up being a whole lot easier.</p>
+    <div class="portfoliorow">
+        <figure><img src="static/img/parametric-6.jpg" alt="Wavy marbled texture, made using SVG filter primitives" /></figure>
+        <figure><img src="static/img/parametric-5.jpg" alt="Wavy marbled texture, made using SVG filter primitives" /></figure>
+    </div>
+    <hr>
+</section>
+<section class="contentitem">
+    <p><a href="https://tympanus.net/codrops/2019/02/19/svg-filter-effects-creating-texture-with-feturbulence/">SVG filter primitives</a> are powerful tools for creating and manipulating images entirely in a web browser. Combined with SVG's animation capabilities, you can potentially have complex, client-side rendered textures and motion graphics that react to things on the page, all delivered in a handful of kilobytes.</p>
+    <p>Parametric texturing using SVG made getting access to Perlin noise textures easy, quick, and free. It formed the starting point for a workflow making noisy, random textures, similar to marbling.</p>
+    <div class="portfoliorow">
+        <figure><img src="static/img/parametric-7.jpg" alt="Wavy marbled texture, made using SVG filter primitives" /><span>SVG filters can produce these kinds of wavy textures very quickly,</span></figure>
+        <figure><img src="static/img/parametric-8.jpg" alt="Screenshot of Adobe Substance Designer. It's difficult to learn and difficult to get out of it what I had in mind" /><span>Whereas while Adobe Substance Designer has a lot more features, it's also a lot more difficult to use and harder to get what you want out of it.</span></figure>
+    </div>
+    <hr>
+</section>

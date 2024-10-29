@@ -1,0 +1,25 @@
+<header class="contentitem">
+    <h2>Childrens' Hospital Waiting Room</h2>
+    <span id="contentsubheading">Interior design project for a paediatric hospital entrance.<br>Ceres Miller, 2019</span>
+    <hr>
+    <p>Providing children nooks and places to hide while being visible to staff and guardians, and hiding the reception desk out of immediate view when entering the room, creates a feeling of homliness and safety to help put patients at ease.</p>
+    <div class="portfoliorow">
+        <figure><img src="static/img/hospital-1.jpg" alt="View of the hospital scene, from the waiting area looking toward the reception desk. Celestory lighting and arched partitions give the feeling of being in a small, comforting space" /></figure>
+        <figure><img src="static/img/hospital-2.jpg" alt="View of the hospital scene, from the entrance looking inward. Lights on the ceiling, the fish tank, and the sign-in terminal guide a visitor forward" /></figure>
+    </div>
+    <div class="portfoliorow">
+        <figure><img src="static/img/hospital-3.jpg" alt="View of the hospital scene, looking toward a play area. A partition wall with child-sized doors allows them to hide, while being completely visible to both a guardian and the reception staff" /></figure>
+        <figure><img src="static/img/hospital-5.jpg" alt="View of the hospital scene, from the hospital corridor looking into the room. A fish tank and skylight create a nice atmosphere for both staff and patients" /></figure>
+    </div>
+    <hr>
+</header>
+<section class="contentitem">
+    <p>There is tactical use of light and pattern all over the space. As a visitor enters, the direction of the floorboards and ceiling tiles, as well as a line of ceiling lights, point them towards the back of the room towards the reception desk. A skylight above the reception helps light it up as the center of the room.</p>
+    <p>Celestory lighting and tree decals with lots of vertical lines help create waiting spaces that feel secluded and still, to calm people waiting.</p>
+    <div class="portfoliorow">
+        <figure><img src="static/img/hospital-6.jpg" alt="Space layout and cardboard model" /></figure>
+        <figure><img src="static/img/hospital-4.jpg" alt="View of the hospital waiting room, from the back of the room looking toward the entrance. A skylight shines natural light onto the reception desk, helping light it up as the center of the room" /></figure>
+    </div>
+    <p>A clear separation of transit and waiting spaces in a children's hospital helps keep toys and books out of the way of anybody moving. The two waiting areas have whole walls dedicated to entering and exiting them, minimising bottleneck-based tripping risks.</p>
+    <hr>
+</section>
