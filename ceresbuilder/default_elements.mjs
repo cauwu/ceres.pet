@@ -45,7 +45,7 @@ const defaultExtraPane = `<a id="hireme" href="about.html"><span>Hire Me</span><
 </div>
 <div id="externallinkscontainer">
 <a href="https://www.instagram.com/ceresmiller/"><span>Instagram</span></a>
-<a href="https://linkedin.com/in/ceres-miller-b69969267/"><span>Linkedin</span></a>
+<a href="https://linkedin.com/in/ceres-miller/"><span>Linkedin</span></a>
 <a href="https://github.com/cauwu"><span>Github</span></a>
 </div>`;
 
