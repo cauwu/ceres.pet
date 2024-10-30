@@ -18,7 +18,7 @@ written. Each object contains:
     • `contents_pane`: If the page should have a contents pane. Used for
     articles with multiple sections. true|false
 
-To build webpages, run
-`$ node ./ceresbuilder/ceresbuilder.mjs`
+To build webpages, cd to `ceresbuilder/` and run
+`$ node ./ceresbuilder.mjs`
 
 Ceresbuilder will output the webpages in `ceresbuilder/ceres.pet/` as HTML.
