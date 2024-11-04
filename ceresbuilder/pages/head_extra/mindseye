@@ -4,15 +4,15 @@
 <script type="importmap">
 {
     "imports": {
-        "three": "https://unpkg.com/three@0.151.3/build/three.module.js",
-        "three/addons/": "https://unpkg.com/three@0.151.3/examples/jsm/",
+        "three": "https://unpkg.com/three@0.170.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.170.0/examples/jsm/",
         "3d": "./static/js/modules/3d.module.js"
     }
 }
 </script>
 <!-- For better performance but not strictly needed -->
 <link rel="modulepreload" href="/static/js/modules/3d.module.js" />
-<link rel="modulepreload" href="https://unpkg.com/three@0.151.3/build/three.module.js" />
-<link rel="modulepreload" href="https://unpkg.com/three@0.151.3/examples/jsm/controls/OrbitControls.js" />
-<link rel="modulepreload" href="https://unpkg.com/three@0.151.3/examples/jsm/loaders/3MFLoader.js" />
-<link rel="modulepreload" href="https://unpkg.com/three@0.151.3/examples/jsm/libs/fflate.module.js" />
+<link rel="modulepreload" href="https://unpkg.com/three@0.170.0/build/three.module.js" />
+<link rel="modulepreload" href="https://unpkg.com/three@0.170.0/examples/jsm/controls/OrbitControls.js" />
+<link rel="modulepreload" href="https://unpkg.com/three@0.170.0/examples/jsm/loaders/3MFLoader.js" />
+<link rel="modulepreload" href="https://unpkg.com/three@0.170.0/examples/jsm/libs/fflate.module.js" />

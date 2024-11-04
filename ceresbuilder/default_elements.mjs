@@ -71,18 +71,6 @@ const defaultHead = ({articleTitle, articleURL, headExtra}) => `<meta charset="U
 <script src="/static/js/modules/cerespet.js"></script>
 ${headExtra}`;
 
-/*
-const callingObject = () => {
-    const props = {
-        articleTitle: 'ab',
-        articleURL: 'cd.com',
-        headExtra: '...'
-    };
-
-    defaultHead({...props, articleTitle: '123'} );
-}
-*/
-
 const defaultBody = ({pageModal, siteNavpane, contentsPane, pageArticle, siteFooter, siteExtraPane}) => `${pageModal}
 <div id="navpane">${siteNavpane}${contentsPane}</div>
 <div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article>${pageArticle}</article><footer id="sitefooter" class="contentitem">${siteFooter}</footer></main><div id="extrapane">${siteExtraPane}</div></div>`;
