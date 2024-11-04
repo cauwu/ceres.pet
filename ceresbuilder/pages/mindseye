@@ -63,7 +63,7 @@
     <!-- Wherever you want to embed a 3mf file, give it a unique ID -->
     <div class="threemf" id="threemf-camera-1"></div>
     <script type="module">
-        import { mount } from '3d';
+        import { mount } from '3djs';
         // Pass the ID and the filename to the mount function
         mount('threemf-camera-1', 'mindseye.3mf');
     </script>
