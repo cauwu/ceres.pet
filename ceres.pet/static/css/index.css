@@ -1,0 +1,34 @@
+/* Page styling for the homepage. */
+
+article header span:nth-child(2) {
+	display: flex;
+	margin: -0.6rem 0rem 1rem 0rem;
+}
+
+#showmorebutton {
+	width: 100%;
+	font-family: Inconsolata, monospace;
+	font-size: 1.2rem;
+	border: none;
+	background: none;
+	text-decoration: none;
+	filter: blur(0.02rem) drop-shadow(0 0 0.06rem light-dark(#c0c0c0, #e3dbeb));
+}
+
+#showmorebutton:hover {
+	color: light-dark(#808080, #ffc5cd);
+}
+
+#showmoredropdown {
+	display: none;
+	flex-direction: column;
+}
+
+#showmoredropdown hr {
+	width: 100%;
+	margin: 1.2rem 0rem 0.6rem 0rem;
+}
+
+#showmoredropdown h2 {
+	margin: 0.2rem 0rem 0.3rem 0rem;
+}

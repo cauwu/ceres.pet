@@ -1,12 +1,12 @@
 :root {
 	color-scheme: light; /* colour names from `encycolorpedia.com` */
 	/* add "dark" after "light" to enable dark mode. I don't like dark mode. portfolio websites should be paper white */
+	font-size: 20px;
 }
 
 html {
     overflow-y: scroll; 
     overscroll-behavior-y: none; 
-    font-size: 20px;
     font-family: Work Sans, Arial, Helvetica, sans-serif;
 	background-color: light-dark(#fbf4f6, #2b2123); /* "very light pink", "very dark pink-red" */
 }
@@ -130,6 +130,7 @@ a:visited {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: right;
 }
 
 #title img { /*logo that shows up on mobile*/
@@ -256,9 +257,13 @@ a:visited {
 /* ~~~~~~ portfolio list, gallery, and article styling ~~~~~~ */
 
 main h1 {
-	color: light-dark(white, #362a2c); /* "white", "dark pink-red" #473438*/
-	margin: 1rem 0rem 1rem 0rem;
-	filter: blur(0.01rem) drop-shadow(0 0 0.06rem light-dark(transparent, #332d2f)); /* "transparent", "chinese black" */
+	font-size: 1.2rem;
+	font-weight: 400;
+	font-family: Inconsolata, Monospace;
+	margin: 1.4rem 1rem 1.5rem 1rem;
+	color: light-dark(#ffffff, #141414);
+	background-color: light-dark(#141414, #ffffff);
+	filter: blur(0.02rem) drop-shadow(0 0 0.06rem light-dark(#c0c0c0, #927da5)); /* "silver", "blue-magenta" */
 }
 
 main h2 {
@@ -269,11 +274,6 @@ main h2 {
 
 main b {
 	font-weight: 600;
-}
-
-#contentsubheading {
-	display: flex;
-	margin: -0.6rem 0rem 1rem 0rem;
 }
 
 .contentitem {
@@ -358,37 +358,9 @@ main b {
 	margin: 0.2rem 0rem 0rem 0rem;
 }
 
-#showmorebutton {
-	width: 100%;
-	font-family: Inconsolata, monospace;
-	font-size: 1.2rem;
-	border: none;
-	background: none;
-	text-decoration: none;
-	filter: blur(0.02rem) drop-shadow(0 0 0.06rem light-dark(#c0c0c0, #e3dbeb));
-}
+/* ~~~~~~ image modal ~~~~~~ */
 
-#showmorebutton:hover {
-	color: light-dark(#808080, #ffc5cd);
-}
-
-#showmoredropdown {
-	display: none;
-	flex-direction: column;
-}
-
-#showmoredropdown hr {
-	width: 100%;
-	margin: 1.2rem 0rem 0.6rem 0rem;
-}
-
-#showmoredropdown h2 {
-	margin: 0.2rem 0rem 0.3rem 0rem;
-}
-
-/* ~~~~~~ image popup ~~~~~~ */
-
-#popup {
+#modal {
 	flex-direction: column;
 	overflow: auto;
 	width: 100%;
@@ -398,7 +370,7 @@ main b {
 	border-color: rgba(0,0,0,0.9);
 }
 
-#popupcontent {
+#modalcontent {
 	margin: auto;
 	margin-bottom: 0.2rem;
 	display: block;
@@ -406,7 +378,7 @@ main b {
 	max-width: 1080px;
 }
 
-#popupcaption {
+#modalcaption {
   margin: auto;
   margin-top: 0.2rem;
   display: block;
@@ -417,7 +389,7 @@ main b {
   padding: 10px 0;
 }
 
-#popupclose {
+#modalclose {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -426,8 +398,8 @@ main b {
   font-weight: bold;
 }
 
-#popupclose:hover,
-#popupclose:focus {
+#modalclose:hover,
+#modalclose:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
@@ -441,7 +413,10 @@ main b {
 
 /* ~~~~~~ mobile and small screens settings ~~~~~~ */
 @media only screen and (max-width: 800px) {
-    html {
+    :root{
+		font-size: 16px;
+	}
+	html {
         font-size: 16px;
     }
 	body {
@@ -481,7 +456,7 @@ main b {
 	#title {
 		justify-content: center;
 	}
-	#popupcontent {
+	#modalcontent {
 		width: 99%;
 	}
 }

@@ -8,13 +8,15 @@ strings. The ones that do require them are provided as functions that the
 ceresbuilder loop can fill with variables as needed and return strings.
 */
 
-const defaultModal = `<dialog id="popup">
-<span id="popupclose" autofocus>&times;</span>
-<img id="popupcontent" />
-<div id="popupcaption"></div>
+const defaultModal = 
+`<dialog id="modal">
+<span id="modalclose" autofocus>&times;</span>
+<img id="modalcontent" />
+<div id="modalcaption"></div>
 </dialog>`;
 
-const defaultNavpane = `<nav id="navcontainer" role="navigation">
+const defaultNavpane = 
+`<nav id="navcontainer" role="navigation">
 <a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg"></a>
 <a href="index.html"><span>Home</span></a>
 <a href="about.html"><span>About</span></a>
@@ -22,7 +24,8 @@ const defaultNavpane = `<nav id="navcontainer" role="navigation">
 <a href="gallery.html"><span>Gallery</span></a>
 </nav>`;
 
-const defaultFooter = `<div id="sitefooterlinks">
+const defaultFooter = 
+`<div id="sitefooterlinks">
 <a href="about.html" role="link">About</a>
 <span>•</span>
 <a href="about.html" role="link">Contact</a>
@@ -37,7 +40,8 @@ const defaultFooter = `<div id="sitefooterlinks">
 </div>
 <span id="copyright">© Ceres Miller 2024 - All works on this website, unless otherwise noted, are licensed under the CC BY-NC-ND 4.0 license.</span>`;
 
-const defaultExtraPane = `<a id="hireme" href="about.html"><span>Hire Me</span></a>
+const defaultExtraPane = 
+`<a id="hireme" href="about.html"><span>Hire Me</span></a>
 <div id="contactemail">
 <span>Contact:</span><br>
 <button id="emailaddress" onclick="pfCopyEmail()"></button>
@@ -51,7 +55,8 @@ const defaultExtraPane = `<a id="hireme" href="about.html"><span>Hire Me</span><
 
 const defaultContentsPane = ``
 
-const defaultHead = ({articleTitle, articleURL, headExtra}) => `<meta charset="UTF-8"/>
+const defaultHead = ({articleTitle, articleURL, extraStyling, headExtra}) => 
+`<meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="description" content="Product design portfolio website, Ceres Miller"/>
 <meta name="keywords" content="portfolio,product design,ceres miller"/>
@@ -69,11 +74,11 @@ const defaultHead = ({articleTitle, articleURL, headExtra}) => `<meta charset="U
 <link rel="canonical" href="${articleURL}"/>
 <link rel="stylesheet" href="/static/css/style.css"/>
 <script src="/static/js/modules/cerespet.js"></script>
+${extraStyling}
 ${headExtra}`;
 
-const defaultBody = ({pageModal, siteNavpane, contentsPane, pageArticle, siteFooter, siteExtraPane}) => `${pageModal}
-<div id="navpane">${siteNavpane}${contentsPane}</div>
-<div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article>${pageArticle}</article><footer id="sitefooter" class="contentitem">${siteFooter}</footer></main><div id="extrapane">${siteExtraPane}</div></div>`;
+const defaultBody = ({pageModal, siteNavpane, contentsPane, pageArticle, siteFooter, siteExtraPane}) => 
+`${pageModal}<div id="navpane">${siteNavpane}${contentsPane}</div><div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article>${pageArticle}</article><footer id="sitefooter" class="contentitem">${siteFooter}</footer></main><div id="extrapane">${siteExtraPane}</div></div>`;
 
 const defaultPage = ({pageHead, pageBody}) => `<!DOCTYPE html><html dir="ltr" lang="en"><head>${pageHead}</head><body>${pageBody}</body></html>`;
 

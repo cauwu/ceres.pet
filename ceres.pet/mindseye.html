@@ -16,6 +16,7 @@
 <link rel="canonical" href="https://ceres.pet/mindseye"/>
 <link rel="stylesheet" href="/static/css/style.css"/>
 <script src="/static/js/modules/cerespet.js"></script>
+<link rel="stylesheet" href="/static/css/portfolio.css"/>
 <!-- Needed to support versions of Safari earlier than 16 (2023) -->
 <script async src="https://unpkg.com/es-module-shims@1.7.1/dist/es-module-shims.js"></script>
 <!-- This tells the browser where to find any JS that we request via import -->
@@ -33,19 +34,17 @@
 <link rel="modulepreload" href="https://unpkg.com/three@0.170.0/build/three.module.js" />
 <link rel="modulepreload" href="https://unpkg.com/three@0.170.0/examples/jsm/controls/OrbitControls.js" />
 <link rel="modulepreload" href="https://unpkg.com/three@0.170.0/examples/jsm/loaders/3MFLoader.js" />
-<link rel="modulepreload" href="https://unpkg.com/three@0.170.0/examples/jsm/libs/fflate.module.js" /></head><body><dialog id="popup">
-<span id="popupclose" autofocus>&times;</span>
-<img id="popupcontent" />
-<div id="popupcaption"></div>
-</dialog>
-<div id="navpane"><nav id="navcontainer" role="navigation">
+<link rel="modulepreload" href="https://unpkg.com/three@0.170.0/examples/jsm/libs/fflate.module.js" /></head><body><dialog id="modal">
+<span id="modalclose" autofocus>&times;</span>
+<img id="modalcontent" />
+<div id="modalcaption"></div>
+</dialog><div id="navpane"><nav id="navcontainer" role="navigation">
 <a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg"></a>
 <a href="index.html"><span>Home</span></a>
 <a href="about.html"><span>About</span></a>
 <a href="index.html#portfolio"><span>Portfolio</span></a>
 <a href="gallery.html"><span>Gallery</span></a>
-</nav></div>
-<div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article><header class="contentitem">
+</nav></div><div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article><header class="contentitem">
     <h2>MIND'S EYE - A Digital Camera Made to be Modified</h2>
     <span id="contentsubheading">A project about adaptable digital electronics.<br>Ceres Miller, 2023</span>
     <hr>
@@ -99,13 +98,12 @@
         <figure><img src="static/img/mindseye-11.jpg" alt="minds eye camera assembly, part 2" /></figure>
     </div>
     <p>With this camera my aim was to demonstrate ideas I had about modifiable digital electronics, and to look into the entire process that someone goes through when trying to learn about and repurpose their electronic devices. What methods would they use, how would they stay motivated, where would they get the knowlege and skills to do it.</p>
-    <p>Mind's Eye is a camera that inspires creativity and makes a user want to change it. I think it is a good starting point for further work in adaptable, open design for digital electronics.</p>
-    <p><a href="https://github.com/cauwu/minds-eye-camera">Models, drawings and code <u>available on Github.</u></a></p>
+    <p>Mind's Eye is a camera that inspires creativity and makes a user want to change it. I think it is a good starting point for further work in adaptable, open design for digital electronics.<br><br><a href="https://github.com/cauwu/minds-eye-camera">Models, drawings and code <u>available on Github.</u></a></p>
     <hr>
 </section>
 <section class="contentitem">
     <h2>3D Assembly</h2>
-    <span id="contentsubheading">Left click to rotate, mousewheel to zoom.</span>
+    <span>Left click to rotate, mousewheel to zoom.</span>
     <hr>
     <!-- Wherever you want to embed a 3mf file, give it a unique ID -->
     <div class="threemf" id="threemf-camera-1"></div>
