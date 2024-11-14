@@ -1,7 +1,7 @@
 import fs from 'fs';
 import fsP from 'node:fs/promises';
 
-import json from './pages_to_build.json' assert {type: 'json'};
+import json from './pages_to_build.json' with {type: 'json'};
 
 import * as d from './default_elements.mjs';
 
@@ -14,6 +14,15 @@ const getPageArticle = (index) => {
 	const article = fs.readFileSync(json.pages[index].page_article_location);
 	return (article.toString());
 };
+
+const getExtraStyling = (index) => {
+	const pagetype = json.pages[index].page_type;
+	if (pagetype.toString() === '') {
+		return '';
+	} else {
+		return `<link rel="stylesheet" href="/static/css/${pagetype.toString()}.css"/>`
+	}
+}
 
 const getHeadExtra = (index) => {
 	try {
@@ -58,6 +67,7 @@ for (let i = 0; i < Object.keys(json.pages).length; i++) {
 	articleURL: getArticleUrl(i),
 	articleTitle: json.pages[i].article_title,
 	pageArticle: getPageArticle(i),
+	extraStyling: getExtraStyling(i),
 	headExtra: getHeadExtra(i),
 	pageModal: getPageModal(i),
 	contentsPane: getContentsPane(i),

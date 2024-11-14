@@ -1,0 +1,67 @@
+/* Page styling for default portfolio pages */
+
+article {
+	font-size: 18px;
+}
+
+article header h2 {
+	font-size: 30px;
+}
+
+article header span:nth-child(2),
+article section span:nth-child(2) { /* Header subheading, under H2 */
+	display: flex;
+	text-align: justify;
+	text-justify: inter-word;
+	margin: -0.6rem 2em 0rem 2em;
+}
+
+article header span:nth-child(3) { /* Header author and year */
+	margin: 0rem 2em 1rem 2em;
+}
+
+article hr {
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+article header hr {
+	margin-top: 1em;
+}
+
+article p {
+	text-align: justify;
+	text-justify: inter-word;
+	margin: 1em 2em 1em 2em;
+}
+
+article ul {
+	margin: 1em 2em 1em 2em;
+}
+
+article section {
+	padding-top: 0.5em !important;
+}
+
+@media only screen and (max-width: 800px) {
+	article {
+		font-size: 16px;
+	}
+	article header h2 {
+		font-size: 24px;
+	}
+	article p {
+		margin: 1em 0em 1em 0em;
+	}
+	article hr {
+		margin-left: 0em;
+		margin-right: 0em;
+	}
+	article header span:nth-child(2) {
+		margin: -0.6rem 0em 1rem 0em;
+	}
+	article ul {
+		margin: 1em 0em 1em 0em;
+	}
+
+}

@@ -16,21 +16,20 @@
 <link rel="canonical" href="https://ceres.pet/thiswebsite"/>
 <link rel="stylesheet" href="/static/css/style.css"/>
 <script src="/static/js/modules/cerespet.js"></script>
-</head><body><dialog id="popup">
-<span id="popupclose" autofocus>&times;</span>
-<img id="popupcontent" />
-<div id="popupcaption"></div>
-</dialog>
-<div id="navpane"><nav id="navcontainer" role="navigation">
+<link rel="stylesheet" href="/static/css/portfolio.css"/>
+</head><body><dialog id="modal">
+<span id="modalclose" autofocus>&times;</span>
+<img id="modalcontent" />
+<div id="modalcaption"></div>
+</dialog><div id="navpane"><nav id="navcontainer" role="navigation">
 <a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg"></a>
 <a href="index.html"><span>Home</span></a>
 <a href="about.html"><span>About</span></a>
 <a href="index.html#portfolio"><span>Portfolio</span></a>
 <a href="gallery.html"><span>Gallery</span></a>
-</nav></div>
-<div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article><header class="contentitem">
+</nav></div><div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article><header class="contentitem">
     <h2>This Website</h2>
-    <span id="contentsubheading">A portfolio website, designed, developed and maintained by me<br>Ceres Miller, 2023-2024</span>
+    <span>A portfolio website, designed, developed and maintained by me<br>Ceres Miller, 2023-2024</span>
     <hr>
     <p>This website developed from a design language I was using for a tech support guides website I had made for an organisation I volunteered for between 2020 and 2023. That took from <a href="https://js.wiki/"><u>Wiki.js</u></a>, and so the original aim was that I'd build something that turned markdown pages into webpages. That never materalised, as I enjoyed the flexibility I could get from just writing webpages by hand. Historically, that's what HTML was designed for, anyway.</p>
     <p>The language involved a narrow, centered reader column, with site and page information surrounding it that could altogether fit on a 4:3 resolution screen. For mobile screens the site adapts natively, the reader column has no problem displaying everything on a narrow screen and all the surrounding site and page links fall inline.</p>
@@ -45,14 +44,14 @@
     <hr>
 </header>
 <section class="contentitem">
-    <h3>Original Guides Website</h3>
-    <span id="contentsubheading">A project from 2022 that I based this portfolio site on<br>Ceres Miller, 2023-2024</span>
+    <h2>Original Guides Website</h2>
+    <span>A project from 2022 that I based this portfolio site on<br>Ceres Miller, 2023-2024</span>
     <hr>
     <hr>
 </section>
 <section class="contentitem">
-    <h3>Migration to Zola Static Site Engine</h3>
-    <span id="contentsubheading">Project to rewrite this website for a static site engine<br>Ceres Miller, Sept 2024</span>
+    <h2>Migration to Zola Static Site Engine</h2>
+    <span>Project to rewrite this website for a static site engine<br>Ceres Miller, Sept 2024</span>
     <hr>
     <p>Currently to add a page to my website I copy+paste one of the HTML files I've already written and replace everything inside the &#60;article&#62; tag with the page content I want to write. This leaves things like the site footer, the navigation links, the page structure etc standard across my site, but means that if I for whatever reason want to change something in those links or that structure (say, for example, add a new button) I have to go through every single page I have and write it in for each one.</p>
     <p>This is fine, if a little tedious, for a site with only a handful of pages (like mine) but if that number of pages grows, it can become impossible to keep them consistent with each other.</p>
@@ -63,8 +62,8 @@
     <hr>
 </section>
 <section class="contentitem">
-    <h3>Not Migrating to Zola and Instead Just Writing My Own Site Builder</h3>
-    <span id="contentsubheading">I don't want to write markdown files<br>Ceres Miller, Oct 2024</span>
+    <h2>Not Migrating to Zola and Instead Just Writing My Own Site Builder</h2>
+    <span>I don't want to write markdown files<br>Ceres Miller, Oct 2024</span>
     <hr>
     <p>I had written my website so that everything was the same between pages except what's inside the &#60;article&#62; tag and some extra lines in the head of the Mind's Eye page to make the .3mf viewer work. To migrate my website to Zola, I'd need to rewrite every article in Markdown, and then style that markdown properly so that it matched the CSS I have right now, and then make all the other little changes with the learning curves that come with them just to get something that I didn't really need or want; I value the flexibility of having written my website entirely on my own, because the main reason I chose to do so in the first place was because I couldn't find <a href="https://gohugo.io"><u>Hugo</u></a> templates I liked.</p>
     <p>I had been putting off the Zola migration for 5 months and when I finally got round to it I realised that if I wanted to make webpages with variable styling from the others (useful for if I wanted to have a portfolio section, a blog section, UI prototypes, etc) then Zola would make that more difficult than if I was to just not use it.</p>
@@ -73,8 +72,8 @@
     <hr>
 </section>
 <section class="contentitem">
-    <h3>Free Web Hosting with Cloudflare (or Github)</h3>
-    <span id="contentsubheading">This site costs me no money to run<br>Ceres Miller, 2023-2024</span>
+    <h2>Free Web Hosting with Cloudflare (or Github)</h2>
+    <span>This site costs me no money to run<br>Ceres Miller, 2023-2024</span>
     <hr>
     <hr>
 </section></article><footer id="sitefooter" class="contentitem"><div id="sitefooterlinks">

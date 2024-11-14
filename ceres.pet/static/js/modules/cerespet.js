@@ -2,7 +2,7 @@
 
 window.addEventListener("load", (event) => {
 	pfInsertEmail();
-	pfPopupSystem();
+	pfModalSystem();
 })
 
 // insert the email as two seperate spans to deter scrapers
@@ -49,11 +49,11 @@ function pfDropdownToggle() {
 	}
 }
 
-// when an image is clicked on, display it in a large popup viewing area
-function pfPopupSystem() {
-	var popup = document.getElementById("popup");
-	var popupContent = document.getElementById("popupcontent");
-	var popupCaption = document.getElementById("popupcaption");
+// when an image is clicked on, display it in a large popup viewing area called a modal
+function pfModalSystem() {
+	var modal = document.getElementById("modal");
+	var modalContent = document.getElementById("modalcontent");
+	var modalCaption = document.getElementById("modalcaption");
 	
 	if (window.location.pathname === "/") {
 		
@@ -62,21 +62,21 @@ function pfPopupSystem() {
 		imgs.forEach(imgClicked);
 		function imgClicked(img,index) {
 			img.addEventListener('click',()=>{
-				popup.showModal();
-				popup.style.display = "flex";
-				popupContent.src = imgs[index].src;
-				popupCaption.innerHTML = imgs[index].alt;
+				modal.showModal();
+				modal.style.display = "flex";
+				modalContent.src = imgs[index].src;
+				modalCaption.innerHTML = imgs[index].alt;
 			});
 		};
 		
-		document.getElementById("popupclose").onclick = function() {
-			popup.style.display = "none";
-			popup.close();
+		document.getElementById("modalclose").onclick = function() {
+			modal.style.display = "none";
+			modal.close();
 		}
 		
-		popup.onclick = function() {
-			popup.style.display = "none";
-			popup.close();
+		modal.onclick = function() {
+			modal.style.display = "none";
+			modal.close();
 		}
 	}
 }

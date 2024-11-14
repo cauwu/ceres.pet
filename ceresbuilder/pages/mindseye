@@ -1,6 +1,6 @@
 <header class="contentitem">
     <h2>MIND'S EYE - A Digital Camera Made to be Modified</h2>
-    <span id="contentsubheading">A project about adaptable digital electronics.<br>Ceres Miller, 2023</span>
+    <span>A project about adaptable digital electronics.<br>Ceres Miller, 2023</span>
     <hr>
     <div class="portfoliorow">
         <figure><img src="static/img/mindseye-6.jpg" alt="Mind's Eye camera with the top plate taken off, showing tools around it" /></figure>
@@ -52,13 +52,12 @@
         <figure><img src="static/img/mindseye-11.jpg" alt="minds eye camera assembly, part 2" /></figure>
     </div>
     <p>With this camera my aim was to demonstrate ideas I had about modifiable digital electronics, and to look into the entire process that someone goes through when trying to learn about and repurpose their electronic devices. What methods would they use, how would they stay motivated, where would they get the knowlege and skills to do it.</p>
-    <p>Mind's Eye is a camera that inspires creativity and makes a user want to change it. I think it is a good starting point for further work in adaptable, open design for digital electronics.</p>
-    <p><a href="https://github.com/cauwu/minds-eye-camera">Models, drawings and code <u>available on Github.</u></a></p>
+    <p>Mind's Eye is a camera that inspires creativity and makes a user want to change it. I think it is a good starting point for further work in adaptable, open design for digital electronics.<br><br><a href="https://github.com/cauwu/minds-eye-camera">Models, drawings and code <u>available on Github.</u></a></p>
     <hr>
 </section>
 <section class="contentitem">
     <h2>3D Assembly</h2>
-    <span id="contentsubheading">Left click to rotate, mousewheel to zoom.</span>
+    <span>Left click to rotate, mousewheel to zoom.</span>
     <hr>
     <!-- Wherever you want to embed a 3mf file, give it a unique ID -->
     <div class="threemf" id="threemf-camera-1"></div>
