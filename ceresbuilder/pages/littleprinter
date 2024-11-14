@@ -1,6 +1,6 @@
 <header class="contentitem">
     <h2>A Thermal Printer</h2>
-    <span id="contentsubheading">Using Adafruit's thermal printer guts.<br>Ceres Miller, 2021</span>
+    <span>Using Adafruit's thermal printer guts.<br>Ceres Miller, 2021</span>
     <hr>
     <p>Thermal printers cost in the range of £70 and above. Adafruit however sells just the thermal printhead and driver for around £35, and provides documentation to guide on how to make it work.</p>
     <p>To make it useable, I had to make a housing for it, and interface it with a microcontroller so I could print what I wanted.</p>

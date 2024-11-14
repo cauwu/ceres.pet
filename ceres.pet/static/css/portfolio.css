@@ -8,7 +8,8 @@ article header h2 {
 	font-size: 30px;
 }
 
-article header span:nth-child(2) { /* Header subheading, under H2 */
+article header span:nth-child(2),
+article section span:nth-child(2) { /* Header subheading, under H2 */
 	display: flex;
 	text-align: justify;
 	text-justify: inter-word;
@@ -28,12 +29,7 @@ article header hr {
 	margin-top: 1em;
 }
 
-article header p {
-	text-indent: 0em;
-}
-
 article p {
-	text-indent: 2em;
 	text-align: justify;
 	text-justify: inter-word;
 	margin: 1em 2em 1em 2em;
@@ -63,6 +59,9 @@ article section {
 	}
 	article header span:nth-child(2) {
 		margin: -0.6rem 0em 1rem 0em;
+	}
+	article ul {
+		margin: 1em 0em 1em 0em;
 	}
 
 }

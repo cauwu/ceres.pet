@@ -1,6 +1,6 @@
 <header class="contentitem">
     <h2>Fast Environment Rendering Study: Warehouse</h2>
-    <span id="contentsubheading">A study of a warehouse, made to practice a design toolchain for quickly producing reusable environments. Krita, Illustrator, Photoshop, Blender, and Godot.<br>Ceres Miller, 2023</span>
+    <span>A study of a warehouse, made to practice a design toolchain for quickly producing reusable environments. Krita, Illustrator, Photoshop, Blender, and Godot.<br>Ceres Miller, 2023</span>
     <hr>
     <p>I worked out this process for speed, to produce detailed-looking, modifiable environments easily. Environments are made up of 12x12 unit tiles. By splitting tiles up into descrete parts, usually material by material, and reusing them over and over, rooms of variable shape and size can be created while avoiding lots of hard drive calls that make rendering more time-consuming.</p>
     <p>Overall the modelling, texturing, and assembly of this warehouse took 4 days.</p>
@@ -38,7 +38,7 @@
 </section>
 <section class="contentitem">
     <h2>Fast Environment Rendering Study: Tables and Chairs</h2>
-    <span id="contentsubheading">Studies of environmental clutter made quickly. Photoshop, Illustrator, Blender.<br>Ceres Miller, 2023</span>
+    <span>Studies of environmental clutter made quickly. Photoshop, Illustrator, Blender.<br>Ceres Miller, 2023</span>
     <hr>
     <p>I kept the polygon count of these studies as low as possible because I wanted to see if I could draw lots of pipes using just four faces, i.e. cylinders with a square cross section. Almost all modern rendering software will render surfaces with a sort of bezeled edge, so that models look rounder and more detailed. I wanted to know if I could use this to draw pipes quickly freehand in Blender, and so made village hall chairs and a folding table.</p>
     <div class="portfoliorow">
