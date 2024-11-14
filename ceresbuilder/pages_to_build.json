@@ -79,7 +79,7 @@
 			"page_type": "portfolio",
 			"head_extra_location": "./pages/head_extra/mindseye",
 			"page_modal": true,
-			"contents_pane": false
+			"contents_pane": true
 		},
 		{
 			"article_url": "misc",
@@ -88,7 +88,7 @@
 			"page_type": "portfolio",
 			"head_extra_location": "",
 			"page_modal": true,
-			"contents_pane": false
+			"contents_pane": true
 		},
 		{
 			"article_url": "otter",
@@ -106,7 +106,7 @@
 			"page_type": "portfolio",
 			"head_extra_location": "",
 			"page_modal": true,
-			"contents_pane": false
+			"contents_pane": true
 		},
 		{
 			"article_url": "rabbit",
@@ -133,7 +133,7 @@
 			"page_type": "portfolio",
 			"head_extra_location": "",
 			"page_modal": true,
-			"contents_pane": false
+			"contents_pane": true
 		},
 		{
 			"article_url": "warehouse",
@@ -142,7 +142,7 @@
 			"page_type": "portfolio",
 			"head_extra_location": "",
 			"page_modal": true,
-			"contents_pane": false
+			"contents_pane": true
 		}
 	]
 }

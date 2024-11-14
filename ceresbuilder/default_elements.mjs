@@ -49,11 +49,12 @@ const defaultExtraPane =
 </div>
 <div id="externallinkscontainer">
 <a href="https://www.instagram.com/ceresmiller/"><span>Instagram</span></a>
-<a href="https://linkedin.com/in/ceres-miller/"><span>Linkedin</span></a>
+<a href="https://linkedin.com/in/ceres-miller/"><span>LinkedIn</span></a>
 <a href="https://github.com/cauwu"><span>Github</span></a>
 </div>`;
 
-const defaultContentsPane = ``
+const defaultContentsPane = (contentsItems) =>
+`<nav id="contentscontainer"><span id="contentsheading">Contents</span>${contentsItems}</nav>`;
 
 const defaultHead = ({articleTitle, articleURL, extraStyling, headExtra}) => 
 `<meta charset="UTF-8"/>

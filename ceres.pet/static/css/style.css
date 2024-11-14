@@ -43,8 +43,8 @@ body {
 
 #navpane {
 	display: flex;
-	flex-direction: row-reverse;
-	align-items: flex-start;
+	flex-direction: column;
+	align-items: flex-end;
 	flex-grow: 1;
 }
 
@@ -53,6 +53,16 @@ body {
 	font-size: 1.4rem;
 	display: flex;
 	flex-direction: column;
+	font-family: Inconsolata, monospace;
+}
+
+#contentscontainer {
+	width: 180px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	flex-grow: 1;
+	margin-top: 6rem;
 	font-family: Inconsolata, monospace;
 }
 
@@ -141,9 +151,25 @@ a:visited {
 	margin: 0rem 0.4rem 0rem 0.2rem;
 }
 
-#navcontainer a {
+#navcontainer a,
+#contentscontainer a {
 	padding: 0.2rem 0rem 0.2rem 0rem;
 	margin: 0rem 0rem 0rem 1rem;
+}
+
+#contentscontainer .contentslinkspan {
+	filter: blur(0.02rem) drop-shadow(0 0 0.06rem light-dark(#c0c0c0, #927da5));
+}
+
+#contentscontainer .contentslinkspan:hover {
+	background-color: light-dark(white, #ff7597); /* "white", "medium light pink-red" */
+	filter: blur(0.02rem) drop-shadow(0 0 0rem transparent);
+}
+
+#contentscontainer #contentsheading {
+	font-size: 1.2rem;
+	padding: 0.2rem 0rem 0.2rem 0rem;
+	filter: blur(0.02rem) drop-shadow(0 0 0.06rem light-dark(#c0c0c0, #927da5));
 }
 
 #navcontainer span {

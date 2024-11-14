@@ -27,8 +27,8 @@
 <a href="about.html"><span>About</span></a>
 <a href="index.html#portfolio"><span>Portfolio</span></a>
 <a href="gallery.html"><span>Gallery</span></a>
-</nav></div><div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article><header class="contentitem">
-    <h2>This Website</h2>
+</nav><nav id="contentscontainer"><span id="contentsheading">Contents</span><a href="#subheading00"><span class="contentslinkspan">This Website</span></a><a href="#subheading01"><span class="contentslinkspan">Original Guides Website</span></a><a href="#subheading02"><span class="contentslinkspan">Migration to Zola Static Site Engine</span></a><a href="#subheading03"><span class="contentslinkspan">Not Migrating to Zola and Instead Just Writing My Own Site Builder</span></a><a href="#subheading04"><span class="contentslinkspan">Free Web Hosting with Cloudflare (or Github)</span></a></nav></div><div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article><header class="contentitem">
+    <h2 id="subheading00">This Website</h2>
     <span>A portfolio website, designed, developed and maintained by me<br>Ceres Miller, 2023-2024</span>
     <hr>
     <p>This website developed from a design language I was using for a tech support guides website I had made for an organisation I volunteered for between 2020 and 2023. That took from <a href="https://js.wiki/"><u>Wiki.js</u></a>, and so the original aim was that I'd build something that turned markdown pages into webpages. That never materalised, as I enjoyed the flexibility I could get from just writing webpages by hand. Historically, that's what HTML was designed for, anyway.</p>
@@ -44,13 +44,13 @@
     <hr>
 </header>
 <section class="contentitem">
-    <h2>Original Guides Website</h2>
+    <h2 id="subheading01">Original Guides Website</h2>
     <span>A project from 2022 that I based this portfolio site on<br>Ceres Miller, 2023-2024</span>
     <hr>
     <hr>
 </section>
 <section class="contentitem">
-    <h2>Migration to Zola Static Site Engine</h2>
+    <h2 id="subheading02">Migration to Zola Static Site Engine</h2>
     <span>Project to rewrite this website for a static site engine<br>Ceres Miller, Sept 2024</span>
     <hr>
     <p>Currently to add a page to my website I copy+paste one of the HTML files I've already written and replace everything inside the &#60;article&#62; tag with the page content I want to write. This leaves things like the site footer, the navigation links, the page structure etc standard across my site, but means that if I for whatever reason want to change something in those links or that structure (say, for example, add a new button) I have to go through every single page I have and write it in for each one.</p>
@@ -62,7 +62,7 @@
     <hr>
 </section>
 <section class="contentitem">
-    <h2>Not Migrating to Zola and Instead Just Writing My Own Site Builder</h2>
+    <h2 id="subheading03">Not Migrating to Zola and Instead Just Writing My Own Site Builder</h2>
     <span>I don't want to write markdown files<br>Ceres Miller, Oct 2024</span>
     <hr>
     <p>I had written my website so that everything was the same between pages except what's inside the &#60;article&#62; tag and some extra lines in the head of the Mind's Eye page to make the .3mf viewer work. To migrate my website to Zola, I'd need to rewrite every article in Markdown, and then style that markdown properly so that it matched the CSS I have right now, and then make all the other little changes with the learning curves that come with them just to get something that I didn't really need or want; I value the flexibility of having written my website entirely on my own, because the main reason I chose to do so in the first place was because I couldn't find <a href="https://gohugo.io"><u>Hugo</u></a> templates I liked.</p>
@@ -72,7 +72,7 @@
     <hr>
 </section>
 <section class="contentitem">
-    <h2>Free Web Hosting with Cloudflare (or Github)</h2>
+    <h2 id="subheading04">Free Web Hosting with Cloudflare (or Github)</h2>
     <span>This site costs me no money to run<br>Ceres Miller, 2023-2024</span>
     <hr>
     <hr>
@@ -97,6 +97,6 @@
 </div>
 <div id="externallinkscontainer">
 <a href="https://www.instagram.com/ceresmiller/"><span>Instagram</span></a>
-<a href="https://linkedin.com/in/ceres-miller/"><span>Linkedin</span></a>
+<a href="https://linkedin.com/in/ceres-miller/"><span>LinkedIn</span></a>
 <a href="https://github.com/cauwu"><span>Github</span></a>
 </div></div></div></body></html>

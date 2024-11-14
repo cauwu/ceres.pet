@@ -1,5 +1,5 @@
 <header class="contentitem">
-    <h2>Parametric Art</h2>
+    <h2 id="subheading00">Parametric Art</h2>
     <span>Triply Periodic Minimal Surface Christmas Ornament using Grasshopper.<br>Ceres Miller, 2021</span>
     <hr>
     <p>Grasshopper is a Rhino plugin for parametric 3D modelling. Gyroid shapes are easy to make with 3D printing, and you can make pretty ornaments and patterns using them.</p>
@@ -32,7 +32,7 @@
     <hr>
 </section>
 <section class="contentitem">
-    <h2>Parametric Textures using SVG</h2>
+    <h2 id="subheading01">Parametric Textures using SVG</h2>
     <span>Ceres Miller, 2022</span>
     <hr>
     <p>There are lots of programs for parametric texturing, like Adobe's Substance Designer. Writing out parametric textures in SVG however ended up being a whole lot easier.</p>
