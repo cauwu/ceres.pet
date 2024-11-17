@@ -81,10 +81,12 @@ const pfModalSystem = () => {
 	};
 	const imgs = document.querySelectorAll('figure img');
 	imgs.forEach((img, index) => {
-		img.addEventListener('mousedown', () => {
-			modalProps.modal.showModal();
+		img.addEventListener('mouseover', () => {
 			modalProps.modalCaption.innerHTML = imgs[index].alt;
 			modalProps.modalContent.src = thumbToImg(imgs[index].src);
+		});
+		img.addEventListener('mousedown', () => {
+			modalProps.modal.showModal();
 		});
 	});
 	modalProps.modalClose.addEventListener('click', () => {
