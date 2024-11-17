@@ -486,16 +486,23 @@ dialog::backdrop {
 	}
 	.portfoliorow {
 		flex-direction: column;
-		margin: 0.4rem 0rem 0.4rem 0rem !important;
+		margin: 0.4rem 0rem 0.4rem 0rem;
 	}
-	.portfoliorow a,button {
+	.portfoliorow a,
+	.portfoliorow button {
 		width: auto;
 	}
-	.portfoliorow a:nth-child(1),button:nth-child(1) {
-		margin: 0rem 0rem 0.4rem 0rem !important;
+	.portfoliorow a:nth-child(1),
+	.portfoliorow button:nth-child(1) {
+		margin: 0rem 0rem 0.4rem 0rem;
 	}
-	.portfoliorow a:nth-child(3),button:nth-child(3) {
-		margin: 0.4rem 0rem 0rem 0rem !important;
+	.portfoliorow a:nth-child(3),
+	.portfoliorow button:nth-child(3) {
+		margin: 0.4rem 0rem 0rem 0rem;
+	}
+	.portfoliorow button:only-of-type,
+	.portfoliorow figure:only-of-type {
+	margin: 0rem 0rem 0rem 0rem;
 	}
 	main h1 {
 		font-size: 1.4rem;

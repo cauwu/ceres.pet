@@ -46,6 +46,15 @@
 			"contents_pane": false
 		},
 		{
+			"article_url": "gallery",
+			"article_title": "Ceres Miller / Gallery",
+			"page_article_location": "./pages/gallery",
+			"page_type": "gallery",
+			"head_extra_location": "",
+			"page_modal": true,
+			"contents_pane": false
+		},
+		{
 			"article_url": "hospital",
 			"article_title": "Ceres Miller / Childrens' Hospital Waiting Room",
 			"page_article_location": "./pages/hospital",

@@ -1,95 +1,70 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Product design portfolio website, Ceres Miller" />
-    <meta name="keywords" content="portfolio,product design,ceres miller" />
-	<link rel="apple-touch-icon" sizes="180x180" href="static/icon/apple-touch-icon.png" />
-	<link rel="icon" type="image/png" sizes="32x32" href="static/icon/favicon-32x32.png" />
-	<link rel="icon" type="image/png" sizes="16x16" href="static/icon/favicon-16x16.png" />
-	<link rel="manifest" href="static/icon/site.webmanifest" />
-	<meta property="og:title" content="Ceres Miller / Gallery" />
-	<meta property="og:description" content="Product design portfolio website, Ceres Miller" />
-	<meta property="og:url" content="https://ceres.pet/gallery.html" />
-	<meta property="og:site_name" content="Ceres Miller / Product Designer" />
-	<meta name="article:author" content="Ceres Miller" />
-	<title>Ceres Miller / Gallery</title>
-	<link rel="canonical" href="https://ceres.pet/gallery.html" />
-	<link rel="stylesheet" href="static/css/style.css" />
-	<script src="static/js/modules/cerespet.js"></script>
-</head>
-<body>
-	<dialog id="modal"><span id="modalclose" autofocus>&times;</span>
-		<div id="modalholder"><img id="modalloading" /><img id="modalcontent" /></div>
-		<div id="modalcaption"></div>
-	</dialog>
-	<div id="navpane">
-		<nav id="navcontainer" role="navigation">
-			<a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg"></a>
-			<a href="index.html"><span>Home</span></a>
-			<a href="about.html"><span>About</span></a>
-			<a href="index.html#portfolio"><span>Portfolio</span></a>
-			<a href="gallery.html"><span>Gallery</span></a>
-		</nav>
-	</div>
-	<div id="contentpane">
-		<main style="max-width:1140px">
-			<a id="title" href="index.html"><img src="static/site/logo-01.svg"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a>
-			<article>
-				<section class="galleryitem">
-					<div class="portfoliorow">
-						<picture><button><img src="static/img/blackbox-3.jpg" alt="Embroidered XOR gate and wire AND gate with teaching material on foamboard slates." /></picture></button>
-						<picture><button><img src="static/img/mindseye-12.jpg" alt="First prototype of the Mind's Eye camera, showing the wire mounting rail." /></picture></button>
-						<picture><button><img src="static/img/blackbox-10.jpg" alt="An artistic representation of what the Mind's Eye project is about. It shows the potential of making new digital electronics using craft methods." /></picture></button>
-					</div>
-					<div class="portfoliorow">
-						<picture><button><img src="static/img/misc-3.jpg" alt="Render of a Bluetooth active speaker, a promotional item for the Cuban team to the Olympics at Tokyo 2020." /></picture></button>
-						<picture><button><img src="static/img/misc-8.jpg" alt="Sketches of a toothbrush that minimises waste. Showing materials and how one may be dissassembled." /></picture></button>
-						<picture><button><img src="static/img/misc-9.jpg" alt="Sketches of Bluetooth active speakers based on Cuban culture and iconography." /></picture></button>
-					</div>
-					<div class="portfoliorow">
-						<picture><button><img src="static/img/irchat-01.jpg" alt="Mockup chat screenshot of the collaborative making process two people go through over distance, using brass wire electronics as a social way of making." /></picture></button>
-						<picture><button><img src="static/img/composter-3.jpg" alt="Section of a garden composter setup, showing how the buckets for compost fit together." /></picture></button>
-						<picture><button><img src="static/img/hospital-2.jpg" alt="View of a pediatric hospital's waiting room, from the entrance looking inward. Lights on the ceiling, the fish tank, and the sign-in terminal guide a visitor forward, while waiting areas are separated from foot traffic." /></picture></button>
-					</div>
-					<div class="portfoliorow">
-						<picture><button><img src="static/img/warehouse-12.webp" alt="Quick 3D studies of office chairs, made in 2 hours." /></picture></button>
-						<picture><button><img src="static/img/otter-04.jpg" alt="Soft toy otter lying down on a surface, on it's back." /></picture></button>
-						<picture><button><img src="static/img/bunny-02.jpg" alt="Soft toy rabbit sitting." /></picture></button>
-					</div>
-				</section>
-			</article>
-			<footer id="sitefooter" class="contentitem">
-				<div id="sitefooterlinks">
-					<a href="about.html" role="link">About</a>
-                    <span>•</span>
-                    <a href="about.html" role="link">Contact</a>
-                    <span>•</span>
-                    <a href="index.html#portfolio" role="link">Portfolio</a>
-                    <span>•</span>
-					<a href="gallery.html" role="link">Gallery</a>
-                    <span>•</span>
-					<button id="darkmodetoggle" onclick="pfDarkmodeToggle()">💡</button>
-                    <span>•</span>
-                    <span style="font-size: 0.8rem;">&lt;3</span>
-				</div>
-				<span id="copyright">© Ceres Miller 2024 - All works on this website, unless otherwise noted, are licensed under the CC BY-NC-ND 4.0 license.</span>
-			</footer>
-		</main>
-		<div id="extrapane">
-			<a id="hireme" href="about.html"><span>Hire Me</span></a>
-			<div id="contactemail">
-				<span>Contact:</span><br>
-				<button id="emailaddress"></button>
-				<span id="emailcopiednotif">copied!</span>
-			</div>
-			<div id="externallinkscontainer">
-				<a href="https://www.instagram.com/ceresmiller/"><span>Instagram</span></a>
-				<a href="https://linkedin.com/in/ceres-miller-b69969267/"><span>Linkedin</span></a>
-				<a href="https://github.com/cauwu"><span>Github</span></a>
-			</div>
-		</div>
-	</div>
-</body>
-</html>
+<!DOCTYPE html><html dir="ltr" lang="en"><head><meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Product design portfolio website, Ceres Miller"/>
+<meta name="keywords" content="portfolio,product design,ceres miller"/>
+<link rel="apple-touch-icon" sizes="180x180" href="static/icon/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="static/icon/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="static/icon/favicon-16x16.png"/>
+<link rel="manifest" href="static/icon/site.webmanifest"/>
+<meta property="og:title" content="Ceres Miller / Gallery"/>
+<meta property="og:description" content="Product design portfolio website, Ceres Miller"/>
+<meta property="og:url" content="https://ceres.pet/gallery"/>
+<meta property="og:site_name" content="Ceres Miller / Product Designer"/>
+<meta name="article:author" content="Ceres Miller"/>
+<meta name="theme-color" content="#fbf4f6"/>
+<title>Ceres Miller / Gallery</title>
+<link rel="canonical" href="https://ceres.pet/gallery"/>
+<link rel="stylesheet" href="/static/css/style.css"/>
+<script src="/static/js/modules/cerespet.js"></script>
+<link rel="stylesheet" href="/static/css/gallery.css"/>
+</head><body><dialog id="modal"><span id="modalclose" autofocus>&times;</span><figure id="modalholder"><picture><img id="modalcontent" alt=""/></picture><span id="modalcaption"></span></figure></dialog><div id="navpane"><nav id="navcontainer" role="navigation">
+<a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg" alt="site logo representing a link to the homepage" title="Home"></a>
+<a href="index.html"><span>Home</span></a>
+<a href="about.html"><span>About</span></a>
+<a href="index.html#portfolio"><span>Portfolio</span></a>
+<a href="gallery.html"><span>Gallery</span></a>
+</nav></div><div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg" alt="site logo representing a link to the homepage" title="Home"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article><section class="galleryitem">
+    <div class="portfoliorow">
+        <button><picture><img src="static/img/blackbox-3.jpg" alt="Embroidered XOR gate and wire AND gate with teaching material on foamboard slates." /></picture></button>
+        <button><picture><img src="static/img/mindseye-12.jpg" alt="First prototype of the Mind's Eye camera, showing the wire mounting rail." /></picture></button>
+        <button><picture><img src="static/img/blackbox-10.jpg" alt="An artistic representation of what the Mind's Eye project is about. It shows the potential of making new digital electronics using craft methods." /></picture></button>
+    </div>
+    <div class="portfoliorow">
+        <button><picture><img src="static/img/misc-3.jpg" alt="Render of a Bluetooth active speaker, a promotional item for the Cuban team to the Olympics at Tokyo 2020." /></picture></button>
+        <button><picture><img src="static/img/misc-8.jpg" alt="Sketches of a toothbrush that minimises waste. Showing materials and how one may be dissassembled." /></picture></button>
+        <button><picture><img src="static/img/misc-9.jpg" alt="Sketches of Bluetooth active speakers based on Cuban culture and iconography." /></picture></button>
+    </div>
+    <div class="portfoliorow">
+        <button><picture><img src="static/img/irchat-01.jpg" alt="Mockup chat screenshot of the collaborative making process two people go through over distance, using brass wire electronics as a social way of making." /></picture></button>
+        <button><picture><img src="static/img/composter-3.jpg" alt="Section of a garden composter setup, showing how the buckets for compost fit together." /></picture></button>
+        <button><picture><img src="static/img/hospital-2.jpg" alt="View of a pediatric hospital's waiting room, from the entrance looking inward. Lights on the ceiling, the fish tank, and the sign-in terminal guide a visitor forward, while waiting areas are separated from foot traffic." /></picture></button>
+    </div>
+    <div class="portfoliorow">
+        <button><picture><img src="static/img/warehouse-12.webp" alt="Quick 3D studies of office chairs, made in 2 hours." /></picture></button>
+        <button><picture><img src="static/img/otter-04.jpg" alt="Soft toy otter lying down on a surface, on it's back." /></picture></button>
+        <button><picture><img src="static/img/bunny-02.jpg" alt="Soft toy rabbit sitting." /></picture></button>
+    </div>
+</section></article><footer id="sitefooter" class="contentitem"><div id="sitefooterlinks">
+<a href="about.html" role="link">About</a>
+<span>•</span>
+<a href="about.html" role="link">Contact</a>
+<span>•</span>
+<a href="index.html#portfolio" role="link">Portfolio</a>
+<span>•</span>
+<a href="gallery.html" role="link">Gallery</a>
+<span>•</span>
+<button id="darkmodetoggle" onclick="pfDarkmodeToggle()">💡</button>
+<span>•</span>
+<span id="footerheart">&lt;3</span>
+</div>
+<span id="copyright">© Ceres Miller 2024 - All works on this website, unless otherwise noted, are licensed under the CC BY-SA 4.0 license.</span></footer></main><div id="extrapane"><a id="hireme" href="about.html"><span>Hire Me</span></a>
+<div id="contactemail">
+<span>Contact:<br></span>
+<button id="emailaddress"></button>
+<span id="emailcopiednotif">copied!</span>
+</div>
+<div id="externallinkscontainer">
+<a href="https://www.instagram.com/ceresmiller/"><span>Instagram</span></a>
+<a href="https://linkedin.com/in/ceres-miller/"><span>LinkedIn</span></a>
+<a href="https://github.com/cauwu"><span>Github</span></a>
+</div></div></div></body></html>
