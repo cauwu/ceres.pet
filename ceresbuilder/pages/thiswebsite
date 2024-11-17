@@ -6,11 +6,11 @@
     <p>The language involved a narrow, centered reader column, with site and page information surrounding it that could altogether fit on a 4:3 resolution screen. For mobile screens the site adapts natively, the reader column has no problem displaying everything on a narrow screen and all the surrounding site and page links fall inline.</p>
     <p>I have maintained this language into my portfolio site. I think it looks neat and professional, and is highly compatible with a variety of screens, browsers and devices. It loads on a Nintendo DS, even.</p>
     <div class="portfoliorow">
-        <figure><img src="static/img/angelbag-14.avif" alt="Angel kneeling holding her camera, with her bag by her leg" /></figure>
+        <button><picture><img src="static/img/angelbag-14.avif" alt="Angel kneeling holding her camera, with her bag by her leg" /></picture></button>
     </div>
     <div class="portfoliorow">
-        <figure><img src="static/img/angelbag-09.avif" alt="The bag elevation" /></figure>
-        <figure><img src="static/img/angelbag-08.avif" alt="The bag from below, showing the metal feet" /></figure>
+        <button><picture><img src="static/img/angelbag-09.avif" alt="The bag elevation" /></picture></button>
+        <button><picture><img src="static/img/angelbag-08.avif" alt="The bag from below, showing the metal feet" /></picture></button>
     </div>
     <hr>
 </header>

@@ -1,0 +1,9 @@
+https://ceres.pet/
+    /static/*
+        Cache-Control: public, max-age=604800
+    
+    /static/js/*
+        Cache-Control: no-cache
+
+    /static/css/*
+        Cache-Control: no-cache

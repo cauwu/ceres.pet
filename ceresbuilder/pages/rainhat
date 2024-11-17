@@ -4,11 +4,11 @@
     <hr>
     <p>The hood is based on the shape of medieval liripipe hoods, a <a href="https://fashionhistory.fitnyc.edu/chaperon/"><u>type of chaperon</u></a> from the 14th and 15th centuries. These were made of felted wool and provided some warmth and resistance to the rain.</p>
     <div class="portfoliorow">
-        <figure><img src="static/img/rainhat-02.jpg" alt="A green liripipe rain hood, made from cordura, showing the back and star-ended tail" /></figure>
-        <figure><img src="static/img/rainhat-01.jpg" alt="A green liripipe rain hood, made from cordura" /></figure>
+        <button><picture><img src="static/img/rainhat-02.jpg" alt="A green liripipe rain hood, made from cordura, showing the back and star-ended tail" /></picture></button>
+        <button><picture><img src="static/img/rainhat-01.jpg" alt="A green liripipe rain hood, made from cordura" /></picture></button>
     </div>
     <div class="portfoliorow">
-        <figure><img src="static/img/rainhat-03.jpg" alt="A green liripipe rain hood, made from cordura, showing the star-ended tail" /></figure>
+        <button><picture><img src="static/img/rainhat-03.jpg" alt="A green liripipe rain hood, made from cordura, showing the star-ended tail" /></picture></button>
     </div>
     <hr>
 </header>
@@ -16,18 +16,18 @@
     <p>These hoods would have been made from two silhouette-shaped pieces of fabric sewn together down the centerline. There may have been gussets on the back and front to cover the chest and back. The length of the tail was just the fashion at the time, and varied similar to trends in <a href="https://fashionhistory.fitnyc.edu/poulaine/"><u>poulaine shoe length</u></a> and <a href="https://fashionhistory.fitnyc.edu/codpiece/"><u>codpieces</u></a> of the same and following centuries.</p>
     <p>My hood however wasn't based on medieval patterns or methods, just the shape. I added an interior lining, a cap peak, and fluffy sherpa around the edges to prevent rain dripping on the wearer's face.</p>
     <div class="portfoliorow">
-        <figure><img src="static/img/rainhat-06.jpg" alt="A green liripipe rain hood, showing the side" /></figure>
-        <figure><img src="static/img/rainhat-05.jpg" alt="A green liripipe rain hood, from 3/4ths" /></figure>
+        <button><picture><img src="static/img/rainhat-06.jpg" alt="A green liripipe rain hood, showing the side" /></picture></button>
+        <button><picture><img src="static/img/rainhat-05.jpg" alt="A green liripipe rain hood, from 3/4ths" /></picture></button>
     </div>
     <div class="portfoliorow">
-        <figure><img src="static/img/rainhat-07.jpg" alt="A green liripipe rain hood, showing the star on the tail" /></figure>
-        <figure><img src="static/img/rainhat-08.jpg" alt="A green liripipe rain hood, from the back" /></figure>
+        <button><picture><img src="static/img/rainhat-07.jpg" alt="A green liripipe rain hood, showing the star on the tail" /></picture></button>
+        <button><picture><img src="static/img/rainhat-08.jpg" alt="A green liripipe rain hood, from the back" /></picture></button>
     </div>
     <p>At the end of the liripipe I put a star and stuffed it with polyester. Novelty is fashionable right now.</p>
     <p>The hood is comfortable and waterproof, but not very flexible and quite warm. The lack of flexibility can be appealing for the feeling of weight and toughness, but the polyurethane coating isn't breathable. I think heat collects in the tail to help with temperature regulation, but this hood might be improved either with vents added or by using a GoreTex shell over a soft cotton or crushed linen lining.</p>
     <p>GoreTex has not great ecologically however, so cotton duck sized with beeswax and paraffin might also be nice as a waterproof shell.</p>
     <div class="portfoliorow">
-        <figure><img src="static/img/rainhat-04.jpg" alt="A green liripipe rain hood, from the side" /></figure>
+        <button><picture><img src="static/img/rainhat-04.jpg" alt="A green liripipe rain hood, from the side" /></picture></button>
     </div>
     <hr>
 </section>

@@ -4,20 +4,20 @@
     <hr>
     <p></p>
     <div class="portfoliorow">
-        <figure><img src="static/img/misc-1.jpg" alt="Pyrex glass toothbrush with replaceable silicone heads" /></figure>
-        <figure><img src="static/img/misc-4.jpg" alt="Table lamp with a glass lampshade inspired by the character of Maude from The Big Lebowski" /></figure>
+        <button><picture><img src="static/img/misc-1.jpg" alt="Pyrex glass toothbrush with replaceable silicone heads" /></picture></button>
+        <button><picture><img src="static/img/misc-4.jpg" alt="Table lamp with a glass lampshade inspired by the character of Maude from The Big Lebowski" /></picture></button>
     </div>
     <div class="portfoliorow">
-        <figure><img src="static/img/misc-2.jpg" alt="Bluetooth speaker, promotional item for the Cuban team to the Olympics at Tokyo 2020" /></figure>
-        <figure><img src="static/img/misc-3.jpg" alt="Bluetooth speaker, promotional item for the Cuban team to the Olympics at Tokyo 2020" /></figure>
+        <button><picture><img src="static/img/misc-2.jpg" alt="Bluetooth speaker, promotional item for the Cuban team to the Olympics at Tokyo 2020" /></picture></button>
+        <button><picture><img src="static/img/misc-3.jpg" alt="Bluetooth speaker, promotional item for the Cuban team to the Olympics at Tokyo 2020" /></picture></button>
     </div>
     <div class="portfoliorow">
-        <figure><img src="static/img/misc-5.jpg" alt="Plant pot inspired by the night sky. Variable inserts provide different growing conditions for different kinds of plants" /></figure>
-        <figure><img src="static/img/misc-6.jpg" alt="Plant pot inspired by the night sky. Variable inserts provide different growing conditions for different kinds of plants" /></figure>
+        <button><picture><img src="static/img/misc-5.jpg" alt="Plant pot inspired by the night sky. Variable inserts provide different growing conditions for different kinds of plants" /></picture></button>
+        <button><picture><img src="static/img/misc-6.jpg" alt="Plant pot inspired by the night sky. Variable inserts provide different growing conditions for different kinds of plants" /></picture></button>
     </div>
     <div class="portfoliorow">
-        <figure><img src="static/img/misc-7.jpg" alt="Door handle for a primary school. A knob shaped handle for a classroom door" /></figure>
-        <figure><img src="" alt="" /></figure>
+        <button><picture><img src="static/img/misc-7.jpg" alt="Door handle for a primary school. A knob shaped handle for a classroom door" /></picture></button>
+        <button><picture><img src="" alt="" /></picture></button>
     </div>
     <hr>
 </header>
@@ -26,12 +26,12 @@
     <span>Ceres Miller, 2018-2023</span>
     <hr>
     <div class="portfoliorow">
-        <figure><img src="static/img/misc-8.jpg" alt="Toothbrushes that minimise waste. Showing materials and how one may be dissassembled" /></figure>
-        <figure><img src="static/img/misc-9.jpg" alt="Bluetooth active speakers based on Cuban culture and iconography" /></figure>
+        <button><picture><img src="static/img/misc-8.jpg" alt="Toothbrushes that minimise waste. Showing materials and how one may be dissassembled" /></picture></button>
+        <button><picture><img src="static/img/misc-9.jpg" alt="Bluetooth active speakers based on Cuban culture and iconography" /></picture></button>
     </div>
     <div class="portfoliorow">
-        <figure><img src="static/img/misc-10.jpg" alt="Open video camera sketch from Black Box project" /></figure>
-        <figure><img src="static/img/misc-11.jpg" alt="Open video camera sketch from Black Box project, showing detail" /></figure>
+        <button><picture><img src="static/img/misc-10.jpg" alt="Open video camera sketch from Black Box project" /></picture></button>
+        <button><picture><img src="static/img/misc-11.jpg" alt="Open video camera sketch from Black Box project, showing detail" /></picture></button>
     </div>
     <hr>
 </section>

@@ -17,21 +17,21 @@
 <link rel="stylesheet" href="/static/css/style.css"/>
 <script src="/static/js/modules/cerespet.js"></script>
 <link rel="stylesheet" href="/static/css/portfolio.css"/>
-</head><body><dialog id="modal"><span id="modalclose" autofocus>&times;</span><div id="modalholder"><img id="modalloading"/><img id="modalcontent"/></div><div id="modalcaption"></div></dialog><div id="navpane"><nav id="navcontainer" role="navigation">
-<a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg"></a>
+</head><body><dialog id="modal"><span id="modalclose" autofocus>&times;</span><figure id="modalholder"><picture><img id="modalcontent" alt=""/></picture><span id="modalcaption"></span></figure></dialog><div id="navpane"><nav id="navcontainer" role="navigation">
+<a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg" alt="site logo representing a link to the homepage" title="Home"></a>
 <a href="index.html"><span>Home</span></a>
 <a href="about.html"><span>About</span></a>
 <a href="index.html#portfolio"><span>Portfolio</span></a>
 <a href="gallery.html"><span>Gallery</span></a>
-</nav></div><div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article><header class="contentitem">
+</nav></div><div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg" alt="site logo representing a link to the homepage" title="Home"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article><header class="contentitem">
     <h2>A Thermal Printer</h2>
     <span>Using Adafruit's thermal printer guts.<br>Ceres Miller, 2021</span>
     <hr>
     <p>Thermal printers cost in the range of £70 and above. Adafruit however sells just the thermal printhead and driver for around £35, and provides documentation to guide on how to make it work.</p>
     <p>To make it useable, I had to make a housing for it, and interface it with a microcontroller so I could print what I wanted.</p>
     <div class="portfoliorow">
-        <figure><img src="static/img/littleprinter-3.jpg" alt="image of final thermal printer" /></figure>
-        <figure><img src="static/img/littleprinter-4.jpg" alt="test printouts showing glitchy print errors" /></figure>
+        <button><picture><img src="static/img/littleprinter-3.jpg" alt="image of final thermal printer" /></picture></button>
+        <button><picture><img src="static/img/littleprinter-4.jpg" alt="test printouts showing glitchy print errors" /></picture></button>
     </div>
     <hr>
 </header>
@@ -40,31 +40,31 @@
     <p>Using the weight of the printer as a counterbalance, the roll could hang off the back. This meant that the size of the roll could be variable, while the printer takes up the least space possible.</p>
     <p>The first iterations worked out sizes and rough shape. I had opted to 3D print the housing so I could get precise measurements and neat edges on the complicated shape needed to house the printer. I felt like I was shrink-wrapping the components; making the housing as small and tight as possible, using the least amount of material. Electronics housings need to consider ease of assembly, and working like this I was worried it was a bad habit. The first few prototype cases I had to scrape edges with a knife to get the parts to slide in properly.</p>
     <div class="portfoliorow">
-        <figure><img src="static/img/littleprinter-5.jpg" alt="development thermal printer connected to arduino" /></figure>
-        <figure><img src="static/img/littleprinter-8.jpg" alt="screenshot of the printer housing in rhino" /></figure>
+        <button><picture><img src="static/img/littleprinter-5.jpg" alt="development thermal printer connected to arduino" /></picture></button>
+        <button><picture><img src="static/img/littleprinter-8.jpg" alt="screenshot of the printer housing in rhino" /></picture></button>
     </div>
     <p>There is nowhere I can think of to learn properly how to make electronics housings; whether it's right to stack components on 'shelves' like I did, whether screw holes should be drilled exactly for a machine screw or if a wood screw that bores its own hole into the plastic should be used. This process of working out what was efficient, reliable, sturdy enough, was all trial and error. I had seen examples of electronics housings through disassembly and imitated them, but that doesn't feel like a thorough way to learn.</p>
     <p>Without knowing what an electronics housing should be, I instead thought about what it could be. I was intrested in what could be the bare minimum for housings, and considered web-like structures and delicate arches, but worried about protecting the electronics from dust; which can stick in heat and short exposed connections. The first, blocky shapes I was working with ended up being the ones I iterated on.</p>
     <p>A thermal print head needs to cool down after it's been used. If it's in constant or very fast use, like in a commercial setting, it can get very hot. Air gaps and aluminium heat sinks are used in commerical thermal printers, which insulate and draw heat away from heat-sensitive components and users. However I didn't have aluminium heat sinks, so I opted to expose the printer fully to air to help heat dissipate while in use, but use a removeable lid prevent dust and damage while in storage.</p>
     <div class="portfoliorow">
-        <figure><img src="static/img/littleprinter-7.jpg" alt="thermal printer housing diassembled" /></figure>
-        <figure><img src="static/img/thermal-receipt-printer-guts-the-pi-hut-ada2753-28610733539523.jpg" alt="from adafruit, promotional image of thermal printer guts laid out" /></figure>
+        <button><picture><img src="static/img/littleprinter-7.jpg" alt="thermal printer housing diassembled" /></picture></button>
+        <button><picture><img src="static/img/thermal-receipt-printer-guts-the-pi-hut-ada2753-28610733539523.jpg" alt="from adafruit, promotional image of thermal printer guts laid out" /></picture></button>
     </div>
     <p>The test prints were successful, but the printer's driver has a very limited memory. It has to be fed a parcel of data to print at exactly the right time. The printer can print bitmap images of a few kilobytes, but will produce a lot of glitchy artefacting when it gets fed too much. The limited capabilities of the microcontroller I was using; Arduino Nano 33 IoT, plays a role. The printer sends messages to the Arduino about when to send the next parcel of data through the same communication channel as it's using to send that data, and if there is any unexpected delay, it will cause information to become scrambled.</p>
     <p>The printer has the capability of sending these requests on another pin from the serial ones. However, on my attempts to use this, it would print endless garbage.</p>
     <p>Perhaps it would work better with another microcontroller, however I liked the messiness of what it printed. It would get images half-correct.</p>
     <p>Someone that I showed it to also liked its messiness, and I offered to make a printer for them to use too.</p>
     <div class="portfoliorow">
-        <figure><img src="static/img/littleprinter-9.jpg" alt="development thermal printer" /></figure>
-        <figure><img src="static/img/littleprinter-6.jpg" alt="development thermal printer next to a battery pack I was using to power the arduino" /></figure>
+        <button><picture><img src="static/img/littleprinter-9.jpg" alt="development thermal printer" /></picture></button>
+        <button><picture><img src="static/img/littleprinter-6.jpg" alt="development thermal printer next to a battery pack I was using to power the arduino" /></picture></button>
     </div>
     <p>Making for someone gave me an opportunity to refine my work and make it simpler, safer and more reliable to use.</p>
     <p>At this point I was powering the printer with a 12v mains plug, with the cable cut into a positive and negative pin for the printer. Simply, I had to be careful not to touch the ends or I would be burnt. To fix this, I had to find a safe and easy way to plug in the printer to power. There was just enough space in the base of the housing to cut out a new area for a power adaptor, a barrel connector with a moulded base. Choosing this was again based on observation and trial and error- often I felt uncomfortable that I had no electronics guidance, especially concerning safety. The best I can do is look up forums online, and rely having been taught only how to wire a plug. A lack of information is a concern.</p>
     <p>The printer requires multiple jumper cables to communicate with the microcontroller. Stranded wire cables are flexible, but don't stay where they're put very easily; meaning the microcontroller can get dragged around by the flexibility of the cables so much that they detach. Solid core wires may break when flexed too much, but they stay still much more easily and are overall better for use in applications where they don't move so much- notably where they have to be bent at right angles, they will stay in that shape. This makes for cables that can work through tight spaces, which is what I needed to be able to manage these cables easily.</p>
     <p>From diassembling other electronics, I came across a few different ways of preventing cables from being pulled too hard and damaging the components. Through trial and error, I worked out that 3D printed U or Z shaped posts as found in injection moulded parts tend to be difficult to fit a cable into, and take up a lot of space. A small clip can be printed, and screwed down; this holds the cables tightly, in small spaces, and is reliable and easy to make.</p>
     <div class="portfoliorow">
-        <figure><img src="static/img/littleprinter-2.jpg" alt="image of final thermal printer with lid on" /></figure>
-        <figure><img src="static/img/littleprinter-1.jpg" alt="image of final thermal printer showing insides" /></figure>
+        <button><picture><img src="static/img/littleprinter-2.jpg" alt="image of final thermal printer with lid on" /></picture></button>
+        <button><picture><img src="static/img/littleprinter-1.jpg" alt="image of final thermal printer showing insides" /></picture></button>
     </div>
     <p>Despite being so blocky, people I showed it to said it was charming, like a little music box. I still don't know about my approach of 'shrink-wrapping' components, but with a lack of best practices to fall back on, I have to make my own way of working. What matters is how people experience what I've made; if they have no problems with it, there is probably nothing wrong with my approach.</p>
     <p>I was able to get a taste of what it's like to make commercial electronics, even if I was using prototyping methods. Observation, trial and error, and online research only goes so far however, and what's needed is to work with people who know more than I do. They may have had the same experiences learning, but to do more, at some point, you have to go and speak to people.</p>
@@ -80,11 +80,11 @@
 <span>•</span>
 <button id="darkmodetoggle" onclick="pfDarkmodeToggle()">💡</button>
 <span>•</span>
-<span style="font-size: 0.8rem;">&lt;3</span>
+<span id="footerheart">&lt;3</span>
 </div>
 <span id="copyright">© Ceres Miller 2024 - All works on this website, unless otherwise noted, are licensed under the CC BY-SA 4.0 license.</span></footer></main><div id="extrapane"><a id="hireme" href="about.html"><span>Hire Me</span></a>
 <div id="contactemail">
-<span>Contact:</span><br>
+<span>Contact:<br></span>
 <button id="emailaddress"></button>
 <span id="emailcopiednotif">copied!</span>
 </div>

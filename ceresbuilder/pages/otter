@@ -4,12 +4,12 @@
     <hr>
     <p>This stuffed otter was made after the <a href="rabbit.html"><u>soft toy rabbit</u></a> and improves upon it by using extra pieces for the head and face, helping make it rounder, less fish-eyed, and easier to pose at the neck.</p>
     <div class="portfoliorow">
-        <figure><img src="static/img/otter-03.jpg" alt="Soft toy otter face detail" /></figure>
-        <figure><img src="static/img/otter-01.jpg" alt="Soft toy otter held by me, showing the scale" /></figure>
+        <button><picture><img src="static/img/otter-03.jpg" alt="Soft toy otter face detail" /></picture></button>
+        <button><picture><img src="static/img/otter-01.jpg" alt="Soft toy otter held by me, showing the scale" /></picture></button>
     </div>
     <div class="portfoliorow">
-        <figure><img src="static/img/otter-02.jpg" alt="Soft toy otter feet and tag detail" /></figure>
-        <figure><img src="static/img/otter-04.jpg" alt="Soft toy otter lying down on a surface, on it's back" /></figure>
+        <button><picture><img src="static/img/otter-02.jpg" alt="Soft toy otter feet and tag detail" /></picture></button>
+        <button><picture><img src="static/img/otter-04.jpg" alt="Soft toy otter lying down on a surface, on it's back" /></picture></button>
     </div>
     <p>Making this was useful for understanding and improving on a workflow. Having worked with paper models for 2 of these projects, I feel confident in working in real space enough that doing the modelling with digital pattern cutting software or even unfolding 3D model meshes could be much faster.</p>
     <hr>
@@ -18,14 +18,14 @@
     <p>As before I started with the head and worked downward. When beginning, I need to make sure the head is exactly how I want it, because it sets the scale for the rest of the toy. It's also the most expressive part of a body, animal or human, followed closely by the hands.</p>
     <p>It's worth noting that I never really measured any of the pieces. When getting seperate pieces to match up, I would guess the length of the edge, cut out the paper template, then try it on, and make adjustments as needed. When working with curves, I would make use of the length of a pencil or my hand to help. I did this for speed reasons, as I wanted to move as quickly as possible. When working with many complicated and small pieces, it can sometimes reduce measuring errors to just eyeball everything.</p>
     <div class="portfoliorow">
-        <figure><img src="static/img/otter-06.jpg" alt="paper iterations of the otter head" /></figure>
-        <figure><img src="static/img/otter-05.jpg" alt="final paper sample of the otter that I used to begin construction" /></figure>
+        <button><picture><img src="static/img/otter-06.jpg" alt="paper iterations of the otter head" /></picture></button>
+        <button><picture><img src="static/img/otter-05.jpg" alt="final paper sample of the otter that I used to begin construction" /></picture></button>
     </div>
     <p>I worked again all hand sewing. I only learned recently how to use a sewing machine, as I never had access to one, but as far as I know, when making little details a sewing machine is messier and more error prone than just hand sewing, especially on this high-pile sherpa fabric. A walking foot on a sewing machine can be used, as with any knit fabric, but many of the shapes I was using had corners that are too tight for a sewing machine anyway.</p>
     <p>A project later may be to make a toy that can be put together with a sewing machine, but I really value the expressiveness in shape that I can get by hand sewing.</p>
     <div class="portfoliorow">
-        <figure><img src="static/img/otter-07.jpg" alt="first parts of the otter face sewn. I left space for the cheeks and upper lip to bulge when stuffed, and added a mouth to help with definition" /></figure>
-        <figure><img src="static/img/otter-08.jpg" alt="the final inside-out otter. the space left to flip the otter right way out was one of the seams between the tail and the body, where i'd sew in the tag at the end" /></figure>
+        <button><picture><img src="static/img/otter-07.jpg" alt="first parts of the otter face sewn. I left space for the cheeks and upper lip to bulge when stuffed, and added a mouth to help with definition" /></picture></button>
+        <button><picture><img src="static/img/otter-08.jpg" alt="the final inside-out otter. the space left to flip the otter right way out was one of the seams between the tail and the body, where i'd sew in the tag at the end" /></picture></button>
     </div>
     <p>A faux leatherette was used for the paws and feet and details embroidered onto them with black wool. Embroidering by hand in this way is always a huge pain, because I use a very thick embroidery needle in order to fit the wool through, which makes pushing the needle through sometimes require a pair of pliers. I do the embroidery last because the stuffed shape is meant to change with the embroidery, in the case of the paws and flippers, the wool helps add definition.</p>
     <p>Leatherworkers will stamp a hole before sewing with thick thread. It is however hard to do this with knit fabrics. A round-tipped needle rather than a sharp one can prevent the needle going through the weave rather than the gaps between them, but a sharp pointed needle avoids getting stuck in the stuffing or the pile. Maybe the solution is just using pliers after all.</p>

@@ -17,13 +17,13 @@
 <link rel="stylesheet" href="/static/css/style.css"/>
 <script src="/static/js/modules/cerespet.js"></script>
 <link rel="stylesheet" href="/static/css/portfolio.css"/>
-</head><body><dialog id="modal"><span id="modalclose" autofocus>&times;</span><div id="modalholder"><img id="modalloading"/><img id="modalcontent"/></div><div id="modalcaption"></div></dialog><div id="navpane"><nav id="navcontainer" role="navigation">
-<a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg"></a>
+</head><body><dialog id="modal"><span id="modalclose" autofocus>&times;</span><figure id="modalholder"><picture><img id="modalcontent" alt=""/></picture><span id="modalcaption"></span></figure></dialog><div id="navpane"><nav id="navcontainer" role="navigation">
+<a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg" alt="site logo representing a link to the homepage" title="Home"></a>
 <a href="index.html"><span>Home</span></a>
 <a href="about.html"><span>About</span></a>
 <a href="index.html#portfolio"><span>Portfolio</span></a>
 <a href="gallery.html"><span>Gallery</span></a>
-</nav><nav id="contentscontainer"><span id="contentsheading">Contents</span><a href="#subheading00"><span class="contentslinkspan">This Website</span></a><a href="#subheading01"><span class="contentslinkspan">Original Guides Website</span></a><a href="#subheading02"><span class="contentslinkspan">Migration to Zola Static Site Engine</span></a><a href="#subheading03"><span class="contentslinkspan">Not Migrating to Zola and Instead Just Writing My Own Site Builder</span></a><a href="#subheading04"><span class="contentslinkspan">Free Web Hosting with Cloudflare (or Github)</span></a><a href="#subheading05"><span class="contentslinkspan">Testing Section Temporary</span></a></nav></div><div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article><header class="contentitem">
+</nav><nav id="contentscontainer"><span id="contentsheading">Contents</span><a href="#subheading00"><span class="contentslinkspan">This Website</span></a><a href="#subheading01"><span class="contentslinkspan">Original Guides Website</span></a><a href="#subheading02"><span class="contentslinkspan">Migration to Zola Static Site Engine</span></a><a href="#subheading03"><span class="contentslinkspan">Not Migrating to Zola and Instead Just Writing My Own Site Builder</span></a><a href="#subheading04"><span class="contentslinkspan">Free Web Hosting with Cloudflare (or Github)</span></a><a href="#subheading05"><span class="contentslinkspan">Testing Section Temporary</span></a></nav></div><div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg" alt="site logo representing a link to the homepage" title="Home"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article><header class="contentitem">
     <h2 id="subheading00">This Website</h2>
     <span>A portfolio website, designed, developed and maintained by me<br>Ceres Miller, 2023-2024</span>
     <hr>
@@ -31,11 +31,11 @@
     <p>The language involved a narrow, centered reader column, with site and page information surrounding it that could altogether fit on a 4:3 resolution screen. For mobile screens the site adapts natively, the reader column has no problem displaying everything on a narrow screen and all the surrounding site and page links fall inline.</p>
     <p>I have maintained this language into my portfolio site. I think it looks neat and professional, and is highly compatible with a variety of screens, browsers and devices. It loads on a Nintendo DS, even.</p>
     <div class="portfoliorow">
-        <figure><img src="static/img/angelbag-14.avif" alt="Angel kneeling holding her camera, with her bag by her leg" /></figure>
+        <button><picture><img src="static/img/angelbag-14.avif" alt="Angel kneeling holding her camera, with her bag by her leg" /></picture></button>
     </div>
     <div class="portfoliorow">
-        <figure><img src="static/img/angelbag-09.avif" alt="The bag elevation" /></figure>
-        <figure><img src="static/img/angelbag-08.avif" alt="The bag from below, showing the metal feet" /></figure>
+        <button><picture><img src="static/img/angelbag-09.avif" alt="The bag elevation" /></picture></button>
+        <button><picture><img src="static/img/angelbag-08.avif" alt="The bag from below, showing the metal feet" /></picture></button>
     </div>
     <hr>
 </header>
@@ -92,11 +92,11 @@
 <span>•</span>
 <button id="darkmodetoggle" onclick="pfDarkmodeToggle()">💡</button>
 <span>•</span>
-<span style="font-size: 0.8rem;">&lt;3</span>
+<span id="footerheart">&lt;3</span>
 </div>
 <span id="copyright">© Ceres Miller 2024 - All works on this website, unless otherwise noted, are licensed under the CC BY-SA 4.0 license.</span></footer></main><div id="extrapane"><a id="hireme" href="about.html"><span>Hire Me</span></a>
 <div id="contactemail">
-<span>Contact:</span><br>
+<span>Contact:<br></span>
 <button id="emailaddress"></button>
 <span id="emailcopiednotif">copied!</span>
 </div>

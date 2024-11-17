@@ -4,18 +4,18 @@
 	<hr>
 	<p>Angel needed a white handbag she could fit her Micro Four Thirds sized camera in. She found it difficult to take both a camera bag and a handbag to events, and disliked that her previous camera bag wasn't waterproofed. I designed and made a camera bag that would match her needs and style.</p>
 	<div class="portfoliorow">
-		<figure><img src="static/thumbs/thumb-angelbag-14.avif" alt="Angel kneeling holding her camera, with her bag by her leg" /></figure>
+		<button><picture><img src="static/thumbs/thumb-angelbag-14.avif" alt="Angel kneeling holding her camera, with her bag by her leg" /></picture></button>
 	</div>
 	<div class="portfoliorow">
-		<figure><img src="static/thumbs/thumb-angelbag-09.avif" alt="The bag elevation" /></figure>
-		<figure><img src="static/thumbs/thumb-angelbag-08.avif" alt="The bag from below, showing the metal feet" /></figure>
+		<button><picture><img src="static/thumbs/thumb-angelbag-09.avif" alt="The bag elevation" /></picture></button>
+		<button><picture><img src="static/thumbs/thumb-angelbag-08.avif" alt="The bag from below, showing the metal feet" /></picture></button>
 	</div>
 	<div class="portfoliorow">
-		<figure><img src="static/thumbs/thumb-angelbag-03.avif" alt="The bag, perspective, from the end showing the zipper-cover embroidered with &#x0022;angel&#x0022;" /></figure>
+		<button><picture><img src="static/thumbs/thumb-angelbag-03.avif" alt="The bag, perspective, from the end showing the zipper-cover embroidered with &#x0022;angel&#x0022;" /></picture></button>
 	</div>
 	<div class="portfoliorow">
-		<figure><img src="static/thumbs/thumb-angelbag-01.avif" alt="The bag, perspective, showing the front and side" /></figure>
-		<figure><img src="static/thumbs/thumb-angelbag-02.avif" alt="The bag, 3/4ths perspective, showing the zipper-cover from the back side" /></figure>
+		<button><picture><img src="static/thumbs/thumb-angelbag-01.avif" alt="The bag, perspective, showing the front and side" /></picture></button>
+		<button><picture><img src="static/thumbs/thumb-angelbag-02.avif" alt="The bag, 3/4ths perspective, showing the zipper-cover from the back side" /></picture></button>
 	</div>
 	<hr>
 </header>
@@ -24,49 +24,49 @@
 	<p>I avoided cutting the PVC outer layer as much as possible to avoid visible seams on the flat sides, because I wanted to highlight the intresting curve produced by the 4 pieces folding together to make the bag. I filled that seam with black piping to avoid water ingress and so the bag is largely resistant to rain. This is why there's no zippered pockets on the outside either.</p>
 	<p>The bag's main zipper is covered by a flap with a magnet inside to clasp it closed. This was for style reasons, but helps the bag feel more waterproof than it already is.</p>
 	<div class="portfoliorow">
-		<figure><img src="static/thumbs/thumb-angelbag-04.avif" alt="The bag from above, showing the seam piping detail" /></figure>
-		<figure><img src="static/thumbs/thumb-angelbag-07.avif" alt="The bag from above, with the zipper-cover part opened, showing the zipper and clasp" /></figure>
+		<button><picture><img src="static/thumbs/thumb-angelbag-04.avif" alt="The bag from above, showing the seam piping detail" /></picture></button>
+		<button><picture><img src="static/thumbs/thumb-angelbag-07.avif" alt="The bag from above, with the zipper-cover part opened, showing the zipper and clasp" /></picture></button>
 	</div>
 	<div class="portfoliorow">
-		<figure><img src="static/thumbs/thumb-angelbag-05.avif" alt="The bag from above, with the zipper open" /></figure>
-		<figure><img src="static/thumbs/thumb-angelbag-06.avif" alt="The bag from above, with the zipper open, showing inside" /></figure>
+		<button><picture><img src="static/thumbs/thumb-angelbag-05.avif" alt="The bag from above, with the zipper open" /></picture></button>
+		<button><picture><img src="static/thumbs/thumb-angelbag-06.avif" alt="The bag from above, with the zipper open, showing inside" /></picture></button>
 	</div>
 	<p>Inside is like all other camera bags. Underneath the smooth nylon lining is PU foam padding. There are PE mesh pockets at either end of the interior with a pleat in them so you can fit your hand in, and there are lines of velcro eyes on both the broad sides to attach padded bag dividers to.</p>
 	<p>There are also shoulder handle loops. These will fit a polyester rope up to 10mm in diameter. Using these is optional, as the rolled carry handles are long enough to fit comfortably over a shoulder, with the bag under an arm.</p>
 	<div class="portfoliorow">
-		<figure><img src="static/img/angelbag-15.avif" alt="Graphic of the paper and digital models I made during development" /></figure>
+		<button><picture><img src="static/img/angelbag-15.avif" alt="Graphic of the paper and digital models I made during development" /></picture></button>
 	</div>
 	<p>The size of the bag was worked out based on the width of an average Micro 4/3rds camera (about 120mm) constrained by the height necessary for comfortable access via top zipper (rather than hinge and clap, like lots of other camera bags), space for extra items (an e-reader, camera lenses, misc), and aesthetic proportion, minimised to what would be a comfortable size of handbag to carry.</p>
 	<p>The resulting dimensions are 140 x 300 x 220 mm exterior; with the walls being about 10mm thick all over, this leaves a volume of approx 6.72 litres.</p>
 	<div class="portfoliorow">
-		<figure><img src="static/img/angelbag-16.avif" alt="Graphic of the rolled handles with aluminium details, showing in-process photographs of how I made them" /></figure>
+		<button><picture><img src="static/img/angelbag-16.avif" alt="Graphic of the rolled handles with aluminium details, showing in-process photographs of how I made them" /></picture></button>
 	</div>
 	<p>Aluminium is soft enough to cut with hand tools. It's a little more difficult to polish to any kind of shine than brass or copper however without buffing wheels which I didn't use; I preferred to polish the aluminium by hand. The sandblasted or brushed look was more what I wanted, as that finish would last longer.</p>
 	<p>The aluminium pieces all together took 8 hours to produce this way. Acceptable for prototypes, but otherwise not ideal. It's worth considering that jewellers perhaps use precious metals in their work rather than aluminium or brass because the amount of time it takes to make things without machinery forces a certain minimum sale price. It's worth then reflecting that I tend to frequently use synthetic materials, primarily because of the cheap price. You could write a whole textbook on whether or not I should be doing this, so I won't here.</p>
 	<p>Rolled handles are usually made by surrounding piping with leather (or polyurethane leatherette) however I used nylon webbing because the PVC I was using is far too soft and stretchy to sew to the bag alone. In fact, the PVC used for the bag body is backed by a layer of cotton duck I had lying around to help avoid the PVC getting overstreched or torn when it takes any force whatsoever.</p>
 	<p>I used this soft PVC because I knew that polyurethane leatherette would fall apart over time, or get easily scraped. The PVC, when it wears, may get marked or chapped, but it won't peel or fray, which was the main concern. Alternatively I could have used white cotton covered in a mixture of paraffin and beeswax that can be maintained, but I chose not to do this because I wanted to experiment rather than copy Kånken backpacks immediately. I decided against using white cordura, which I have used before, because I preferred the flat, shiny finish of the PVC better for this project.</p>
 	<div class="portfoliorow">
-		<figure><img src="static/img/angelbag-17.avif" alt="Graphic of the 4 sides of the bag, unfolded, before they were sewn together" /></figure>
+		<button><picture><img src="static/img/angelbag-17.avif" alt="Graphic of the 4 sides of the bag, unfolded, before they were sewn together" /></picture></button>
 	</div>
 	<p>Many of the pieces of this bag were difficult and time consuming to sew, and most of it was done by hand. I don't have a sewing machine with enough space to fit puffy pieces through, and since a lot of the hand sewing was load bearing stitches, it took a long time. Every project I do I get to see how it would be manufactured, but until it's finished, I can never be sure what could have been improved, especially if I'm trying to do things I haven't seen before. The prototypes will always be time consuming.</p>
 	<p>To me, to design something isn't necessarily about assembling a solution to a problem within certain constraints. Rather, sometimes it's about trying to find something new with limited resources; like a new manufacturing technique, a new use for an old material or a new composite, or a way to save money without buying machines. What I make might be unappealing, or awkward, but it's an attempt to do something like that on purpose, because it's something that I haven't seen before.</p>
 	<div class="portfoliorow">
-		<figure><img src="static/img/angelbag-18.avif" alt="Graphic of the 4 sides of the bag from the inside, showing how they were folded together to make the final bag" /></figure>
+		<button><picture><img src="static/img/angelbag-18.avif" alt="Graphic of the 4 sides of the bag from the inside, showing how they were folded together to make the final bag" /></picture></button>
 	</div>
 	<p>There were innumerable problems making this bag. For example, I kept the zipper together the entire time, because I was worried if I put them together seperately, they wouldn't align properly. The two narrow ends of the bag then stayed in one piece as the zipper was sewn in the middle, by hand, slowly folding un-ironable plastic rolled hems inside.</p>
 	<p>When I sewed the bag together at the edges finally, I was hand sewing through 7 layers of material, then 11 at the shoulder strap loops which I used pliers to pull the needle through, and then once over again with 9 layers when I put the cotton webbing on to cover the edges. Helpfully, ordinarily, synthetic textiles are very easy to sew even in layers, but I'd often sew until my fingers bled, and that isn't very helpful or productive.</p>
 	<p>Making this bag was an experiment probably in the futility of cottage industry. You might think you can make something affordably that, if you went to buy it, would be prohibitively expensive, and while yes, that is what I ended up with; even if I could make bags like this much faster, they'd be too expensive for someone else to buy. This project is useful as an experiment in craft practice, but illustrates the necessity of machines in luxury (or <em>designer</em>) manufacturing and the financialisation that requires.</p>
 	<div class="portfoliorow">
-		<figure><img src="static/thumbs/thumb-angelbag-12.avif" alt="The bag handles, from a far-away focal distance" /></figure>
+		<button><picture><img src="static/thumbs/thumb-angelbag-12.avif" alt="The bag handles, from a far-away focal distance" /></picture></button>
 	</div>
 	<div class="portfoliorow">
-		<figure><img src="static/thumbs/thumb-angelbag-11.avif" alt="The bag end, from a far-away focal distance" /></figure>
+		<button><picture><img src="static/thumbs/thumb-angelbag-11.avif" alt="The bag end, from a far-away focal distance" /></picture></button>
 	</div>
 	<div class="portfoliorow">
-		<figure><img src="static/thumbs/thumb-angelbag-10.avif" alt="The bag end, from a far-away focal distance" /></figure>
+		<button><picture><img src="static/thumbs/thumb-angelbag-10.avif" alt="The bag end, from a far-away focal distance" /></picture></button>
 	</div>
 	<div class="portfoliorow">
-		<figure><img src="static/thumbs/thumb-angelbag-13.avif" alt="The bag side, with an aluminium tag in the center, from a far-away focal distance" /></figure>
+		<button><picture><img src="static/thumbs/thumb-angelbag-13.avif" alt="The bag side, with an aluminium tag in the center, from a far-away focal distance" /></picture></button>
 	</div>
 	<hr>
 </section>

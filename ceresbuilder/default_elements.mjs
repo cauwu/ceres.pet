@@ -9,11 +9,11 @@ ceresbuilder loop can fill with variables as needed and return strings.
 */
 
 const defaultModal = 
-`<dialog id="modal"><span id="modalclose" autofocus>&times;</span><div id="modalholder"><img id="modalloading"/><img id="modalcontent"/></div><div id="modalcaption"></div></dialog>`;
+`<dialog id="modal"><span id="modalclose" autofocus>&times;</span><figure id="modalholder"><picture><img id="modalcontent" alt=""/></picture><span id="modalcaption"></span></figure></dialog>`;
 
 const defaultNavpane = 
 `<nav id="navcontainer" role="navigation">
-<a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg"></a>
+<a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg" alt="site logo representing a link to the homepage" title="Home"></a>
 <a href="index.html"><span>Home</span></a>
 <a href="about.html"><span>About</span></a>
 <a href="index.html#portfolio"><span>Portfolio</span></a>
@@ -32,14 +32,14 @@ const defaultFooter =
 <span>•</span>
 <button id="darkmodetoggle" onclick="pfDarkmodeToggle()">💡</button>
 <span>•</span>
-<span style="font-size: 0.8rem;">&lt;3</span>
+<span id="footerheart">&lt;3</span>
 </div>
 <span id="copyright">© Ceres Miller 2024 - All works on this website, unless otherwise noted, are licensed under the CC BY-SA 4.0 license.</span>`;
 
 const defaultExtraPane = 
 `<a id="hireme" href="about.html"><span>Hire Me</span></a>
 <div id="contactemail">
-<span>Contact:</span><br>
+<span>Contact:<br></span>
 <button id="emailaddress"></button>
 <span id="emailcopiednotif">copied!</span>
 </div>
@@ -75,7 +75,7 @@ ${extraStyling}
 ${headExtra}`;
 
 const defaultBody = ({pageModal, siteNavpane, contentsPane, pageArticle, siteFooter, siteExtraPane}) => 
-`${pageModal}<div id="navpane">${siteNavpane}${contentsPane}</div><div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article>${pageArticle}</article><footer id="sitefooter" class="contentitem">${siteFooter}</footer></main><div id="extrapane">${siteExtraPane}</div></div>`;
+`${pageModal}<div id="navpane">${siteNavpane}${contentsPane}</div><div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg" alt="site logo representing a link to the homepage" title="Home"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article>${pageArticle}</article><footer id="sitefooter" class="contentitem">${siteFooter}</footer></main><div id="extrapane">${siteExtraPane}</div></div>`;
 
 const defaultPage = ({pageHead, pageBody}) => `<!DOCTYPE html><html dir="ltr" lang="en"><head>${pageHead}</head><body>${pageBody}</body></html>`;
 

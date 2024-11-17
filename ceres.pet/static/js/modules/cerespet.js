@@ -79,14 +79,14 @@ const pfModalSystem = () => {
 		modalContent: document.getElementById("modalcontent"),
 		modalClose: document.getElementById("modalclose"),
 	};
-	const imgs = document.querySelectorAll('figure img');
+	const imgs = document.querySelectorAll('button picture img');
 	imgs.forEach((img, index) => {
 		img.addEventListener('mouseover', () => {
-			modalProps.modalCaption.innerHTML = imgs[index].alt;
 			modalProps.modalContent.src = thumbToImg(imgs[index].src);
 		});
 		img.addEventListener('mousedown', () => {
 			modalProps.modal.showModal();
+			modalProps.modalCaption.innerHTML = imgs[index].alt;
 		});
 	});
 	modalProps.modalClose.addEventListener('click', () => {
