@@ -46,14 +46,12 @@ const getPageModal = (index) => {
 const getContentsItems = (index, data) => {
 	if (json.pages[index].contents_pane == true) {
 		const dom = htmlparser2.parseDocument(data);
-        const template = (id, data) => `<a href="#${id}"><span class="contentslinkspan">${data}</span></a>`;
-        let items = '';
-		cssselect.selectAll('h2', dom)
-        .forEach(h2 => {
-            const item = template(h2.attribs.id, h2.children[0].data);
-            items = items.concat(item);
-        });
-        return items;
+		const template = (id, data) => `<a href="#${id}"><span class="contentslinkspan">${data}</span></a>`;
+		const items = cssselect
+			.selectAll('h2', dom)
+			.map(h2 => template(h2.attribs.id, h2.children[0].data))
+			.join('');
+		return items;
 	} else {
 		return '';
 	};

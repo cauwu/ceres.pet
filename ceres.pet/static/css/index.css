@@ -1,5 +1,14 @@
 /* Page styling for the homepage. */
 
+.portfoliorow a:nth-child(1) {
+	margin: 0rem 1rem 0rem 0rem;
+}
+
+.portfoliorow a:only-of-type {
+	width: 100%;
+	margin: 0rem 0rem 0rem 0rem;
+}
+
 article header span:nth-child(2) {
 	display: flex;
 	margin: -0.6rem 0rem 1rem 0rem;

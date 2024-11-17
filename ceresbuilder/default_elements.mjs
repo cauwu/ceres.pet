@@ -9,11 +9,7 @@ ceresbuilder loop can fill with variables as needed and return strings.
 */
 
 const defaultModal = 
-`<dialog id="modal">
-<span id="modalclose" autofocus>&times;</span>
-<img id="modalcontent" />
-<div id="modalcaption"></div>
-</dialog>`;
+`<dialog id="modal"><span id="modalclose" autofocus>&times;</span><div id="modalholder"><img id="modalloading"/><img id="modalcontent"/></div><div id="modalcaption"></div></dialog>`;
 
 const defaultNavpane = 
 `<nav id="navcontainer" role="navigation">
@@ -38,13 +34,13 @@ const defaultFooter =
 <span>•</span>
 <span style="font-size: 0.8rem;">&lt;3</span>
 </div>
-<span id="copyright">© Ceres Miller 2024 - All works on this website, unless otherwise noted, are licensed under the CC BY-NC-ND 4.0 license.</span>`;
+<span id="copyright">© Ceres Miller 2024 - All works on this website, unless otherwise noted, are licensed under the CC BY-SA 4.0 license.</span>`;
 
 const defaultExtraPane = 
 `<a id="hireme" href="about.html"><span>Hire Me</span></a>
 <div id="contactemail">
 <span>Contact:</span><br>
-<button id="emailaddress" onclick="pfCopyEmail()"></button>
+<button id="emailaddress"></button>
 <span id="emailcopiednotif">copied!</span>
 </div>
 <div id="externallinkscontainer">

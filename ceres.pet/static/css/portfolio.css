@@ -39,6 +39,26 @@ article ul {
 	margin: 1em 2em 1em 2em;
 }
 
+article code {
+	font-family: Inconsolata, Consolas, Monospace;
+	color: light-dark(#657b83, #839496);
+	background-color: light-dark(#eee8d5, #073642);
+	border-radius: 2px;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+}
+
+article .codeblock {
+	font-family: Inconsolata, Consolas, Monospace;
+	display: block;
+	color: light-dark(#657b83, #839496);
+	background-color: light-dark(#fdf6e3, #002b36);
+	border-radius: 2px;
+	margin-left: 2em;
+	margin-right: 2em;
+	padding: 0.5em 1em 0.5em 1em;
+}
+
 article section {
 	padding-top: 0.5em !important;
 }
@@ -63,6 +83,11 @@ article section {
 	}
 	article ul {
 		margin: 1em 0em 1em 0em;
+	}
+
+	article code .codeblock {
+		margin-left: 0em;
+		margin-right: 0em;
 	}
 
 }

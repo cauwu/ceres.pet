@@ -17,17 +17,13 @@
 <link rel="stylesheet" href="/static/css/style.css"/>
 <script src="/static/js/modules/cerespet.js"></script>
 <link rel="stylesheet" href="/static/css/portfolio.css"/>
-</head><body><dialog id="modal">
-<span id="modalclose" autofocus>&times;</span>
-<img id="modalcontent" />
-<div id="modalcaption"></div>
-</dialog><div id="navpane"><nav id="navcontainer" role="navigation">
+</head><body><dialog id="modal"><span id="modalclose" autofocus>&times;</span><div id="modalholder"><img id="modalloading"/><img id="modalcontent"/></div><div id="modalcaption"></div></dialog><div id="navpane"><nav id="navcontainer" role="navigation">
 <a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg"></a>
 <a href="index.html"><span>Home</span></a>
 <a href="about.html"><span>About</span></a>
 <a href="index.html#portfolio"><span>Portfolio</span></a>
 <a href="gallery.html"><span>Gallery</span></a>
-</nav><nav id="contentscontainer"><span id="contentsheading">Contents</span><a href="#subheading00"><span class="contentslinkspan">This Website</span></a><a href="#subheading01"><span class="contentslinkspan">Original Guides Website</span></a><a href="#subheading02"><span class="contentslinkspan">Migration to Zola Static Site Engine</span></a><a href="#subheading03"><span class="contentslinkspan">Not Migrating to Zola and Instead Just Writing My Own Site Builder</span></a><a href="#subheading04"><span class="contentslinkspan">Free Web Hosting with Cloudflare (or Github)</span></a></nav></div><div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article><header class="contentitem">
+</nav><nav id="contentscontainer"><span id="contentsheading">Contents</span><a href="#subheading00"><span class="contentslinkspan">This Website</span></a><a href="#subheading01"><span class="contentslinkspan">Original Guides Website</span></a><a href="#subheading02"><span class="contentslinkspan">Migration to Zola Static Site Engine</span></a><a href="#subheading03"><span class="contentslinkspan">Not Migrating to Zola and Instead Just Writing My Own Site Builder</span></a><a href="#subheading04"><span class="contentslinkspan">Free Web Hosting with Cloudflare (or Github)</span></a><a href="#subheading05"><span class="contentslinkspan">Testing Section Temporary</span></a></nav></div><div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article><header class="contentitem">
     <h2 id="subheading00">This Website</h2>
     <span>A portfolio website, designed, developed and maintained by me<br>Ceres Miller, 2023-2024</span>
     <hr>
@@ -76,6 +72,15 @@
     <span>This site costs me no money to run<br>Ceres Miller, 2023-2024</span>
     <hr>
     <hr>
+</section>
+<section class="contentitem">
+    <h2 id="subheading05">Testing Section Temporary</h2>
+    <span>Testing Section Temporary<br>Ceres Miller, 2023-2024</span>
+    <hr>
+    <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. <code>Lorem Ipsum</code> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <code class="codeblock">const target = document.querySelector("#listItem");
+        observer.observe(target);</code>
+    <hr>
 </section></article><footer id="sitefooter" class="contentitem"><div id="sitefooterlinks">
 <a href="about.html" role="link">About</a>
 <span>•</span>
@@ -89,10 +94,10 @@
 <span>•</span>
 <span style="font-size: 0.8rem;">&lt;3</span>
 </div>
-<span id="copyright">© Ceres Miller 2024 - All works on this website, unless otherwise noted, are licensed under the CC BY-NC-ND 4.0 license.</span></footer></main><div id="extrapane"><a id="hireme" href="about.html"><span>Hire Me</span></a>
+<span id="copyright">© Ceres Miller 2024 - All works on this website, unless otherwise noted, are licensed under the CC BY-SA 4.0 license.</span></footer></main><div id="extrapane"><a id="hireme" href="about.html"><span>Hire Me</span></a>
 <div id="contactemail">
 <span>Contact:</span><br>
-<button id="emailaddress" onclick="pfCopyEmail()"></button>
+<button id="emailaddress"></button>
 <span id="emailcopiednotif">copied!</span>
 </div>
 <div id="externallinkscontainer">

@@ -1,5 +1,5 @@
 <header class="contentitem">
-    <h2>Ceres Miller</h2>
+    <h2>Ceres Kinnear Miller</h2>
     <span>Product Designer, London, UK</span>
     <hr>
     <ul>
@@ -76,11 +76,11 @@
             <span>Graphic and Web Design</span>
             <span>2023-2024</span>
         </a>
-        <figure>
+        <a>
                 <img src="" alt="">
                 <span></span>
                 <span></span>
-        </figure>
+        </a>
     </div>
     <div id="showmoredropdown" style="display: none;">
         <hr>
@@ -115,11 +115,11 @@
                 <span>A Thermal Printer</span>
                 <span>2022</span>
             </a>
-            <figure>
+            <a>
                 <img src="" alt="">
                 <span></span>
                 <span></span>
-            </figure>
+            </a>
         </div>
     </div>
     <button id="showmorebutton" onclick="pfDropdownToggle()">v Show More v</button>

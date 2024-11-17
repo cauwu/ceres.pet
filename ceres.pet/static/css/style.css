@@ -216,6 +216,7 @@ a:visited {
 	text-align: left;
 	margin: 0rem 0rem 0rem 0rem;
 	padding: 0rem 0rem 0rem 0rem;
+	cursor: pointer;
 }
 
 #emailaddress:hover {
@@ -334,11 +335,12 @@ main b {
 .portfoliorow a,figure {
 	display: flex;
 	flex-direction: column;
-	width: 50%
+	width: 50%;
+	cursor: pointer;
 }
 
-.portfoliorow a:nth-child(1),figure:nth-child(1) {
-	margin: 0rem 1rem 0rem 0rem;
+.portfoliorow figure:nth-child(1) {
+	margin: 0rem 0.5rem 0rem 0rem;
 }
 
 .portfoliorow figure:nth-child(2) {
@@ -362,8 +364,8 @@ main b {
 }
 
 .portfoliorow figure:only-of-type {
-	width: auto !important;
-	margin: 0rem 0rem 0rem 0rem !important;
+	width: 100%;
+	margin: 0rem 0rem 0rem 0rem;
 }
 
 /* portfolio page item captions */
@@ -386,14 +388,32 @@ main b {
 
 /* ~~~~~~ image modal ~~~~~~ */
 
-#modal {
+dialog {
 	flex-direction: column;
 	overflow: auto;
 	width: 100%;
 	height: 100%;
-	background-color: rgb(0,0,0);
-	background-color: rgba(0,0,0,0.9);
-	border-color: rgba(0,0,0,0.9);
+	background-color: transparent;
+}
+
+dialog::backdrop {
+	background-color: light-dark(black, black);
+	border-color: light-dark(black, black);
+	opacity: 0.9;
+}
+
+#modalholder {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#modalloading {
+	margin: auto;
+	margin-bottom: 0.2rem;
+	display: block;
+	width: 80%;
+	max-width: 1080px;
 }
 
 #modalcontent {
@@ -422,13 +442,16 @@ main b {
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  z-index: 99;
 }
 
 #modalclose:hover,
 #modalclose:focus {
   color: #bbb;
   text-decoration: none;
-  cursor: pointer;
 }
 
 /* ~~~~~~ 3D 3mf viewer ~~~~~~ */

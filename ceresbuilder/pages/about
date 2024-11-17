@@ -18,16 +18,26 @@
 	<hr>
 </section>
 <section class="contentitem">
-	<p>I made this website with help from <a href="https://github.com/twnk"><u>Angel (github.com/twnk)</u></a> for implementing the static site builder and the .3mf viewer. Please contact me with any accessibility or compatibility concerns.</p>
+	<p>I made this website with help from <a href="https://github.com/twnk"><u>Angel (github.com/twnk)</u></a> for implementing the .3mf viewer and for JS programming assistance.</p>
 	<p>I am also open to website design commissions.</p>
+	<p>Please contact me with any accessibility or compatibility concerns.</p>
 	<hr>
 </section>
 <section class="contentitem">
 	<h2>See Also</h2>
 	<hr>
 	<ul>
-		<li><a href="https://frasermiller.dev"><span>Fraser Miller</span></a></li>
-		<li><a href="https://woofmute.github.io/"><span>Woofmute</span></a></li>
+		<li><a href="https://frasermiller.dev"><u><b>Fraser Miller</b></u></a> - Programmer, brother</li>
+		<li><a href="https://woofmute.github.io/"><u><b>Woofmute</b></u></a> - Dreamcast researcher; decompling, analysing, and documenting Dreamcast games</li>
+	</ul>
+	<hr>
+</section>
+<section class="contentitem">
+	<h2>Notes</h2>
+	<hr>
+	<ul>
+		<li><b>16/11/2024 - Copyright license changed from <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><u>CC BY-NC-ND 4.0</u></a> (Attribution-Noncommercial-Noderivatives) to <a href="https://creativecommons.org/licenses/by-sa/4.0/"><u>CC BY-SA 4.0</u></a> (Attribution-Sharealike).</b> What this means is that anybody may adapt, remix, transform, and build upon any of the works on this website (unless otherwise noted) including for commerical use, however in doing this appropriate credit must be given to me, any changes made must be indicated, and contributions must be distributed under the same license. (CC BY-SA 4.0)</li>
+		<li></li>
 	</ul>
 	<hr>
 </section>
