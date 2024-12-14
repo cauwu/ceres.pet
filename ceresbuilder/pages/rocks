@@ -1,0 +1,187 @@
+<header class="contentitem">
+    <h2 id="subheading00">Bouldering Hold Pins</h2>
+    <span>Miniature 3D printed bouldering holds, as pins, earring studs, and merch<br>Ceres Miller, 2024</span>
+    <hr>
+    <p>For <a href="https://www.instagram.com/transclimbing/p/DDb8XwWx2EA/">T-Climbing's Winter Fundraiser Party</a> they wanted 3D printed bouldering hold pins as merch to sell, so I volunteered to model them. I had used a method of making Blender sculpts into 3D printable objects before making a duck-shaped lamp, so I said I could make these bouldering holds.</p>
+    <div class="portfoliorow">
+        <button><picture><img src="static/img/rocks-21.avif" alt="Arrangement of large size climbing holds" /></picture></button>
+    </div>
+    <div class="portfoliorow">
+        <button><picture><img src="static/img/rocks-24.avif" alt="Arrangement of pin size climbing holds" /></picture></button>
+        <button><picture><img src="static/img/rocks-25.avif" alt="Arrangement of earring size climbing holds, with 50p for scale" /></picture></button>
+    </div>
+    <div class="portfoliorow">
+        <button><picture><img src="static/img/rocks-23.avif" alt="Arrangement of pin size black climbing holds, showing the sparkling sand glued to them" /></picture></button>
+    </div>
+    <p>The models are available to <a href="https://drive.google.com/file/d/1jK98ow3X_khGwOZuBaBRmc8wLMWp82xU/view?usp=sharing">download here.</a></p>
+    <hr>
+</header>
+<section class="contentitem">
+    <h2 id="subheading01">How to turn Blender sculpted meshes into 3D printable objects using Rhino</h2>
+    <span>Turn undimensioned meshes into real objects that fit together<br>Ceres Miller, 2024</span>
+    <hr>
+    <p>This method needs some perfecting but is fine for most sculpted objects. <a href="https://www.rhino3d.com/">Rhino 8</a> added <a href="https://www.rhino3d.com/features/quadremesh/">quad remeshing</a> as a built-in feature, previously I was using <a href="https://www.grasshopper3d.com/group/millipede">Millipede</a> (a plugin for <a href="https://www.rhino3d.com/features/#grasshopper">Grasshopper</a>) so now this method can now be done with Rhino 8 alone. Quad remeshing was necessary for simplifying geometry substantially without losing important detail, because Rhino would often fail to resolve certain operations without it, and also because some slicers would generate printer <a href="https://howtomechatronics.com/tutorials/g-code-explained-list-of-most-important-g-code-commands/">G-code</a> using the vertex mesh which resulted in bizarrely long print times. Quad meshes also open the possibility of using subdivision meshes rather than vertex meshes, (the normal kind of mesh used by <a href="https://www.blender.org/">Blender</a>) which use a network of splines to depict an object rather than a point cloud, so curves are more accurate and don't look "low poly".</p>
+    <ol class="howtolist">
+        <li>
+            <h3>Open Blender and Create a New File with The Sculpting Preset</h3>
+            <p>You'll want to follow a Blender sculpting tutorial if you don't know how to do this. Other sculpting programs work fine too, like ZBrush, Maya, and Cinema 4D.</p>
+            <div class="portfoliorow">
+                <button><picture><img src="static/img/rocks-01.avif" alt="A default sphere in a new Blender file with the sculpting preset" /></picture></button>
+            </div>
+            <hr>
+        </li>
+        <li>
+            <h3>Sculpt a Mesh</h3>
+            <p>It's useful at this point to add another object, a <code>plane</code>, at the origin to use as a reference for the printbed of the 3D printer.</p>
+            <p>For those who are too impatient to follow a Blender sculpting tutorial, the gist is that when you sculpt into the sphere with your mouse and the mesh starts to stretch, press <kbd>ctrl</kbd> + <kbd>r</kbd> and Blender will remesh what you've made to remove the stretching. <kbd>Leftmouse</kbd> adds material, <kbd>ctrl</kbd> + <kbd>leftmouse</kbd> removes material. <kbd>shift</kbd> + <kbd>leftmouse</kbd> smoothes.</p>
+            <div class="portfoliorow">
+                <button><picture><img src="static/img/rocks-02.avif" alt="A mesh sculpted in Blender, of a bouldering hold" /></picture></button>
+            </div>
+            <hr>
+        </li>
+        <li>
+            <h3>Switch to Orthographic View and Use <code>Box-Clip</code> to Cut Off The Part You Don't Need</h3>
+            <p>Where you put your <code>plane</code>, if you did, to use as a printbed reference, use the <code>box-clip</code> tool to cut off everything below the plane.</p>
+            <p>You will want to save your file before you do this and not after, if you need to edit your sculpt later.</p>
+            <p>To enter orthographic mode, you can click an axis on the gimbal at the top-right of the screen.</p>
+            <div class="portfoliorow">
+                <button><picture><img src="static/img/rocks-03.avif" alt="Using box-clip on the sculpt to cut a flat side where the piece will contact the print bed" /></picture></button>
+            </div>
+            <p>Aside: When 3D printing, especially lots of items, it's best to avoid needing to use build supports. Build supports take time and cost material, and the best build supports are ones you design yourself to break off without causing a mess. Most printers can print a 45&#176; negative (overhang) before they need build supports, but depending on the part and the printer you can get a little more than that reliably and neatly. With a decent amount of the piece contacting the build plate on a flat side, you can also get rid of skirts and brims.</p>
+            <hr>
+        </li>
+        <li>
+            <h3>Switch to Edit Mode and Delete The Flat Faces <code>Box-Clip</code> Added</h3>
+            <p>If you leave the flat face on the bottom, remeshing in Rhino will round off this sharp edge that you want. (Unless you add a crease around the edge, but this will still add unnecessary geometry to the underside)</p>
+            <p>This will open the mesh. We will seal it up again later in Rhino.</p>
+            <div class="portfoliorow">
+                <button><picture><img src="static/img/rocks-04.avif" alt="In the Blender edit mode, delete the flat face on the bottom" /></picture></button>
+            </div>
+            <hr>
+        </li>
+        <li>
+            <h3>Export from Blender as <code>.glb</code></h3>
+            <p><code>.glb</code> is a modern and good file format for vertex meshes. It includes both scene information, textures, animations, and other data. (all optional in the export settings, but you shouldn't have any of these except scene data like the camera and light) Unlike <code>.obj</code> and <code>.stl</code>, <code>.glb</code> results in smaller file sizes, and contains the exact mesh you sculpted. (unlike <code>.stl</code> which will lose things like quad data) <code>.fbx</code> is also fine, but <code>.glb</code> is still smaller (and is also a non-propietary filetype, meaning you can open <code>.glb</code> files in Windows' 3D objects viewer)</p>
+            <hr>
+        </li>
+        <li>
+            <h3>Open Rhino, Select MM Units, Import Your Mesh, and Scale It to The Size You Want</h3>
+            <p>Rhino is a CAD modelling software used mostly by jewellers, architects, designers, and dentists. It's similar to Alias, in that Rhino is a NURBS surface modeler, but it can "fake" solids using multiple surfaces to create an enclosed space, called a polysurface. This makes it useful as a combination engineering and design multitool.</p>
+            <p>We want to use it to turn a complicated mesh into a surface, and then a solid, which we are going to put dimensioned holes into.</p>
+            <p>One of the most useful features about Rhino is that you can type in the command you want in a box at the top of the screen, so you don't have to search through menus for the tools you need.</p>
+            <p>Go to <code>File > Import</code>, and select your <code>.glb</code> mesh.</p>
+            <p>Move the mesh's autogenerated origin to the scene origin. This isn't necessary, but it helps. Align the bottom of the mesh to the <code>X/Z</code> axis plane. It doesn't have to match exactly.</p>
+            <p>If the mesh is the wrong size, type <code>scale</code> in the <code>Command:</code> box at the top of the screen and press <kbd>enter</kbd>. Put the <code>base point</code> at the scene origin, the <code>scale factor</code> somewhere at the edge of the mesh, and scale the mesh down by moving the mouse. The grid behind the orthographic windows is in millimetres, so you can scale the mesh to the rough size you want.</p>
+            <div class="portfoliorow">
+                <button><picture><img src="static/img/rocks-05.avif" alt="In Rhino, with the imported mesh from Blender, that's been scaled to a size in millimetres" /></picture></button>
+            </div>
+            <p>Note: If you want to scale to an exact size, before you scale, draw a <code>line</code> from the origin to the size you want, and then when you scale the mesh, go to the <code>OSnap</code> tab at the bottom left and check <code>end</code>. This will snap the <code>scale factor</code> point you set when you started scaling to the end of the <code>line</code> you drew.</p>
+            <hr>
+        </li>
+        <li>
+            <h3><code>QuadRemesh</code> to Make The Mesh Easier to Work With</h3>
+            <p>This again isn't strictly necessary, it just depends. If your PC is lagging, or Rhino can't resolve the edits you're making, or if your printer is taking forever for some reason, or your mesh is just really ugly, <code>QuadRemesh</code> helps.</p>
+            <p>Play with the settings until you get a result you like. Remeshing takes a while, so leave it to work for a minute or so when you click OK.</p>
+            <p><a href="https://docs.mcneel.com/rhino/8/help/en-us/commands/quadremesh.htm">The documentation for <code>QuadRemesh</code></a> outlines what the options for the tool mean. Usually, set <code>Adaptive Size %</code> to <code>100</code> and <code>Target Quad Count</code> to some number in the thousands.</p>
+            <div class="portfoliorow">
+                <button><picture><img src="static/img/rocks-06.avif" alt="Rhino quad remesh settings" /></picture></button>
+            </div>
+            <p>When <code>QuadRemesh</code> is finished, delete the old mesh, and you should be left with something that looks regular and organised, like this:</p>
+            <div class="portfoliorow">
+                <button><picture><img src="static/img/rocks-07.avif" alt="Rhino quad remesh result" /></picture></button>
+            </div>
+            <hr>
+        </li>
+        <li>
+            <h3>On the Open Edges of The Mesh, Select The Edge Loops</h3>
+            <p>You will make a new surface to close up the bottom of the mesh. To do this, you need to select the edges around the hole you want to fill.</p>
+            <p>To do this, zoom in to an edge, hold <kbd>shift</kbd> + <kbd>ctrl</kbd>, and <kbd>double-click</kbd> on the edge. This should select the edge loop. Do this for both edge loops if your mesh is doughnut shaped, like this example.</p>
+            <p>To make the edge easier to see, in the <code>Perspective</code> viewport, at the top-left, you can select <code>shaded</code> instead of <code>wireframe</code>.</p>
+            <div class="portfoliorow">
+                <button><picture><img src="static/img/rocks-08.avif" alt="Select the edge loops of the open edge in Rhino" /></picture></button>
+            </div>
+            <p>Note: This method relies on this new surface being flat. If the hole is uneven, you'll need to use another method. You can, for example, split the hole up into flat (that will touch the build plate) and uneven (that won't touch the build plate) segments in your Blender sculpt. You can also use tools like <code>Mesh patch</code> in Rhino, but good luck.</p>
+            <p>Note 2: You don't technically need to seal this hole to make the mesh a solid. If you wanted to print this shape hollow on the inside, you can add a thickness to the hollow mesh instead. 0.5mm white PLA is slightly translucent and will allow LED lights to diffuse through. This is what I used Millipede and Grasshopper for when I made the duck lamp.</p>
+            <hr>
+        </li>
+        <li>
+            <h3>Use the Planar Surface Tool to Seal The Bottom With A Surface</h3>
+            <p>The command is <code>_PlanarSrf</code>, from the <code>Surfaces Tools</code> tab.</p>
+            <p>When we used <code>box clip</code> in Blender to cut off geometry we don't care about and get a flat side for printing, it sliced straight through triangles in the way and damaged the mesh's topology, which made it harder to work with. (It's also important if you want to render the mesh, for whatever reason you wish, because the mesh topology is used by shaders to make surfaces look how they should in real life) When we used <code>QuadRemesh</code>, it fixed this problem, but how well that works depends on Rhino knowing what edges we think are important and want the new topology to respect, like the edge between the sculpted mesh and the flat bottom. By adding a new surface at this point instead of earlier, it just makes the project a little neater and easier to manage, especially if something goes wrong later. (Like during mesh boolean operations)</p>
+            <div class="portfoliorow">
+                <button><picture><img src="static/img/rocks-09.avif" alt="A new NURBS surface created on the bottom of the mesh, using Planar Surface" /></picture></button>
+            </div>
+            <hr>
+        </li>
+        <li>
+            <h3>Convert the Planar Surface You Created To A Mesh, So You Can Join It to The Sculpted Mesh</h3>
+            <p>The command is <code>_Mesh</code>, in the <code>Mesh Tools</code> tab.</p>
+            <p>NURBS surfaces can't be joined to meshes in Rhino, they need to both be the same type of surface. Helpfully, Rhino can make meshes from NURBS surfaces and automatically generate the geometry.</p>
+            <p>You can use <code>_MeshBooleanUnion</code> to join the two pieces together. If it worked, on the right side of the screen in the properties tree, when you click the shape you've made, it should say under <code>Object</code>, "<code>closed mesh</code>".</p>
+            <div class="portfoliorow">
+                <button><picture><img src="static/img/rocks-10.avif" alt="Using Mesh, turning a NURBS surface into a mesh to join with the sculpted mesh" /></picture></button>
+            </div>
+            <p>Note: <a href="https://www.3ds.com/store/cad/nurbs-modeling">NURBS means <em>Non-Uniform Rational B-Splines</em>.</a> A <a href="https://www.youtube.com/watch?v=jvPPXbo87ds">spline</a> is a curved line that can be represented mathematically with polynomials. B-Spline, <em>basis spline</em>, means one piece of a list of connected splines that make a complicated curve, <em>rational</em> (as in ratio) means that the curve's shape is worked out by each segment having an effect on the ones around it, and <em>non-uniform</em> means that NURBS can represent lots of shapes rather than relying on parametric primitives. <em>NURBS surface</em> means a 3D shape represented by a network of lots of curves, kind of like the warp yarns and weft yarns in weaving. You can imagine that the warp might be called <code>X</code> and the weft might be called <code>Y</code>, but in 3D graphics, they are named <code>U</code> and <code>V</code> instead.</p>
+            <hr>
+        </li>
+        <li>
+            <h3>Create The Shapes You Want To Add/Remove, And Use <code>_MeshBooleanUnion</code> or <code>_MeshBooleanDifference</code> To Join/Cut</h3>
+            <p>Surfaces and polysurfaces in Rhino can't be added directly to a mesh or SubD, but they can be used to <code>boolean difference</code>, which is to gouge out a piece of the mesh that's the shape of the surface or polysurface. To <code>boolean union</code>, the piece you want to add has to be converted to a mesh as above.</p>
+            <p>This will add/remove mesh faces as needed, which can get very messy. I hate this part and I'm sure there's a better way, but I'm not sure what it is yet. I'm still looking, but this does work most of the time, so long as what you're trying to do isn't too complicated. (which can be difficult to know) If something isn't working, you'll need to move some pieces around. Boolean unions seem to work best using primitive shapes at the point of the union, like cylinders, flat surfaces or cubes.</p>
+            <p>Here I'm cutting two holes using cylinders. You can see how they're intersecting completely, with a little bit of excess.</p>
+            <div class="portfoliorow">
+                <button><picture><img src="static/img/rocks-11.avif" alt="Created some shapes to cut into the mesh" /></picture></button>
+            </div>
+            <div class="portfoliorow">
+                <button><picture><img src="static/img/rocks-12.avif" alt="Mesh boolean difference on the mesh and the shapes" /></picture></button>
+            </div>
+            <hr>
+        </li>
+        <li>
+            <h3>When You're Finished, Export As <code>.3mf</code></h3>
+            <p>Go to <code>File > Export Selected</code>, click <code>Save as type</code> and select <code>3MF (*.3mf)</code>.</p>
+            <p><code>.3mf</code>, like <code>.glb</code>, contains scene data, colours, textures, and other data like copyright information, but most importantly it can represent NURBS surfaces, unlike <code>.stl</code>. In CAD softwares, like Rhino, Solidworks, and others, this means that lofts and fillets can be accurately represented in 3D printing slicers and other manufacturing systems, and also helpfully that 3D objects made in one CAD software are portable to other CAD softwares. (although history trees like the FeatureManager tree from Solidworks are not preserved)</p>
+            <hr>
+        </li>
+        <li>
+            <h3>Import The <code>.3mf</code> Into A 3D Printing Slicer</h3>
+            <p>Which slicer you choose will most likely be up to what 3D printer you are going to use. The most popular so far, at least to my impression, are <a href="https://ultimaker.com/software/ultimaker-cura/">Ultimaker Cura</a> and <a href="https://bambulab.com/en/download/studio">Bambu Studio</a>. If you're not the person who is going to prepare the model for 3D printing, you don't need to do this part.</p>
+            <p>You can see in the slicer that in this case the mesh is shaded showing all the diamond-shaped vertices from the mesh. In a large enough resolution, these would be visible in the print. Rhino can convert meshes to a kind of surface called <code>SubD</code>, <em>subdivison surface</em>. You can do this before you export the shape if you'd like. It turns the quad mesh you generated with <code>QuadRemesh</code> into a set of splines that use the vertices from the mesh as control points, making the mesh smooth.</p>
+            <div class="portfoliorow">
+                <button><picture><img src="static/img/rocks-13.avif" alt="The model is imported into a 3D printing slicer, shaded to show vertices" /></picture></button>
+            </div>
+            <p>At this resolution though, the vertices can't be seen in the preview of the print, but that might not always be the case with every mesh.</p>
+            <div class="portfoliorow">
+                <button><picture><img src="static/img/rocks-14.avif" alt="The 3D printing preview in the slicer, showing smooth curves" /></picture></button>
+            </div>
+            <p>If you make the mesh into a <code>SubD</code> in Rhino before you export it, with some tweaking and adding of creases in the right places, you can get a shape that's much smoother, useful for high definition rendering, or very large prints.</p>
+            <div class="portfoliorow">
+                <button><picture><img src="static/img/rocks-15.avif" alt="A SubD surface previewed in Rhino" /></picture></button>
+                <button><picture><img src="static/img/rocks-16.avif" alt="A SubD surface showing the wavy topology of subdivisions, unlike the point-to-point lines of normal meshes" /></picture></button>
+            </div>
+            <div class="portfoliorow">
+                <button><picture><img src="static/img/rocks-19.avif" alt="With the shape exported as a SubD, you can see in the slicer there's no vertices visible" /></picture></button>
+            </div>
+            <p>Note: Slicers generate a text file, a list of coordinates and times called <a href="https://howtomechatronics.com/tutorials/g-code-explained-list-of-most-important-g-code-commands/">G-code</a>. You can hand write these if you want. Machinists for metalworking are expected to write and edit their G-code themselves, and doing the same thing for 3D printing (usually not by hand, you may give yourself an RSI, you may use a script or some other tool) can create some intresting effects. 3D printed ceramics often make use of the sloughing of clay slip to make complicated and precise petal shapes, ridges, loops and textured patterns.</p>
+            <p><a href="https://ift.devinci.fr/grasshopper-for-g-code-generation">With Rhino you can use Grasshopper to write G-code.</a></p>
+            <hr>
+        </li>
+        <li>
+            <h3>Print, Wait, Finished</h3>
+            <p>Slicing models for printing is a lot of trial and error until you find settings that work the quickest and produce the neatest results. Sometimes you can find settings files online for your printer that make it faster to get started. Sometimes there are modifications and additions you can make to your printer to make it more reliable, like bowden tubes and cable tidy trains, and sometimes it's temperature, humidity and dust management depending on your region.</p>
+            <p>This is by far not the only method for achieving the same result as I have. There are probably better ways. However, in terms of time and the skills and softwares I already know, this is the way that works for me. I hope if you attempt a similar process you can get what you imagined. I'm also always open to talk about this kind of work, so if you'd like to, you can send me an email.</p>
+            <div class="portfoliorow">
+                <button><picture><img src="static/img/rocks-20.avif" alt="Prints arranged in slicing software" /></picture></button>
+            </div>
+            <div class="portfoliorow">
+                <button><picture><img src="static/img/rocks-22.avif" alt="Prints on a 3D printer build plate" /></picture></button>
+            </div>
+        </li>
+    </ol>
+    <hr>
+</section>
+<section class="contentitem">
+    <h2 id="subheading02">About These Bouldering Holds</h2>
+    <span>Details for anyone interested<br>Ceres Miller, 2024</span>
+    <hr>
+</section>

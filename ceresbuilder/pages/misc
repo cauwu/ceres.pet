@@ -1,6 +1,6 @@
 <header class="contentitem">
     <h2 id="subheading00">Miscellaneous</h2>
-    <span>Portfolio work, renders, sketches, pictures.<br>Ceres Miller, 2018-2023</span>
+    <span>Portfolio work, renders, sketches, pictures.<br>Ceres Miller, 2018-2024</span>
     <hr>
     <p></p>
     <div class="portfoliorow">
@@ -22,7 +22,7 @@
     <hr>
 </header>
 <section class="contentitem">
-    <h2 id="subheading01">Sketching</h2>
+    <h2 id="sketching">Sketching</h2>
     <span>Ceres Miller, 2018-2023</span>
     <hr>
     <div class="portfoliorow">
@@ -32,6 +32,35 @@
     <div class="portfoliorow">
         <button><picture><img src="static/img/misc-10.jpg" alt="Open video camera sketch from Black Box project" /></picture></button>
         <button><picture><img src="static/img/misc-11.jpg" alt="Open video camera sketch from Black Box project, showing detail" /></picture></button>
+    </div>
+    <hr>
+</section>
+<section class="contentitem">
+    <h2 id="viralplushtoys">Design Test for a Company that Makes Plush Toys</h2>
+    <span>These are design samples for a company that sells plush toys using viral marketing strategies.<br>Ceres Miller, 2024</span>
+    <hr>
+    <p>These are 9 plush toy designs. The first 3 are about pairs, (keep one, give one) the next 3 are about reveals (something hidden inside, for example) and the last 3 are studies of viral content.</p>
+    <blockquote><p>Fuzzy Stars create premium and playful plush toys aimed at adults. The more viral the toy the better. This is because we put a massive emphasis onto marketing across social media. We have noticed that reveal toys and toys that come in pairs (keep one, give one) do well.</p></blockquote>
+    <p>The first slide outlines my approach.</p>
+    <div class="portfoliorow">
+        <button><picture><img src="static/thumbs/thumb-viralplushtoys-10.avif" alt="Brief and outline of the design test" /></picture></button>
+        <button><picture><img src="static/thumbs/thumb-viralplushtoys-01.avif" alt="Hugging beanbag ferrets that would wrap around each other" /></picture></button>
+    </div>
+    <div class="portfoliorow">
+        <button><picture><img src="static/thumbs/thumb-viralplushtoys-02.avif" alt="Seashells with dog faces embroidered onto them" /></picture></button>
+        <button><picture><img src="static/thumbs/thumb-viralplushtoys-03.avif" alt="Shipping container shaped pillows" /></picture></button>
+    </div>
+    <div class="portfoliorow">
+        <button><picture><img src="static/thumbs/thumb-viralplushtoys-04.avif" alt="Duck with an orange on its head. Remove the orange, another duck" /></picture></button>
+        <button><picture><img src="static/thumbs/thumb-viralplushtoys-05.avif" alt="Cat with a star shaped sprout growing out of it's head" /></picture></button>
+    </div>
+    <div class="portfoliorow">
+        <button><picture><img src="static/thumbs/thumb-viralplushtoys-06.avif" alt="A bulging lithium battery plushie that fits inside a plushie phone" /></picture></button>
+        <button><picture><img src="static/thumbs/thumb-viralplushtoys-07.avif" alt="A two-headed calf" /></picture></button>
+    </div>
+    <div class="portfoliorow">
+        <button><picture><img src="static/thumbs/thumb-viralplushtoys-08.avif" alt="A beanbag dog, with fins like a seal and a pointed hat" /></picture></button>
+        <button><picture><img src="static/thumbs/thumb-viralplushtoys-09.avif" alt="A sad looking cat with a magic wand and a wizard hat. The collar says Novice on it" /></picture></button>
     </div>
     <hr>
 </section>

@@ -55,6 +55,15 @@
 			"contents_pane": false
 		},
 		{
+			"article_url": "hammer",
+			"article_title": "Ceres Miller / Environments with Hammer 4.x",
+			"page_article_location": "./pages/hammer",
+			"page_type": "portfolio",
+			"head_extra_location": "",
+			"page_modal": true,
+			"contents_pane": true
+		},
+		{
 			"article_url": "hospital",
 			"article_title": "Ceres Miller / Childrens' Hospital Waiting Room",
 			"page_article_location": "./pages/hospital",
@@ -134,6 +143,15 @@
 			"head_extra_location": "",
 			"page_modal": true,
 			"contents_pane": false
+		},
+		{
+			"article_url": "rocks",
+			"article_title": "Ceres Miller / Bouldering Hold Pins",
+			"page_article_location": "./pages/rocks",
+			"page_type": "portfolio",
+			"head_extra_location": "",
+			"page_modal": true,
+			"contents_pane": true
 		},
 		{
 			"article_url": "thiswebsite",

@@ -13,7 +13,7 @@ const defaultModal =
 
 const defaultNavpane = 
 `<nav id="navcontainer" role="navigation">
-<a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg" alt="site logo representing a link to the homepage" title="Home"></a>
+<a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg" alt="site logo representing a link to the homepage" title="Home" role="img"></a>
 <a href="index.html"><span>Home</span></a>
 <a href="about.html"><span>About</span></a>
 <a href="index.html#portfolio"><span>Portfolio</span></a>
@@ -75,7 +75,7 @@ ${extraStyling}
 ${headExtra}`;
 
 const defaultBody = ({pageModal, siteNavpane, contentsPane, pageArticle, siteFooter, siteExtraPane}) => 
-`${pageModal}<div id="navpane">${siteNavpane}${contentsPane}</div><div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg" alt="site logo representing a link to the homepage" title="Home"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article>${pageArticle}</article><footer id="sitefooter" class="contentitem">${siteFooter}</footer></main><div id="extrapane">${siteExtraPane}</div></div>`;
+`${pageModal}<div id="navpane">${siteNavpane}${contentsPane}</div><div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg" alt="site logo representing a link to the homepage" title="Home" role="img"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article>${pageArticle}</article><footer id="sitefooter" class="contentitem">${siteFooter}</footer></main><div id="extrapane">${siteExtraPane}</div></div>`;
 
 const defaultPage = ({pageHead, pageBody}) => `<!DOCTYPE html><html dir="ltr" lang="en"><head>${pageHead}</head><body>${pageBody}</body></html>`;
 

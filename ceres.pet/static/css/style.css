@@ -397,6 +397,7 @@ dialog {
 	width: 100%;
 	height: 100%;
 	background-color: transparent;
+	border-color: transparent;
 }
 
 dialog::backdrop {
@@ -490,19 +491,19 @@ dialog::backdrop {
 	}
 	.portfoliorow a,
 	.portfoliorow button {
-		width: auto;
+		width: auto !important;
 	}
 	.portfoliorow a:nth-child(1),
 	.portfoliorow button:nth-child(1) {
-		margin: 0rem 0rem 0.4rem 0rem;
+		margin: 0rem 0rem 0.4rem 0rem !important;
 	}
 	.portfoliorow a:nth-child(3),
 	.portfoliorow button:nth-child(3) {
-		margin: 0.4rem 0rem 0rem 0rem;
+		margin: 0.4rem 0rem 0rem 0rem !important;
 	}
 	.portfoliorow button:only-of-type,
 	.portfoliorow figure:only-of-type {
-	margin: 0rem 0rem 0rem 0rem;
+	margin: 0rem 0rem 0rem 0rem !important;
 	}
 	main h1 {
 		font-size: 1.4rem;
