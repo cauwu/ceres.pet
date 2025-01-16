@@ -16,6 +16,9 @@
 <link rel="canonical" href="https://ceres.pet/mindseye"/>
 <link rel="stylesheet" href="/static/css/style.css"/>
 <link rel="stylesheet" href="/static/css/portfolio.css"/>
+<!-- Needed to support versions of Safari earlier than 16 (2023) -->
+<script async src="https://unpkg.com/es-module-shims@2.0.3/dist/es-module-shims.js"></script>
+<!-- This tells the browser where to find any JS that we request via import -->
 <script type="importmap">
     {
         "imports": {
@@ -25,9 +28,6 @@
         }
     }
 </script>
-<!-- Needed to support versions of Safari earlier than 16 (2023) -->
-<script async src="https://unpkg.com/es-module-shims@1.7.1/dist/es-module-shims.js"></script>
-<!-- This tells the browser where to find any JS that we request via import -->
 <!-- For better performance but not strictly needed -->
 <link rel="modulepreload" href="./static/js/modules/3d.module.js" />
 <link rel="modulepreload" href="https://unpkg.com/three@0.170.0/build/three.module.js" />
