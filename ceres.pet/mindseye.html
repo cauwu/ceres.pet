@@ -21,26 +21,26 @@
         "imports": {
             "three": "https://unpkg.com/three@0.170.0/build/three.module.js",
             "three/addons/": "https://unpkg.com/three@0.170.0/examples/jsm/",
-            "3djs": "./static/js/modules/3d.module.js"
+            "3d": "./static/js/modules/3d.module.js"
         }
     }
-    </script>
+</script>
 <!-- Needed to support versions of Safari earlier than 16 (2023) -->
 <script async src="https://unpkg.com/es-module-shims@1.7.1/dist/es-module-shims.js"></script>
 <!-- This tells the browser where to find any JS that we request via import -->
 <!-- For better performance but not strictly needed -->
-<link rel="modulepreload" href="/static/js/modules/3d.module.js" />
+<link rel="modulepreload" href="./static/js/modules/3d.module.js" />
 <link rel="modulepreload" href="https://unpkg.com/three@0.170.0/build/three.module.js" />
 <link rel="modulepreload" href="https://unpkg.com/three@0.170.0/examples/jsm/controls/OrbitControls.js" />
 <link rel="modulepreload" href="https://unpkg.com/three@0.170.0/examples/jsm/loaders/3MFLoader.js" />
 <link rel="modulepreload" href="https://unpkg.com/three@0.170.0/examples/jsm/libs/fflate.module.js" />
-<script src="/static/js/modules/cerespet.js"></script></head><body><dialog id="modal"><span id="modalclose" autofocus>&times;</span><figure id="modalholder"><picture><img id="modalcontent" alt=""/></picture><span id="modalcaption"></span></figure></dialog><div id="navpane"><nav id="navcontainer" role="navigation">
+<script src="./static/js/modules/cerespet.js"></script></head><body><dialog id="modal"><span id="modalclose" autofocus>&times;</span><figure id="modalholder"><picture><img id="modalcontent" alt=""/></picture><span id="modalcaption"></span></figure></dialog><div id="navpane"><nav id="navcontainer" role="navigation">
 <a id="desktoplogo" href="index.html"><img src="static/site/logo-01.svg" alt="site logo representing a link to the homepage" title="Home" role="img"></a>
 <a href="index.html"><span>Home</span></a>
 <a href="about.html"><span>About</span></a>
 <a href="index.html#portfolio"><span>Portfolio</span></a>
 <a href="gallery.html"><span>Gallery</span></a>
-</nav><nav id="contentscontainer"><span id="contentsheading">Contents</span><a href="#subheading00"><span class="contentslinkspan">MIND'S EYE - A Digital Camera Made to be Modified</span></a><a href="#subheading01"><span class="contentslinkspan">3D Assembly</span></a><a href="#subheading02"><span class="contentslinkspan">Development work</span></a></nav></div><div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg" alt="site logo representing a link to the homepage" title="Home" role="img"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article><header class="contentitem">
+</nav><nav id="contentscontainer"><span id="contentsheading">Contents</span><a href="#subheading00"><span class="contentslinkspan">MIND'S EYE - A Digital Camera Made to be Modified</span></a><a href="#subheading01"><span class="contentslinkspan">3D Assembly - Interactive Model</span></a><a href="#subheading02"><span class="contentslinkspan">Development work</span></a></nav></div><div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg" alt="site logo representing a link to the homepage" title="Home" role="img"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article><header class="contentitem">
     <h2 id="subheading00">MIND'S EYE - A Digital Camera Made to be Modified</h2>
     <span>A project about adaptable digital electronics.<br>Ceres Miller, 2023</span>
     <hr>
@@ -98,13 +98,13 @@
     <hr>
 </section>
 <section class="contentitem">
-    <h2 id="subheading01">3D Assembly</h2>
-    <span>Left click to rotate, mousewheel to zoom.</span>
+    <h2 id="subheading01">3D Assembly - Interactive Model</h2>
+    <span><kbd>Left click</kbd>&nbsp;to rotate,&nbsp;<kbd>mousewheel</kbd>&nbsp;to zoom.</span>
     <hr>
     <!-- Wherever you want to embed a 3mf file, give it a unique ID -->
     <div class="threemf" id="threemf-camera-1"></div>
     <script type="module">
-        import { mount } from '3djs';
+        import { mount } from './static/js/modules/3d.module.js';
         // Pass the ID and the filename to the mount function
         mount('threemf-camera-1', 'mindseye.3mf');
     </script>
