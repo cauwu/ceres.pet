@@ -24,7 +24,7 @@
         "imports": {
             "three": "https://unpkg.com/three@0.170.0/build/three.module.js",
             "three/addons/": "https://unpkg.com/three@0.170.0/examples/jsm/",
-            "3d": "./static/js/modules/3d.module.js"
+            "module3d": "./static/js/modules/3d.module.js"
         }
     }
 </script>
@@ -104,9 +104,9 @@
     <!-- Wherever you want to embed a 3mf file, give it a unique ID -->
     <div class="threemf" id="threemf-camera-1"></div>
     <script type="module">
-        import { mount } from '3d';
+        import { mount3mf } from 'module3d';
         // Pass the ID and the filename to the mount function
-        mount('threemf-camera-1', 'mindseye.3mf');
+        mount3mf('threemf-camera-1', 'mindseye.3mf');
     </script>
     <hr>
 </section>
