@@ -6,7 +6,9 @@
 
 html {
     overflow-y: scroll; 
-    overscroll-behavior-y: none; 
+    overscroll-behavior-y: auto; 
+	overflow-x: clip;
+	overscroll-behavior-x: none;
     font-family: Work Sans, Arial, Helvetica, sans-serif;
 	background-color: light-dark(#fbf4f6, #2b2123); /* "very light pink", "very dark pink-red" */
 }

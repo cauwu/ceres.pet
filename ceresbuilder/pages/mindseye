@@ -56,13 +56,13 @@
     <hr>
 </section>
 <section class="contentitem">
-    <h2 id="subheading01">3D Assembly</h2>
-    <span>Left click to rotate, mousewheel to zoom.</span>
+    <h2 id="subheading01">3D Assembly - Interactive Model</h2>
+    <span><kbd>Left click</kbd>&nbsp;to rotate,&nbsp;<kbd>mousewheel</kbd>&nbsp;to zoom.</span>
     <hr>
     <!-- Wherever you want to embed a 3mf file, give it a unique ID -->
     <div class="threemf" id="threemf-camera-1"></div>
     <script type="module">
-        import { mount } from '3djs';
+        import { mount } from '3d';
         // Pass the ID and the filename to the mount function
         mount('threemf-camera-1', 'mindseye.3mf');
     </script>
