@@ -1,0 +1,16 @@
+<header class="contentitem">
+    <h2 id="subheading00">Riley's Portfolio Website</h2>
+    <span>A portfolio website for a musician<br>Ceres Miller, 2025</span>
+    <hr>
+    <p>Riley MacKenzie needed a personal website that presented their composition work in a way consistent with the artistic vision in their music.</p>
+    <p>I asked them for a moodboard of images and a personal bio, and that combined with the discussions we had had about their music, the way that they decorate their staves, and some of the programme notes from their performances, I developed a website that emulates their style and influences.</p>
+    <p><a href="https://rileysite.pages.dev" rel="external" target="_blank"><u>Riley's website is available here.</u></a></p>
+    <div class="portfoliorow">
+        <button><picture><img src="static/img/rileysite-01.avif" alt="Screenshot of Riley's website, home page" /></picture></button>
+    </div>
+    <div class="portfoliorow">
+        <button><picture><img src="static/img/rileysite-02.avif" alt="Screenshot of Riley's website, portfolio page. More details about each work can be found in a dropdown" /></picture></button>
+    </div>
+    <p>The artwork was made by me using public domain images composited together in Photoshop. Taking from Riley's artist's bio, the images contain bodies, flowers, stars, and animals, blended with thorny plants, medical illustrations, and gnashing teeth. Exposures, levels and colours of images are adjusted so to give the impression of poor camera quality that contributes to a feeling of unease. The images are indexed to the colours of an Apple II and pattern dithered, to give the impression of data loss and sketchiness that allows the viewer to make up the details in the image for themselves.</p>
+    <hr>
+</header>

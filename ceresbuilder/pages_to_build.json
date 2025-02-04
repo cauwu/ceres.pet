@@ -145,6 +145,15 @@
 			"contents_pane": false
 		},
 		{
+			"article_url": "rileysite",
+			"article_title": "Ceres Miller / Riley's Portfolio Website",
+			"page_article_location": "./pages/rileysite",
+			"page_type": "portfolio",
+			"head_extra_location": "",
+			"page_modal": true,
+			"contents_pane": false
+		},
+		{
 			"article_url": "rocks",
 			"article_title": "Ceres Miller / Bouldering Hold Pins",
 			"page_article_location": "./pages/rocks",

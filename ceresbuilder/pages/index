@@ -2,14 +2,14 @@
     <h2>Ceres Kinnear Miller</h2>
     <span>Product Designer, London, UK</span>
     <hr />
-    <p id="indexbio">Ceres Kinnear Miller is a transfem product designer originally from Glasgow and currently living in London. Her work is in craft methods of making digital electronic devices, inspired by <a href="https://www.journalofjewelleryresearch.org/wp-content/uploads/2022/05/0143_SMT_Vol13_P04_Shorter_FA.pdf" rel="external">Michael Shorter's craft technologist work</a> and <a href="http://ireneposch.net/the-embroidered-computer/" rel="external">Irene Posch and Ebru Kurbak's CRAFTED LOGIC.</a> She makes her own toys as part of a study of play, fun and interaction; cute soft toys, fun garments and electronic things for people to investigate. Besides that, she is intrested in kit bags, and real-time graphics rendering for video games and websites.</p>
+    <p id="indexbio">Ceres Kinnear Miller is a transfem product designer originally from Glasgow and currently living in London. Her work is in craft methods of making digital electronic devices, inspired by <a href="https://www.journalofjewelleryresearch.org/wp-content/uploads/2022/05/0143_SMT_Vol13_P04_Shorter_FA.pdf" rel="external" target="_blank">Michael Shorter's craft technologist work</a> and <a href="http://ireneposch.net/the-embroidered-computer/" rel="external" target="_blank">Irene Posch and Ebru Kurbak's CRAFTED LOGIC.</a> She makes her own toys as part of a study of play, fun and interaction; cute soft toys, fun garments and electronic things for people to investigate. Besides that, she is intrested in kit bags, and real-time graphics rendering for video games and websites.</p>
     <hr />
 </header>
 <section class="contentitem">
     <a href="mindseye.html">
         <h2>MIND'S EYE - A Digital Camera Kit Made to be Modified</h2>
         <hr>
-        <p>A project about adaptable digital electronics. What's inside a black box?</p>
+        <p>A project about adaptable digital electronics and the craft cultures that make them. What's inside a black box?</p>
         <img src="static/img/mindseye-6.jpg" alt="Thumbnail image: Mind's Eye camera with the top plate taken off, showing tools around it">
         <hr style="margin-top: 0.5rem;">
     </a>
@@ -71,10 +71,10 @@
             <span>Graphic and Web Design</span>
             <span>2023-2024</span>
         </a>
-        <a>
-                <img src="" alt="">
-                <span></span>
-                <span></span>
+        <a href="rileysite.html">
+            <img src="static/img/rileysite-01.avif" alt="Thumbnail image: A screenshot of Riley MacKenzie's website">
+            <span>A Portfolio Website for Riley</span>
+            <span>2025</span>
         </a>
     </div>
     <div id="showmoredropdown" style="display: none;">
