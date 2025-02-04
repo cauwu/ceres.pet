@@ -393,6 +393,17 @@ main b {
 	margin: 0.2rem 0rem 0rem 0rem;
 }
 
+#indexbio {
+	text-align: justify;
+	text-justify: inter-word;
+	margin: 1em 1em 1em 1em;
+	font-size: 18px;
+}
+
+#indexbio a {
+	text-decoration: underline;
+}
+
 /* ~~~~~~ image modal ~~~~~~ */
 
 dialog {

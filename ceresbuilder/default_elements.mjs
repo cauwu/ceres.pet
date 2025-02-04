@@ -34,7 +34,7 @@ const defaultFooter =
 <span>•</span>
 <span id="footerheart">&lt;3</span>
 </div>
-<span id="copyright">© Ceres Miller 2024 - All works on this website, unless otherwise noted, are licensed under the CC BY-SA 4.0 license.</span>`;
+<span id="copyright">© Ceres Miller 2025 - All works on this website, unless otherwise noted, are licensed under the CC BY-SA 4.0 license.</span>`;
 
 const defaultExtraPane = 
 `<a id="hireme" href="about.html"><span>Hire Me</span></a>
@@ -44,9 +44,9 @@ const defaultExtraPane =
 <span id="emailcopiednotif">copied!</span>
 </div>
 <div id="externallinkscontainer">
-<a href="https://www.instagram.com/ceresmiller/"><span>Instagram</span></a>
-<a href="https://linkedin.com/in/ceres-miller/"><span>LinkedIn</span></a>
-<a href="https://github.com/cauwu"><span>Github</span></a>
+<a href="https://www.instagram.com/ceresmiller/" rel="external" target="_blank"><span>Instagram</span></a>
+<a href="https://linkedin.com/in/ceres-miller/" rel="external" target="_blank"><span>LinkedIn</span></a>
+<a href="https://github.com/cauwu" rel="external" target="_blank"><span>Github</span></a>
 </div>`;
 
 const defaultContentsPane = (contentsItems) =>
@@ -75,7 +75,7 @@ ${headExtra}
 <script src="./static/js/modules/cerespet.js"></script>`;
 
 const defaultBody = ({pageModal, siteNavpane, contentsPane, pageArticle, siteFooter, siteExtraPane}) => 
-`${pageModal}<div id="navpane">${siteNavpane}${contentsPane}</div><div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg" alt="site logo representing a link to the homepage" title="Home" role="img"/><h1>Ceres&nbsp;Miller / Product&nbsp;Designer</h1></a><article>${pageArticle}</article><footer id="sitefooter" class="contentitem">${siteFooter}</footer></main><div id="extrapane">${siteExtraPane}</div></div>`;
+`${pageModal}<div id="navpane">${siteNavpane}${contentsPane}</div><div id="contentpane"><main><a id="title" href="index.html"><img src="static/site/logo-01.svg" alt="site logo representing a link to the homepage" title="Home" role="img"/><h1>Ceres&nbsp;Kinnear&nbsp;Miller / Product&nbsp;Designer</h1></a><article>${pageArticle}</article><footer id="sitefooter" class="contentitem">${siteFooter}</footer></main><div id="extrapane">${siteExtraPane}</div></div>`;
 
 const defaultPage = ({pageHead, pageBody}) => `<!DOCTYPE html><html dir="ltr" lang="en"><head>${pageHead}</head><body>${pageBody}</body></html>`;
 

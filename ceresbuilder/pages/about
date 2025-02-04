@@ -7,9 +7,9 @@
 	<p><b>Contact:</b></p>
 	<ul>
 		<li><button id="emailaddress" style="font-family:Work Sans; font-size:1rem; background-color:light-dark(#fbf4f6, #2b2123); padding:0.2rem;" onclick="pfCopyEmail(v = 1)"></button><span id="emailcopiednotifmobile" style="padding:0.2rem; color:light-dark(#808080, #ffc5cd); font-family:Inconsolata; display:none;">copied!</span></li>
-		<li><a href="https://linkedin.com/in/ceres-miller-b69969267/"><span>Linkedin</span></a></li>
-		<li><a href="https://www.instagram.com/ceresmiller/"><span>Instagram</span></a></li>
-		<li><a href="https://github.com/cauwu"><span>Github</span></a></li>
+		<li><a href="https://linkedin.com/in/ceres-miller-b69969267/" rel="external" target="_blank"><span>Linkedin</span></a></li>
+		<li><a href="https://www.instagram.com/ceresmiller/" rel="external" target="_blank"><span>Instagram</span></a></li>
+		<li><a href="https://github.com/cauwu" rel="external" target="_blank"><span>Github</span></a></li>
 	</ul>
 	<hr>
 	<p>I'm a product designer looking for work.</p>
@@ -18,8 +18,11 @@
 	<hr>
 </section>
 <section class="contentitem">
-	<p>I made this website with help from <a href="https://github.com/twnk"><u>Angel (github.com/twnk)</u></a> for implementing the .3mf viewer and for JS programming assistance.</p>
-	<p>I am also open to website design commissions.</p>
+	<p>I made this website with help from <a href="https://github.com/twnk" rel="external" target="_blank"><u>Angel (github.com/twnk)</u></a> for implementing the .3mf viewer and for JS programming assistance.</p>
+	<p>I am also open to website design commissions. Previous work:</p>
+	<ul>
+		<li><a href="https://rileysite.pages.dev" rel="external" target="_blank"><u>Riley MacKenzie's portfolio website</u></a></li>
+	</ul>
 	<p>Please contact me with any accessibility or compatibility concerns.</p>
 	<hr>
 </section>
@@ -27,8 +30,10 @@
 	<h2>See Also</h2>
 	<hr>
 	<ul>
-		<li><a href="https://frasermiller.dev"><u><b>Fraser Miller</b></u></a> - Programmer, brother</li>
-		<li><a href="https://woofmute.github.io/"><u><b>Woofmute</b></u></a> - Dreamcast researcher; decompling, analysing, and documenting Dreamcast games</li>
+		<li><a href="http://ava.glashack.space/" rel="external" target="_blank"><u><b>Ava</b></u></a> - Photographer, artist, musician, co-founder and director of <a href="https://wiki.glashack.space/" rel="external" target="_blank"><u>Glasgow Hackerspace CIC</u></a></li>
+		<li><a href="https://frasermiller.dev" rel="external" target="_blank"><u><b>Fraser Miller</b></u></a> - Programmer, brother</li>
+		<li><a href="https://rileysite.pages.dev" rel="external" target="_blank"><u><b>Riley E. F. MacKenzie</b></u></a> - Composer, experimental musician</li>
+		<li><a href="https://woofmute.github.io/" rel="external" target="_blank"><u><b>Woofmute</b></u></a> - Dreamcast researcher; decompling, analysing, and documenting Dreamcast games</li>
 	</ul>
 	<hr>
 </section>
