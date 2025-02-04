@@ -1,8 +1,6 @@
 import { 
     AmbientLight, 
     Box3,
-    Box3Helper,
-    Color, 
     CircleGeometry,
     DirectionalLight,
     DirectionalLightHelper, 
@@ -11,7 +9,6 @@ import {
     Mesh,
     MeshBasicMaterial,
     PerspectiveCamera, 
-    PointLight, 
     Scene, 
     TextureLoader,
     Vector3,
@@ -50,7 +47,7 @@ const setupControls = (controls, render) => {
 }
 
 
-export const mount = (id, filename) => {
+export const mount3mf = (id, filename) => {
     const container = document.getElementById(id);
 
     if (container === null) {

@@ -6,6 +6,9 @@ window.addEventListener("load", () => {
 		to open when someone clicks a link that is an image */
 	if (window.location.pathname !== "/") {
 		pfModalSystem();
+		if (HTMLScriptElement.supports?.("importmap")) {
+			console.log("Browser supports import maps.");
+		  }		  
 	}
 })
 

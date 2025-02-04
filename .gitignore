@@ -1,5 +1,6 @@
 ceresbuilder/node_modules/
 node_modules/
+ceres.pet/.vite/
 
 # Logs
 logs
