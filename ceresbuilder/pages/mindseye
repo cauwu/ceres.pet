@@ -1,6 +1,6 @@
 <header class="contentitem">
     <h2 id="subheading00">MIND'S EYE - A Digital Camera Made to be Modified</h2>
-    <span>A project about adaptable digital electronics.<br>Ceres Miller, 2023</span>
+    <span>A digital camera kit that encourages and enables end-user modification, adaptation, and repair of their digital electronic devices through hand-making, craft, and co-design methods.<br>Ceres Miller, 2023</span>
     <hr>
     <div class="portfoliorow">
         <button><picture><img src="static/img/mindseye-6.jpg" alt="Mind's Eye camera with the top plate taken off, showing tools around it" /></picture></button>
@@ -19,12 +19,12 @@
     <hr>
 </header>
 <section class="contentitem">
-    <p>Mind's Eye is a digital camera designed to be modified by an end user. Contemporary digital electronics require expensive tools and difficult to acquire knowledge to alter them, dissuading an end user from learning and developing skills to make their electronics their own.</p>
-    <p>This project is my research and investigation into how adaptable digital electronics might look and work, that enable end users to explore, alter and adapt their devices.</p>
+    <p>MIND's EYE is a digital camera kit to be modified and changed by end users. Digital electronic devices are difficult to understand because the knowledge to alter or repair them is hard to acquire, preventing an end user from developing the skills to make their electronics their own. To address this, MIND'S EYE makes use of open-source design techniques applied to product design.</p>
+    <p>This project is my research and investigation into how adaptable digital electronics might look and work based on my participation in craft communities of electronics hackers. How can digital electronic devices guide and encourage end users into understanding how they work in relation to them, in a way that enables them to explore, alter and adapt their devices in ways unique to them?</p>
     <hr>
 </section>
 <section class="contentitem">
-    <p>From my development, I considered there to be 3 key components to adaptable design for digital electronics:</p>
+    <p>From my development, I considered there to be 3 key components to adaptable design for digital electronics products:</p>
     <ul>
         <li><b>A craft approach to making,</b> where materials and construction of a product are craft-based.</li>
         <li><b>A design that creates intrigue,</b> encouraging a user to explore it physically.</li>
@@ -33,8 +33,25 @@
     <div class="portfoliorow">
         <button><picture><img src="static/img/mindseye-8.jpg" alt="the packaged camera, showing the brass parts wrapped in pink tissue paper, and the instruction booklet. The packaging is meant for postage, and is A5 size x 40mm" /></picture></button>
     </div>
-    <p>The product includes the camera kit itself, but also to support an end user's ability to make using the camera, it includes warranty, an online forums service bringing users of the camera together to ask questions, share information, and exhibit their work, an online documentation service curating a library of information and resources, and paper instructions detailing assembly and asking the user to get involved in the community online by talking about their work and posting pictures.</p>
+    <p>The product includes the camera kit itself, but also to support an end user's ability to make using the camera, it includes;</p>
+    <ul>
+        <li><b>A warranty</b> alleviating a user's fear of damaging the device's electronics when working with it,</li>
+        <li><b>An online forums service</b> bringing users of the camera together to ask questions, share information, make contributions, and exhibit their work,</li>
+        <li><b>An online documentation service</b> curating a library of information and resources about how the camera's code works and how to change it, specifications and drawings of the hardware, and development principles,</li>
+        <li><b>Paper instructions</b> detailing assembly and asking the user to get involved in the community online by talking about their work, asking questions of others, and posting pictures.</li>
+    </ul>
     <p>Users talking about and exhibiting their work online is how new users come into the project. It provides inspiration and motivation to users, puts them in contact with experienced people, and helps a new user develop their own methods and goals for making.</p>
+    <p>The camera kit itself is made up of:</p>
+    <ul>
+        <li><b>A Raspberry Pi 3B+. Note:</b> This is arbitrary and it's what I had around to build with. This could be any other Raspberry Pi with an FPC connector to connect to a camera, <i>(ribbon cable)</i> like a Raspberry Pi Zero. Alternatively this could be any microcontroller board that can run an <a href="https://www.sinoseen.com/what-is-an-spi-camera" rel="external" target="_blank"><u>SPI camera/MIPI CSI camera.</u></a> Arduino makes a few but lots of cheaper microcontroller boards can do this.</li>
+        <li><b>An <a href="https://docs.arducam.com/Raspberry-Pi-Camera/Native-camera/5MP-OV5647/" rel="external" target="_blank"><u>OV5647 camera sensor.</u></a></b> The one I chose was a module for Raspberry Pi/Arduino Uno but anything will do, including different kinds of sensor if they'll work. I chose the cheapest I could find, you can get lots of options on <a href="https://www.aliexpress.com/w/wholesale-ov5647.html" rel="external" target="_blank"><u>AliExpress.</u></a></li>
+        <li><b>A rotary encoder</b> for the lever switch. I used a <a href="https://www.avrfreaks.net/s/topic/a5C3l000000UYJTEA4/t145693" rel="external" target="_blank"><u>small one salvaged from a mousewheel.</u></a> On the camera kit, if you cut the lever off the switch, it will turn forever, meaning you can use it as a digital zoom for example rather than to swap between picture/film.</li>
+        <li><b>A keyboard switch and keycap</b> for the shutter switch. Again arbitrary, you can use anything to complete an electrical circuit.</li>
+        <li><b>A threaded female insert for a tripod mount.</b> I salvaged the one I used from a broken tripod adapter.</li>
+        <li><b>PLA 3D printed component housings and brass plate parts for the frame.</b></li>
+        <li><b>Lengths of freestanding brass wire</b> to make electrical connections in the <a href="https://hackaday.com/2018/11/19/flywire-circuits-at-the-next-level/" rel="external" target="_blank"><u><i>flywire</i> style.</u></a></li>
+        <li><b>M3 countersunk wood screws</b> for plastic parts, and for the metal parts and electronics, <b>M3 bolts, washers, and nuts.</b></li>
+    </ul>
     <div class="portfoliorow">
         <button><picture><img src="static/img/forum-01.jpg" alt="mockup of the forums site" /></picture></button>
     </div>
@@ -51,8 +68,8 @@
     <div class="portfoliorow">
         <button><picture><img src="static/img/mindseye-11.jpg" alt="minds eye camera assembly, part 2" /></picture></button>
     </div>
-    <p>With this camera my aim was to demonstrate ideas I had about modifiable digital electronics, and to look into the entire process that someone goes through when trying to learn about and repurpose their electronic devices. What methods would they use, how would they stay motivated, where would they get the knowlege and skills to do it.</p>
-    <p>Mind's Eye is a camera that inspires creativity and makes a user want to change it. I think it is a good starting point for further work in adaptable, open design for digital electronics.<br><br><a href="https://github.com/cauwu/minds-eye-camera">Models, drawings and code <u>available on Github.</u></a></p>
+    <p>With this camera kit my aim was to demonstrate a craft approach to open-source product design, and to look into the entire process that someone goes through when trying to learn about and repurpose their electronic devices. What methods they might use, how they might stay motivated, and where they might get the knowlege and skills to do it.</p>
+    <p>MIND'S EYE is a camera kit that inspires creativity and makes a user want to change it. I think it is a good starting point for further work in adaptable, open design for digital electronics.<br><br><a href="https://github.com/cauwu/minds-eye-camera" rel="external" target="_blank">Models, drawings and code <u>available on Github.</u></a></p>
     <hr>
 </section>
 <section class="contentitem">
@@ -66,11 +83,32 @@
         // Pass the ID and the filename to the mount function
         mount3mf('threemf-camera-1', 'mindseye.3mf');
     </script>
+    <p>With thanks to Angel <a href="https://github.com/twnk" rel="external" target="_blank"><u>twnk</u></a> for teaching me how to implement this 3D viewer.</p>
     <hr>
 </section>
 <section class="contentitem">
-    <h2 id="subheading02">Development work</h2>
-    <hr>
+    <h2 id="subheading02">How am I supposed to modify MIND'S EYE?</h2>
+    <hr />
+    <p></p>
+    <hr />
+</section>
+<section class="contentitem">
+    <h2 id="subheading03">[Manifesto] What is the point of MIND'S EYE?</h2>
+    <hr />
+    <div class="portfoliorow">
+        <button><picture><img src="static/img/misc-10.jpg" alt="Open video camera sketch, from when the project was called Black Box" /></picture></button>
+        <button><picture><img src="static/img/misc-11.jpg" alt="Open video camera sketch, showing detail" /></picture></button>
+    </div>
+    <p>There are people who have an enormous intrest in electronics and computers that they are unable to properly satiate. They are people who want to get hands-on with digital electronics, for fun or purpose, but it's too much of a time/focus/money investment to learn how these devices work in a way that allows them to build things they want. They lack a community of people who they can learn from and be a part of.</p>
+    <p><a href="https://www.wired.com/2013/02/lebbeus-woods-conceptual-architect/" rel="external" target="_blank"><u>Lebbeus Woods</u></a> proposed the idea of <a href="https://lebbeuswoods.wordpress.com/2008/02/06/the-reality-of-theory/" rel="external" target="_blank"><u>Freespaces in the rebuilding of Sarajevo after the siege in 1996.</u></a> The people building them would have very little money, so the Freespaces, buildings without a defined purpose, would be built from sheets, planks, cables, and poles, growing haphazard out of the bomb holes in concrete apartment towers, or suspended with cables between two buildings over the street. Woods believed that instead of rebuilding the past as it was, after war, some of the residents of Sarajevo should build spaces that could be adapted for uses and communities that would emerge in the future that was being created.</p>
+    <p>Think of the same idea applied to product design. People, together, who have formed a craft community to find their materials, techniques, and learning, covering their homes and workplaces in handmade sensors, buttons, indicators, controllers, hanging from ceilings, stuck to walls, in painted and decorated little boxes, embroidered bags, or reused milk cartons and sushi plates, made of threads, nail polish, wires, aluminium cans, and electronic components understood as craft materials. Wreckage and circumstance, through necessity, transformed into a powerful design and engineering language owned by its speakers. These devices are tools for work and play, they keep track of tasks and inventory, control phones and PCs, keep people in touch, feed pets, provide information at a glance, are to be played with and taught to others, and make spaces that are intresting and new, with emergent capabilities.</p>
+    <p>The open source movement in information and communication technology has produced development boards and microcomputers designed to make rapid, inexpensive electronic prototyping possible for hobbyists and experts alike. Arduino, Raspberry Pi, and others make use of microcontrollers like ATmega328 and <a href="https://thepihut.com/products/seeed-xiao-rp2040" rel="external" target="_blank"><u>RP2040 that costs £5</u></a> and are as easy to use as they can be. But how can these computer boards become useful objects with a purpose? The answer, following <a href="https://www.journalofjewelleryresearch.org/wp-content/uploads/2022/05/0143_SMT_Vol13_P04_Shorter_FA.pdf" rel="external" target="_blank">Michael Shorter's <i>The Craft Technologist,</i></a> is to interpret electronic components as craft materials, and use people's intrest in artistic expression and curiosity about computers and electronics to get them to play with friends and build with whatever they have to hand.</p>
+    <p>This is what MIND'S EYE is designed to initiate.</p>
+    <hr />
+</section>
+<section class="contentitem">
+    <h2 id="subheading04">Development work</h2>
+    <hr />
     <div class="portfoliorow">
         <button><picture><img src="static/img/blackbox-1.jpg" alt="wire webcam rebuild that I used to experiment with creating intrigue" /></picture></button>
         <button><picture><img src="static/img/blackbox-2.jpg" alt="wire webcam in the shape of an orchid or a dragonfly" /></picture></button>
@@ -119,7 +157,29 @@
         <button><picture><img src="static/img/mindseye-12.jpg" alt="first prototype of the mind's eye camera, showing the wire mounting rail" /></picture></button>
     </div>
     <p>First prototype of the Mind's Eye camera, with a soldered brass wire mounting rail on top. For my prototypes after this, I wanted to make the shape more intresting, but I couldn't keep the mounting rail because using a soldering iron couldn't get the brass plate hot enough to solder to it well and braizing with a torch is probably not something a hobby user would have access to. Drilling holes or screwing it down would have been such intricate work that a user might not want to change it.</p>
-    <hr>
+    <hr />
+</section>
+<section class="contentitem">
+    <h2 id="subheading05">What is MIND'S EYE?</h2>
+    <hr />
+    <h3>Controlling Complexity</h3>
+    <p>In <a href="https://youtu.be/-J_xL4IGhJA" rel="external" target="_blank">Harold Abelson, Gerald Jay Sussman, and Julie Sussman's <i>Structure and Interpretation of Computer Programs</i> lectures from 1986,</a> Hal Abelson gives an overview of techniques that computer programmers use to control complexity. These techniques allow programmers to build complex systems out of simple primitives, so that they are able to parse lots of kinds of data without getting overwhelmed. These techniques are:</p>
+    <ul>
+        <li><em><b>Black Box Abstraction:</b></em> Learners don't need to know the bits and bytes of mathematical operations, for example, so unnecessary details should be wrapped up in simple commands and characters that take inputs and produce predictable ouputs. These black boxes can be put together to produce a very complicated system easily.</li>
+        <li><em><b>Conventional Interfaces:</b></em> Agreed upon ways of plugging things together. Learners should expect that if they are able to produce an output with a component they've built, they can send that input into something else and it'll work as expected.</li>
+        <li><em><b>Metalinguistic Abstraction:</b></em> Creating new language. When learners are overwhelmed by the complexity of a system, they can make new ways of communicating to others about the system that suppress some aspects and emphasize others.</li>
+    </ul>
+    <p>These techniques are meant for software engineering, and are inspired by electrical engineering, but are also perfectly applicable to product design. However, in a complicated product like a digital camera, these ways of making it easier for end users to interact with complex systems, and for professional engineers to build them, can make it impossible for end users (and other engineers not familiar with the product) to understand how they work without being taught, for example, to repair or modify them.</p>
+    <h3>The Open Source Movement</h3>
+    <p>The open source movement, which is ubiquitous now, developed out of the hacker culture of the 1980s and 1990s. <a href="https://pld.cs.luc.edu/courses/412/spr20/mnotes/cathedral-bazaar.pdf" rel="external" target="_blank"><u>Eric Raymond's <i>The Cathedral and the Bazaar</i> from 1996</u></a> gives an overview of the open-source design methodology in software development, comparing the "more centralized, a priori approach" of GNU (the cathedral) to the "great babbling bazaar of differing agendas and approaches [...] out of which a coherent and stable system could seemingly emerge only by a succession of miracles" of Linux. Importantly, <i>open-source</i> as <a href="https://opensource.org/history" rel="external" target="_blank"><u>coined by the Open Source Initiative co-founded by Raymond</u></a> means the community development of software through requests, submissions, and re-use of code by contributors over the internet. (Rather than just the freedom of information of the source code.)</p>
+    <p>"The fact that this bazaar style seemed to work, and work well, came as a distinct shock." Raymond wrote that the open-source, collaborative method made Linux community "a fountain of good software". Raymond also describes how contributors and authors of various skill levels each produced something very valuable. "Though fetchpop had some good original ideas in it [...] [It] was rather amateurishly coded (Seung-Hong [Oh] was at that time a bright but inexperienced programmer, and both traits showed)." Raymond combined the broad features of Fetchpop by Seung-Hong Oh with the solid foundational codebase of Popclient by Carl Harris when he took over ownership of Popclient from Harris. "In a software culture that encourages code-sharing, this is a natural way for a project to evolve".</p>
+    <p>In order to make a contribution to an open-source project, you must request that a project owner (owner in the responsibility sense, more like an administrator, rather than the legal-property sense) add your contributions to the source (merge). Before this happens, there is a process of code review, which is a public discussion between the contributor, project owners, and other community members, to understand the changes that are being made and why. Communication is a vital part of the open-source process, and in Linux for example, there are 35 years of emails, Usenet, and forum posts between Linus Torvalds and others discussing, and often rejecting, contributions, with reasoning why. This documented history of discussions and reasoning is an invaluable source for understanding why Linux functions in the way that it does, and what it's trying to do—the <i>engineering logic</i>.</p>
+    <p>It's being able to read and learn this engineering logic, or have someone explain it to you, that allows someone unfamiliar with a complicated project to understand the ways that Abelson & Sussman's insights on methods of controling complexity have been used and be brought up to speed. To learn the metalinguistic abstractions, interfaces, and black boxes in a constructive (literally) way. This is only possible in an open-source community.</p>
+    <h3>Craft Culture</h3>
+    <p></p>
+    <h3>Open Source Product Design</h3>
+    <p>Tbd. -28/03/2025</p>
+    <hr />
 </section>
 <section>
     <img style="max-width:100%;" src="static/img/businesscard.jpg" alt="" />
