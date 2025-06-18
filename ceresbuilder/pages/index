@@ -116,6 +116,18 @@
                 <span>2022-2023</span>
             </a>
         </div>
+            <div class="portfoliorow">
+        <a href="plushplane.html">
+            <img src="static/img/plushplane-01.avif" alt="Thumbnail image: A stuffed toy plane">
+            <span>Panavia Tornado Stuffed Toy</span>
+            <span>2025</span>
+        </a>
+        <a>
+            <img src="" alt="">
+            <span></span>
+            <span></span>
+        </a>
+    </div>
     </div>
     <button id="showmorebutton" onclick="pfDropdownToggle()">v Show More v</button>
     <hr style="margin-top: 0.5rem;">

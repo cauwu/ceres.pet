@@ -1,0 +1,44 @@
+<header class="contentitem">
+    <h2 id="subheading00">Panavia Tornado Stuffed Toy</h2>
+    <span>A scale toy model of a variable-sweep wing multi-role jet for a commission client. Cotton sweater jersey, weighted beans, recycled polyester stuffing, and 0.5mm polypropylene for the wings, with appliqué detailing.<br>Ceres Miller, 2025</span>
+    <hr>
+    <p>This was a commission from a friend who wanted a gift for someone recovering from surgery; it is her favourite plane. The <a href="https://en.wikipedia.org/wiki/Panavia_Tornado" rel="external" target="_blank">Tornado</a> was introduced in 1979 and was jointly developed and built by British Aerospace, MBB (West Germany), and Aeritalia. It is currently in service in the Luftwaffe, the Italian Air Force, and the Royal Saudi Air Force. The British RAF retired the Tornado in 2019.</p>
+    <div class="portfoliorow">
+        <button><picture><img src="static/img/plushplane-01.avif" alt="Soft toy fighter jet held in a hand" /></picture></button>
+    </div>
+    <div class="portfoliorow">
+        <button><picture><img src="static/img/plushplane-03.avif" alt="Soft toy fighter jet from the front" /></picture></button>
+        <button><picture><img src="static/img/plushplane-04.avif" alt="Soft toy fighter jet from the flank" /></picture></button>
+    </div>
+        <div class="portfoliorow">
+        <button><picture><img src="static/img/plushplane-05.avif" alt="Soft toy fighter jet from the side" /></picture></button>
+        <button><picture><img src="static/img/plushplane-06.avif" alt="Soft toy fighter jet from nearly above" /></picture></button>
+    </div>
+    <div class="portfoliorow">
+        <button><picture><img src="static/img/plushplane-02.avif" alt="Plush variable sweep wings for plush supersonic flight" /></picture></button>
+    </div>
+    <hr>
+</header>
+<section class="contentitem">
+    <p>This was my first experience patternmaking digitally. I used the <a href="https://thomaskole.nl/s2s/" rel="external" target="_blank">Blender plugin Seams to Sewing Pattern by Thomas Kole</a> to turn a Blender model into a pattern sheet using the model's UV seams. This meant I could start with an accurate scale model, retopologize it, print out SVG drawings of the UV shapes, and get panels ready to sew together without any <a href="https://www.reddit.com/r/plushartists/comments/127a58c/comment/jedrcrs/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" rel="external" target="_blank">trial-and-error</a>.</p>
+    <div class="portfoliorow">
+        <button><picture><img src="static/img/plushplane-11.avif" alt="Blender model of the plane fuselage showing the UV seams in red" /></picture></button>
+        <button><picture><img src="static/img/plushplane-07.avif" alt="Fabric panels and pattern pieces laid out about to be sewn together" /></picture></button>
+    </div>
+    <p>A fabric with some thickness to it would be useful for helping give the plane some softness and roundness at the thin edges, especially with the small size I was going for. I was originally looking for a low-pile minky, but decided on looking for jersey instead because the tight knit surface on top could suggest the smoothness of metal. Due to colour choice limitations, I chose a colour that had a sort of naval vibe instead of a livery more like what this plane would wear in actual service.</p>
+    <div class="portfoliorow">
+        <button><picture><img src="static/img/plushplane-08.avif" alt="Just butchered this fighter jet. Beautiful pelt on it" /></picture></button>
+    </div>
+    <p>To make the control surfaces, there's pieces of 0.5mm polypropylene sheet sandwiched in between sweater jersey, giving a soft, flexible wing, but stiff and smooth to give the right appearance. The wings sweep by having them attach at the base of a pocket which pokes inside the fuselage. There's a "pin" of thread where the wing hinges, so the wings can move somewhat freely while staying secure.</p>
+    <p>The cockpit canopy is appliquéd. I used some tissue paper as a stabiliser and a walking foot to help the stretchy materials stay in the right place through the sewing machine. It still stretched however, so it may be better to do the canopy appliqué as one piece rather than multiple small pieces, so to help control the pieces better. I could also use fusible interfacing to hold the appliqué in place while sewing.</p>
+    <div class="portfoliorow">
+        <button><picture><img src="static/img/plushplane-09.avif" alt="Canopy appliqué detail" /></picture></button>
+    </div>
+    <p>Once all the pieces were together, the plane was pulled inside-out and stuffed. At the ends, (the nose cone, engine intakes, and exhuasts) I used weighted beads to give the plane a better feel when hugging it. Differing weights at extremities from the body also make the plane move when being played with which can give a sense of emotion. The rest of the stuffing is recycled polyester, pressed in quite tightly.</p>
+    <div class="portfoliorow">
+        <button><picture><img src="static/img/plushplane-10.avif" alt="Fighter jet assembled inside-out, before stuffing" /></picture></button>
+    </div>
+    <p>When the plane was stuffed, it did not have the shape of a fighter jet, rather the skin ballooned with the stuffing as you might expect, especially with a stretchy material. So, to properly define the shape of the plane, I used a doll needle (a very long sewing needle, meant for sewing in the eyes on dolls' heads) to thread parts of the plane together in gentle pinches. I did this around the engine intakes, all the way along the line from the cockpit, and where the control surfaces connect to the fuselage. This pinching turned balloon shapes into straight lines and accute angles where needed.</p>
+    <p>The plane looks to have too many pieces, which are probably unnecessary. However, I felt the seam lines were important for defining the shape of the plane, especially in depicting corners where the stuffed toy would naturally be a gradual curve, like in defining the squarish belly of the plane around the engines.</p>
+    <hr>
+</section>

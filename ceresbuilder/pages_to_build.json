@@ -126,6 +126,15 @@
 			"page_modal": true,
 			"contents_pane": true
 		},
+				{
+			"article_url": "plushplane",
+			"article_title": "Ceres Miller / Panavia Tornado Stuffed Toy",
+			"page_article_location": "./pages/plushplane",
+			"page_type": "portfolio",
+			"head_extra_location": "",
+			"page_modal": true,
+			"contents_pane": false
+		},
 		{
 			"article_url": "rabbit",
 			"article_title": "Ceres Miller / A Toy Rabbit",
