@@ -1,12 +1,23 @@
 {
-  "dependencies": {
-    "css-select": "^5.1.0",
-    "dom-serializer": "^2.0.0",
-    "htmlparser2": "^9.1.0",
-    "jsdom": "^25.0.1",
-    "three": "^0.172.0"
+  "name": "ceresbuilder",
+  "version": "1.0.0",
+  "description": "A static website builder for https://ceres.pet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
-    "vite": "^6.0.7"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cauwu/ceres.pet.git"
+  },
+  "author": "cauwu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cauwu/ceres.pet/issues"
+  },
+  "homepage": "https://github.com/cauwu/ceres.pet#readme",
+  "dependencies": {
+    "css-select": "^6.0.0",
+    "htmlparser2": "^10.0.0"
   }
 }
