@@ -2,6 +2,10 @@
     font-size:60px;
 }
 
+body {
+    overflow-y: hidden;
+}
+
 .line {
     display: flex;
     justify-content: space-between;

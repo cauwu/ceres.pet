@@ -23,7 +23,6 @@ p[8] = "w"
 
 window.addEventListener("load", () => {
   pfAttachButtons();
-  pfAttachCounters();
 })
 
 const pfAttachButtons = () => {
@@ -35,13 +34,6 @@ const pfAttachButtons = () => {
 	});
 }
 
-const pfAttachCounters = () => {
-  const counters = document.querySelectorAll('[data-counter]')
-  counters.forEach((span) => {
-    span.innerHTML = totals[1];
-  });
-}
-
 const pfUpdateCounters = (g, v) => {
   const span = document.querySelector("[data-counter=" + CSS.escape(v) + "]");
   span.innerHTML = totals[g];
@@ -51,8 +43,8 @@ const pfChangeCount = (button) => {
   const g = (element) => element === button.dataset.glass
   const glass = p.findIndex(g);
   totals[glass] = totals[glass]+parseInt(button.dataset.count);
-  console.log(totals[glass])
+  if (totals[glass] < 0) {
+    totals[glass] = 0
+  }
   pfUpdateCounters(glass, button.dataset.glass);
-  //console.log(button.dataset.count)
-  //console.log(button.dataset.glass)
 }
