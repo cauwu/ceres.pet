@@ -1,16 +1,64 @@
-<script type="importmap">
-  {
-    "imports": {
-      "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+<!DOCTYPE html><html dir="ltr" lang="en">
+<head>
+  <link rel="stylesheet" href="/static/css/glasscounter.css"/>
+  <script type="importmap">
+    {
+      "imports": {
+        "glasscounter": "./static/js/modules/glasscounter.js"
+      }
     }
-  }
-</script>
+  </script>
+  <script type="module" src="./static/js/modules/glasscounter.js"></script>
+</head>
+<body>
+<div class="line">
+  <div><button data-glass="nn" data-count="-6">&#171;6</button><button data-glass="nn" data-count="-1">&#8249;1</button></div>
+  <div><span>Nick & Nora</span></div>
+  <div><span data-counter="nn">0</span></div>
+  <div><button data-glass="nn" data-count="1">1&#8250;</button><button data-glass="nn" data-count="6">6&#187;</button></div>
+</div>
+<div class="line">
+  <div><button data-glass="c" data-count="-6">&#171;6</button><button data-glass="c" data-count="-1">&#8249;1</button></div>
+  <div><span>Coupe</span></div>
+  <div><span data-counter="c">0</span></div>
+  <div><button data-glass="c" data-count="1">1&#8250;</button><button data-glass="c" data-count="6">6&#187;</button></div>
+</div>
+<div class="line">
+  <div><button data-glass="hb" data-count="-6">&#171;6</button><button data-glass="hb" data-count="-1">&#8249;1</button></div>
+  <div><span>Highball</span></div>
+  <div><span data-counter="hb">0</span></div>
+  <div><button data-glass="hb" data-count="1">1&#8250;</button><button data-glass="hb" data-count="6">6&#187;</button></div>
+</div>
+<div class="line">
+  <div><button data-glass="r" data-count="-6">&#171;6</button><button data-glass="r" data-count="-1">&#8249;1</button></div>
+  <div><span>Rocks</span></div>
+  <div><span data-counter="r">0</span></div>
+  <div><button data-glass="r" data-count="1">1&#8250;</button><button data-glass="r" data-count="6">6&#187;</button></div>
+</div>
+<div class="line">
+  <div><button data-glass="f" data-count="-6">&#171;6</button><button data-glass="f" data-count="-1">&#8249;1</button></div>
+  <div><span>Flute</span></div>
+  <div><span data-counter="f">0</span></div>
+  <div><button data-glass="f" data-count="1">1&#8250;</button><button data-glass="f" data-count="6">6&#187;</button></div>
+</div>
+<div class="line">
+  <div><button data-glass="wine" data-count="-6">&#171;6</button><button data-glass="wine" data-count="-1">&#8249;1</button></div>
+  <div><span>Wine</span></div>
+  <div><span data-counter="wine">0</span></div>
+  <div><button data-glass="wine" data-count="1">1&#8250;</button><button data-glass="wine" data-count="6">6&#187;</button></div>
+</div>
+<div class="line">
+  <div><button data-glass="s" data-count="-6">&#171;6</button><button data-glass="s" data-count="-1">&#8249;1</button></div>
+  <div><span>Shot</span></div>
+  <div><span data-counter="shot">0</span></div>
+  <div><button data-glass="s" data-count="1">1&#8250;</button><button data-glass="s" data-count="6">6&#187;</button></div>
+</div>
+<div class="line">
+  <div><button data-glass="w" data-count="-6">&#171;6</button><button data-glass="w" data-count="-1">&#8249;1</button></div>
+  <div><span>Water</span></div>
+  <div><span data-counter="w">0</span></div>
+  <div><button data-glass="w" data-count="1">1&#8250;</button><button data-glass="w" data-count="6">6&#187;</button></div>
+</div>
 
-<div id="app"></div>
-
-<script type="module">
-  import { createApp } from 'vue'
-  import GlassCounter from './static/js/modules/glasscounter.js'
-
-  createApp(GlassCounter).mount('#app')
-</script>
+</body>
+</html>
