@@ -31,5 +31,6 @@ button {
     display: flex;
     justify-content: center;
     padding-top: 1rem;
+    font-size: 0.7rem;
 }
 
