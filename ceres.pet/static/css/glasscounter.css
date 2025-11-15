@@ -27,3 +27,9 @@ button {
     align-items: center;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
