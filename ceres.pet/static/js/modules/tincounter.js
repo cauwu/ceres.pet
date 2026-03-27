@@ -4,23 +4,12 @@ var totals = new Array();
 totals[1] = 0;
 totals[2] = 0;
 totals[3] = 0;
-totals[4] = 0;
-totals[5] = 0;
-totals[6] = 0;
-totals[7] = 0;
-totals[8] = 0;
-
 
 // p for pseudonym
 const p = new Array();
-p[1] = "noam"
-p[2] = "lucky"
-p[3] = "coke"
-p[4] = "soda"
-p[5] = "tonic"
-p[6] = "ginger"
-p[7] = "gsoda"
-p[8] = "crodino"
+p[1] = "mt"
+p[2] = "mc"
+p[3] = "ms"
 
 window.addEventListener("load", () => {
   pfAttachButtons();
